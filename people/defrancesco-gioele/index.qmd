@@ -6,7 +6,7 @@ people_group: "phdstudent" ##
 email: gioele.defrancesco@unitn.it ##
 education:
   - M.S. in Mechatronics Engineering | University of Trento | 2025  <br> B.S. in Industrial Engineering | University of Trento | 2022  # 
-subtitle: "PhD stundent" ## 
+subtitle: "PhD student" ## 
 description: "" ## Short description (optional) ##
 image: gioele.jpeg
 page-layout: full

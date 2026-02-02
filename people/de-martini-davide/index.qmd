@@ -1,0 +1,62 @@
+---
+title: &TITLE Davide De Martini ##
+last: De Martini ##
+first: Davide ##
+people_group: "phdstudent" ## "postdoc | gradstudent | alumni | pi | student" #
+email: davide.demartini@unitn.it ##
+education:
+  - MS in Artificial Intellicence Systems | University of Trento | 2025  <br> BS in Information Engineering | University of Trento | 2023 
+subtitle: "PhD student" ## "Postdoctoral Fellow | Graduate Student | Principal Investigator | Student | Alumni" #
+description: "" ## Short description (optional) ##
+image: avatar.jpg
+page-layout: full
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../publications/**/*.qmd"
+    - "!../../../publications/_template/"
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: avatar.jpg
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:davide.demartini@unitn.it 
+    - text: Google Scholar
+      icon: mortarboard 
+      href: https://scholar.google.com/citations?user=or6CzwMAAAAJ&hl=it
+    - icon: github
+      text: GitHub 
+      href: https://github.com/davidedema
+---
+
+<hr>
+
+
+:::{#about}
+
+
+Davide De Martini is a PhD student at the university of Trento. He received the B.S. degree in computer science at the University of Trento, Italy, in 2023 and the M.S. in artificial intelligence systems at the University of Trento, Italy, in 2025. His research focuses on planning and control of quadrupedal locomotion.
+
+
+
+## Education
+{{< meta education >}}
+
+<br>
+
+:::
+
+## {{< meta first >}}'s Group Publications
+
+:::{#pubs}
+:::

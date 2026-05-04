@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "publications/index.html",
-    "href": "publications/index.html",
-    "title": "Publications",
+    "objectID": "related/index.html",
+    "href": "related/index.html",
+    "title": "Related works",
     "section": "",
-    "text": "A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks\n            \n            \n            \n                \n                    Mattia Piccinini, \n                    Matteo Zumerle, \n                    Johannes Betz, \n                    Gastone Pietro Rosati Papini \n            \n            \n            \n                \n                    IEEE Open Journal of Intelligent Transportation Systems, pp. 522-536 (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items\n\n\n\n\n\n Back to top"
+    "text": "A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks\n            \n            \n            \n                \n                    Mattia Piccinini, \n                    Matteo Zumerle, \n                    Johannes Betz, \n                    Gastone Pietro Rosati Papini \n            \n            \n            \n                \n                    IEEE Open Journal of Intelligent Transportation Systems, pp. 522-536 (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items\n Back to top"
+  },
+  {
+    "objectID": "publications/index.html#related-works",
+    "href": "publications/index.html#related-works",
+    "title": "Publications",
+    "section": "Related works",
+    "text": "Related works\nClick here"
   },
   {
     "objectID": "publications.html",
@@ -228,7 +235,7 @@
     "href": "people/rosati-papini-gastone-pietro/index.html#group-publications",
     "title": "Gastone Pietro Rosati Papini",
     "section": "Group Publications",
-    "text": "Group Publications\n\n\n    \n      \n      \n    \n\n\n    \n    \n    \n        \n            \n        \n        \n            \n                A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks\n            \n            \n            \n                \n                    Mattia Piccinini, \n                    Matteo Zumerle, \n                    Johannes Betz, \n                    Gastone Pietro Rosati Papini \n            \n            \n            \n                \n                    IEEE Open Journal of Intelligent Transportation Systems, pp. 522-536 (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items"
+    "text": "Group Publications\n\n\n    \n      \n      \n    \n\n\n    \n    \n    \n        \n            \n            \n                \n                    \n                \n            \n            \n        \n        \n            \n                A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks\n            \n            \n            \n                \n                    Mattia Piccinini, \n                    Matteo Zumerle, \n                    Johannes Betz, \n                    Gastone Pietro Rosati Papini \n            \n            \n            \n                \n                    IEEE Open Journal of Intelligent Transportation Systems, Volume 6, pp. 522-536 (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    CITE \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items"
   },
   {
     "objectID": "people/taddei-sebastiano/index.html#education",
@@ -247,6 +254,20 @@
   {
     "objectID": "publications/2025_RoadFrictionAware_IEEE_OJITS/index.html",
     "href": "publications/2025_RoadFrictionAware_IEEE_OJITS/index.html",
+    "title": "A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks",
+    "section": "",
+    "text": "The anti-lock braking system (ABS) is a vital safety feature in modern vehicles, preventing wheel lock during emergency braking. However, the performance of conventional ABS is often limited by the lack of real-time road friction information. This paper introduces a novel road friction-aware ABS, leveraging model-structured neural networks (MS-NNs) to learn the vehicle longitudinal dynamics in different road conditions. Our framework uses a robust criterion to dynamically select from a set of pre-trained MS-NNs based on the available sensor data, enabling real-time road friction estimation and autonomous adaptation of the ABS parameters. Simulation experiments demonstrate that the proposed MS-NN-based ABS significantly improves safety and performance across varying road conditions: the braking distances are reduced by 3.0%-40.4% compared to a conventional ABS, tuned for a specific road condition. Furthermore, the MS-NN’s architecture shows better accuracy, generalization and sample-efficiency compared to other neural networks in the literature, and is suitable for real-time deployment on automotive-grade hardware. Our implementation is open source and available in a public repository."
+  },
+  {
+    "objectID": "publications/2025_RoadFrictionAware_IEEE_OJITS/index.html#abstract",
+    "href": "publications/2025_RoadFrictionAware_IEEE_OJITS/index.html#abstract",
+    "title": "A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks",
+    "section": "",
+    "text": "The anti-lock braking system (ABS) is a vital safety feature in modern vehicles, preventing wheel lock during emergency braking. However, the performance of conventional ABS is often limited by the lack of real-time road friction information. This paper introduces a novel road friction-aware ABS, leveraging model-structured neural networks (MS-NNs) to learn the vehicle longitudinal dynamics in different road conditions. Our framework uses a robust criterion to dynamically select from a set of pre-trained MS-NNs based on the available sensor data, enabling real-time road friction estimation and autonomous adaptation of the ABS parameters. Simulation experiments demonstrate that the proposed MS-NN-based ABS significantly improves safety and performance across varying road conditions: the braking distances are reduced by 3.0%-40.4% compared to a conventional ABS, tuned for a specific road condition. Furthermore, the MS-NN’s architecture shows better accuracy, generalization and sample-efficiency compared to other neural networks in the literature, and is suitable for real-time deployment on automotive-grade hardware. Our implementation is open source and available in a public repository."
+  },
+  {
+    "objectID": "related/2025_RoadFrictionAware_IEEE_OJITS/index.html",
+    "href": "related/2025_RoadFrictionAware_IEEE_OJITS/index.html",
     "title": "A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks",
     "section": "",
     "text": "Back to top"

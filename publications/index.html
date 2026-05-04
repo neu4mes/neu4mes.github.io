@@ -76,7 +76,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-pubs .list');
+    const listingTargetEl = window.document.querySelector('#listing-journals .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -85,11 +85,11 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-pub_number','listing-title','listing-publication','listing-author','listing-url_source',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-author","listing-publication","listing-categories","listing-url_source","listing-url_preprint","listing-journ","listing-page","listing-doi","listing-year","listing-pub_number","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-author","listing-publication","listing-type","listing-categories","listing-url_source","listing-url_preprint","listing-journ","listing-issue","listing-page","listing-doi","listing-year","listing-video","listing-bibtex","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-pubs'] = new List('listing-pubs', options);
+    window['quarto-listings']['listing-journals'] = new List('listing-journals', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -135,8 +135,10 @@ window.Quarto = {
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Publications – Neu4mes Research Group">
+<meta property="og:description" content="Research Group focused on Phisically Informed Neural Networks for Mechanical and Mechatronic Systems">
 <meta property="og:site_name" content="Neu4mes Research Group">
 <meta name="twitter:title" content="Publications – Neu4mes Research Group">
+<meta name="twitter:description" content="Research Group focused on Phisically Informed Neural Networks for Mechanical and Mechatronic Systems">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -195,7 +197,13 @@ window.Quarto = {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p><img src="../assets/images/logomodely.png" class="img-fluid"></p>
 </div></div>
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#related-works" id="toc-related-works" class="nav-link active" data-scroll-target="#related-works">Related works</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
@@ -220,7 +228,18 @@ window.Quarto = {
 
 
 <hr>
-<div id="listing-pubs" class="quarto-listing quarto-listing-container-custom">
+<div id="pubs">
+
+</div>
+<section id="related-works" class="level2">
+<h2 class="anchored" data-anchor-id="related-works">Related works</h2>
+<p><a href="../related/index.html">Click here</a></p>
+
+
+
+</section>
+
+<div class="quarto-listing quarto-listing-container-custom" id="listing-journals">
 <div class="listing-actions-group">
     <div class="input-group input-group-sm quarto-listing-filter">
       <span class="input-group-text"><i class="bi bi-search"></i></span>
@@ -230,8 +249,14 @@ window.Quarto = {
 <div class="list quarto-listing-default">
     
     
-    <div class="quarto-post image-left" data-index="0" data-categories="UHVibGljYXRpb25zJTJDSm91cm5hbCUyMEFydGljbGVzJTJDTW9kZWwtU3RydWN0dXJlZCUyME5ldXJhbCUyME5ldHdvcmtzJTJDUm9hZCUyMEZyaWN0aW9uJTIwRXN0aW1hdGlvbiUyQ0FudGktTG9jayUyMEJyYWtpbmclMjBTeXN0ZW1zJTJDSW50ZWxsaWdlbnQlMjBUcmFuc3BvcnRhdGlvbiUyMFN5c3RlbXM=" data-listing-file-modified-sort="1777898599259" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <div class="quarto-post image-left" data-index="0" data-categories="UHVibGljYXRpb25zJTJDSm91cm5hbCUyMEFydGljbGVzJTJDTW9kZWwtU3RydWN0dXJlZCUyME5ldXJhbCUyME5ldHdvcmtzJTJDUm9hZCUyMEZyaWN0aW9uJTIwRXN0aW1hdGlvbiUyQ0FudGktTG9jayUyMEJyYWtpbmclMjBTeXN0ZW1zJTJDSW50ZWxsaWdlbnQlMjBUcmFuc3BvcnRhdGlvbiUyMFN5c3RlbXM=" data-listing-file-modified-sort="1777907286051" data-listing-reading-time-sort="1" data-listing-word-count-sort="171">
         <div class="thumbnail">
+            
+            <a href="../publications/2025_RoadFrictionAware_IEEE_OJITS/index.html">
+                <p>
+                    <img alt="A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks" src="https://img.youtube.com/vi/xQ_T96IjGP8/0.jpg" class="thumbnail-image">
+                </p>
+            </a>
             
         </div>
         <div class="body">
@@ -249,7 +274,7 @@ window.Quarto = {
             
             <div class="metadata-value listing-pub-journal listing-publication">
                 
-                    <i>IEEE Open Journal of Intelligent Transportation Systems</i>, pp. 522-536 (2025)<br>
+                    <i>IEEE Open Journal of Intelligent Transportation Systems</i>, <b>Volume 6</b>, pp. 522-536 (2025)<br>
                 
             </div>
             
@@ -268,6 +293,12 @@ window.Quarto = {
                 
                 
                 
+                 | 
+                
+                <a href="../publications/2025_RoadFrictionAware_IEEE_OJITS/bibtex.txt" download="" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">CITE <i class="bi bi-download"></i></span>
+                </a>
+                
             </div>
         </div>
     </div>
@@ -276,12 +307,7 @@ window.Quarto = {
     </div>
 
 <div class="listing-no-matching d-none">No matching items</div>
-</div>
-
-
-
-
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

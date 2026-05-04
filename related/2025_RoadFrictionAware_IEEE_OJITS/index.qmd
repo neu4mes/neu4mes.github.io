@@ -1,0 +1,21 @@
+---
+title: "A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks"
+author: ["Mattia Piccinini", "Matteo Zumerle", "Johannes Betz", "Gastone Pietro Rosati Papini"]
+publication: "IEEE Open Journal of Intelligent Transportation Systems, volume 6, 522-536 (2025)"
+type: related
+categories: 
+  - "Publications"
+  - "Journal Articles"
+  - "Model-Structured Neural Networks"
+  - "Road Friction Estimation"
+  - "Anti-Lock Braking Systems"
+  - "Intelligent Transportation Systems"
+url_source: 
+url_preprint: 
+journ: "IEEE Open Journal of Intelligent Transportation Systems"
+# issue: Volume 6
+page: pp. 522-536
+doi: "10.1109/OJITS.2025.3563347"
+year: 2025
+# image: ""
+---

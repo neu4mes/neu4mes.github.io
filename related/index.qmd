@@ -1,9 +1,9 @@
 ---
-title: "Publications"
+title: "Related works"
 listing:
-  - id: journals
+  - id: related
     template: ../_ejs/publications.ejs
-    contents: ../publications/**/*.qmd
+    contents: ../related/**/*.qmd
     sort: "pub_number desc"
     page-size: 30
     filter-ui: true
@@ -15,7 +15,3 @@ page-layout: full
 
 :::{#pubs}
 :::
-
-## Related works
-
-[Click here](../related/index.qmd)

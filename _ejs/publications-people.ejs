@@ -2,74 +2,108 @@
 <div class="list quarto-listing-default">
     <% for (const item of items) { %>
     
-    <div class="quarto-post image-right" <%= metadataAttrs(item) %> >
+    <div class="quarto-post image-left" <%= metadataAttrs(item) %> >
         <div class="thumbnail">
-            <!-- <a href="<%- item.path %>"> -->
-
+            <% if (item.video) { %>
+            <a href="<%- item.path %>">
                 <p>
-                    <% if (item.image) { %>
-                    <img alt="<%= item.title %>" src="<%= item.image %>" class="thumbnail-image">
-                    <% } %>
-
+                    <img alt="<%= item.title %>" src="https://img.youtube.com/vi/<%= item.video %>/0.jpg" class="thumbnail-image">
                 </p>
-      
-
-            <!-- </a> -->
+            </a>
+            <% } else if (item.logo) { %>
+            <a href="<%- item.path %>">
+                <p>
+                    <img alt="<%= item.logo %> logo" src="/_images/_third_parties_logos/<%= item.logo %>" class="thumbnail-image">
+                </p>
+            </a>
+            <% } else if (item.image) { %>
+            <a href="<%- item.path %>">
+                <p>
+                    <% 
+                    // Construct full image path if it's relative
+                    const imagePath = item.image.startsWith('/') || item.image.startsWith('http') 
+                        ? item.image 
+                        : item.path.substring(0, item.path.lastIndexOf('/') + 1) + item.image;
+                    %>
+                    <img alt="<%= item.title %>" src="<%= imagePath %>" class="thumbnail-image">
+                </p>
+            </a>
+            <% } %>
         </div>
         <div class="body">
-            <!-- <a href="<%- item.path %>"> -->
-            <div class="no-anchor listing-pub-title listing-title"><%= item.title %></div>
-            <!-- </a> -->
-            <!-- <a href="<%- item.path %>"> -->
-                
-                <div class="listing-pub-author listing-author">
-                    <%= item.author %><br> 
-                </div>
-                
-                <div class="metadata-value listing-pub-journal listing-publication">
-                    <% if (item.journ) { %>
-                        <i><%= item.journ %></i><% if (item.issue) { %>, <b><%= item.issue %></b><% } %><% if (item.page) { %>, <%= item.page %><% } %><% if (item.year) { %> (<%= item.year %>)<% } %><br>
-                        
-                        <% } %>
-                        
-                        
-                        
-                        
-                </div>
+            <a href="<%- item.path %>">
+                <div class="no-anchor listing-pub-title listing-title"><%= item.title %></div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                <% 
+                const authors = item.author.split(',').map(a => a.trim());
+                authors.forEach((author, index) => {
+                    // Try to match author to profile path
+                    const nameParts = author.split(' ');
+                    const firstName = nameParts[0].toLowerCase();
+                    const lastName = nameParts[nameParts.length - 1].toLowerCase();
+                    const profilePath = `/people/${lastName}-${firstName}/`;
                     
-                    
-                    
-            <!-- </a> -->
- <!--               <div class="listing-categories">
-                <% for (const category of item.categories) { %>
-                <div class="listing-category" onclick="window.quartoListingCategory('<%=category%>'); return false;"><%= category %></div>
+                    // Check if this author has a profile (we'll create links for all, browser will handle 404s)
+                    %>
+                    <a href="<%- profilePath %>"><%= author %></a><% 
+                    if (index < authors.length - 1) { %>, <% }
+                }); 
+                %><br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                <% if (item.journ) { %>
+                    <i><%= item.journ %></i><% if (item.issue) { %>, <b><%= item.issue %></b><% } %><% if (item.page) { %>, <%= item.page %><% } %><% if (item.year) { %> (<%= item.year %>)<% } %><br>
                 <% } %>
-                </div>
-                -->
-        </div>
-        <div class="metadata">
-
-            <% if (item.url_source) { %>
-            <div class="listing-pub-url">
-
-                    <a href="<%- item.url_source %>">
-                    <p style="color:#8250E6;">journal URL <i class="bi bi-box-arrow-up-right"></i></p>
-                    </a>
-                </div>
-                    <% } %>
-  
-              <% if (item.url_preprint) { %>
-            <div class="listing-pub-url">
-
-                    <a href="<%- item.url_preprint %>">
-                    <p style="color:#8250E6;">preprint URL <i class="bi bi-box-arrow-up-right"></i></p>
-                    </a>
-                </div>
-                    <% } %>
-
-
-
-
+            </div>
+            
+            <div class="listing-pub-links">
+                <% if (item.url_source) { %>
+                <a href="<%- item.url_source %>">
+                    <span style="color:#8250E6;">journal URL <i class="bi bi-box-arrow-up-right"></i></span>
+                </a>
+                <% } %>
+                
+                <% if (item.url_preprint) { %>
+                <% if (item.url_source) { %> | <% } %>
+                <a href="<%- item.url_preprint %>">
+                    <span style="color:#8250E6;">preprint URL <i class="bi bi-box-arrow-up-right"></i></span>
+                </a>
+                <% } %>
+                
+                <% if (item.doi) { %>
+                <% if (item.url_source || item.url_preprint) { %> | <% } %>
+                <a href="https://doi.org/<%- item.doi %>" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">DOI <i class="bi bi-box-arrow-up-right"></i></span>
+                </a>
+                <% } %>
+                
+                <% if (item.pdf) { %>
+                <% if (item.url_source || item.url_preprint || item.doi) { %> | <% } %>
+                <% 
+                // Get directory path from item.path and construct full PDF path
+                const dirPath = item.path.substring(0, item.path.lastIndexOf('/') + 1);
+                const pdfPath = dirPath + item.pdf;
+                %>
+                <a href="<%- pdfPath %>" download style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
+                </a>
+                <% } %>
+                
+                <% if (item.bibtex) { %>
+                <% if (item.url_source || item.url_preprint || item.doi || item.pdf) { %> | <% } %>
+                <% 
+                // Get directory path from item.path and construct full bibtex path
+                const dirPath = item.path.substring(0, item.path.lastIndexOf('/') + 1);
+                const bibtexPath = dirPath + item.bibtex;
+                %>
+                <a href="<%- bibtexPath %>" download style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">CITE <i class="bi bi-download"></i></span>
+                </a>
+                <% } %>
+            </div>
         </div>
     </div>
     

@@ -6,7 +6,7 @@ people_group: "phdstudent"
 email: "giovanni.lascala@unitn.it"
 education:
   - M.S. Mechatronics Engineering | University of Trento | 2025  <br> B.S. Cybernetic Engineering | University of Palermo | 2022
-subtitle: "PhD Candidate in System Engineering"
+subtitle: "PhD Student in System Engineering"
 description: ""
 project: "neu4mes"
 affiliation: University of Trento

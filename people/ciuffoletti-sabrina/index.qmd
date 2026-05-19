@@ -7,7 +7,7 @@ seniority: 2
 email: "sabrina.ciuffoletti@unitn.it"
 education:
   - M.S. Mechatronics Engineering | University of Trento | 2026 <br> B.S. Industrial Engineering | University of Trento | 2023
-subtitle: "PhD Candidate in System Engineering"
+subtitle: "Research Fellow"
 description: ""
 project: "neu4mes"
 affiliation: University of Trento

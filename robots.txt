@@ -1,1 +1,1 @@
-Sitemap: https://neu4mes.github.io/ResearchGroup/sitemap.xml
+Sitemap: https://neu4mes.github.io/sitemap.xml

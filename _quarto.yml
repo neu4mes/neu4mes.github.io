@@ -6,7 +6,7 @@ project:
     - "!people/_template/"
 
 website:
-  title: "Neu4mes Research Group"
+  title: "Neu4mes"
   description: "Research Group focused on Phisically Informed Neural Networks for Mechanical and Mechatronic Systems"
   favicon: /assets/images/logomodely.png
   margin-header: |

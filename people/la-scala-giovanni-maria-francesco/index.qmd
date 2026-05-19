@@ -5,13 +5,13 @@ first: Giovanni Maria Francesco
 people_group: "phdstudent"
 email: "giovanni.lascala@unitn.it"
 education:
-  - M.S. Mechatronics Engineering | University of Trento | 2025 <br> B.S. Industrial Engineering | University of Trento | 2022
+  - M.S. Mechatronics Engineering | University of Trento | 2025  <br> B.S. Cybernetic Engineering | University of Palermo | 2022
 subtitle: "PhD Candidate in System Engineering"
 description: ""
 project: "neu4mes"
 affiliation: University of Trento
 # image: avatar.jpg
-image: https://cdn-icons-png.flaticon.com/512/5580/5580993.png
+image: https://avatars.githubusercontent.com/u/130652685?v=4
 listing:
   id: pubs
   template: ../../_ejs/publications-people.ejs 
@@ -29,28 +29,32 @@ about:
   id: about
   template: trestles
   image-shape: round
-  image: https://cdn-icons-png.flaticon.com/512/5580/5580993.png
+  image: https://avatars.githubusercontent.com/u/130652685?v=4
   # image: avatar.jpg
-  # links:
-  #   - icon: envelope
-  #     text: Email
-  #     href: mailto:mattia.piazza@unitn.it
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:giovanni.lascala@unitn.it
+    - icon: github
+      text: GitHub 
+      href: https://github.com/Giolasca
+    - icon: globe2
+      text: Website 
+      href: https://mattiapzz.github.io/
+  #   - icon: linkedin
   #   - text: Google Scholar
   #     icon: mortarboard 
   #     href: https://scholar.google.com/citations?user=_csJIOYAAAAJ&hl=it&oi=ao
-  #   - icon: github
-  #     text: GitHub 
-  #     href: https://github.com/Mattiapzz
-  #   - icon: globe2
-  #     text: Website 
-  #     href: https://mattiapzz.github.io/
 ---
 
 <hr>
 
 
 :::{#about}
+Giovanni Maria Francesco La Scala is a PhD student in System Engineering at the University of Trento working on
+development of Model Structured Neural Network for modeling estimation and control of an aerial drone.
 
+He received the BSc from the University of Palermo in Cybernetic Engineering with focus in Mechatronics in 2022 while the MSc in Mechatronics Engineering from the University of Trento focusing on Robotics and Electronics in 2025. He is now a PhD student.
 
 
 ## Education

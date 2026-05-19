@@ -4,7 +4,9 @@ project:
     - "*.qmd"
     - "!publications/_template/"
     - "!people/_template/"
-
+include-in-header:
+  - text: |
+      <meta name="google-site-verification" content="j_gTCzWnr1jevnfvO9Y_sxECPpvnmmr3i7nuJjhDkiw" />
 website:
   title: "Neu4mes"
   description: "Research Group focused on Phisically Informed Neural Networks for Mechanical and Mechatronic Systems"

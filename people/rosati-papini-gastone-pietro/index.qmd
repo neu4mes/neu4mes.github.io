@@ -1,13 +1,14 @@
 ---
-title: &TITLE Gastone Pietro Rosati Papini
+title: &TITLE Gastone Pietro </br> Rosati Papini
 last: Rosati Papini
 first: Gastone Pietro
 people_group: "pi"
 email: "gastone.rosatipapini@unitn.it"
 education:
-  - Ph.D. in Emerging Digital Technologies | Sant’Anna University | 2016 <br> M.S. Automation Engineering | University of Pisa | 2011 <br> B.S. Software Engineering | University of Pisa | 2007
-
-subtitle: "Associate Professor in Applied mechanics, University of Trento<br> Post-Doc, PERCRO laboratory, Sant’Anna University"
+  - Ph.D. in Emerging Digital Technologies | Sant’Anna University | 2016 
+  # - <br> M.S. Automation Engineering | University of Pisa | 2011 <br> B.S. Software Engineering | University of Pisa | 2007
+subtitle: "Associate Professor in Applied Mechanics, University of Trento" 
+# <br> Post-Doc, PERCRO laboratory, Sant’Anna University"
 description: ""
 project: "neu4mes"
 affiliation: University of Trento

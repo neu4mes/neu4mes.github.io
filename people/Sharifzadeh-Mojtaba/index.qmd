@@ -8,7 +8,7 @@ education:
   - PhD in Industrial Engineering | University of Salerno | 2020  <br> MS in Systems and Control Engineering | Tabriz University of Tech. | 2015  <br> BS  in Systems and Control Engineering | University of Tabriz | 2012
 subtitle: "Assistant Professor RTDa"
 # description: "" ## Short description (optional) ##
-image: avatar.jpeg
+image: avatar.png
 listing:
   id: pubs
   template: ../../_ejs/publications-people.ejs 
@@ -26,7 +26,7 @@ about:
   id: about
   template: trestles
   image-shape: round
-  image: avatar.jpeg
+  image: avatar.png
   links:
     - icon: envelope
       text: Email

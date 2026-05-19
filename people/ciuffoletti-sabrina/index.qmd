@@ -32,10 +32,10 @@ about:
   image-shape: round
   image: https://cdn-icons-png.flaticon.com/512/5580/5580993.png
   # image: avatar.jpg
-  # links:
-  #   - icon: envelope
-  #     text: Email
-  #     href: mailto:mattia.piazza@unitn.it
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:sabrina.ciuffoletti@unitn.it
   #   - text: Google Scholar
   #     icon: mortarboard 
   #     href: https://scholar.google.com/citations?user=_csJIOYAAAAJ&hl=it&oi=ao

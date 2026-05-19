@@ -11,8 +11,7 @@ subtitle: "PhD Candidate in System Engineering"
 description: ""
 project: "neu4mes"
 affiliation: University of Trento
-# image: avatar.jpg
-image: https://cdn-icons-png.flaticon.com/512/5580/5580993.png
+image: avatar.jpg
 listing:
   id: pubs
   template: ../../_ejs/publications-people.ejs 
@@ -30,27 +29,28 @@ about:
   id: about
   template: trestles
   image-shape: round
-  image: https://cdn-icons-png.flaticon.com/512/5580/5580993.png
-  # image: avatar.jpg
+  image: avatar.jpg
   links:
     - icon: envelope
       text: Email
       href: mailto:sabrina.ciuffoletti@unitn.it
   #   - text: Google Scholar
   #     icon: mortarboard 
-  #     href: https://scholar.google.com/citations?user=_csJIOYAAAAJ&hl=it&oi=ao
+  #     href: https://scholar.google.com/citations?user=_c
   #   - icon: github
   #     text: GitHub 
-  #     href: https://github.com/Mattiapzz
+  #     href: https://github.com/sabrina-ciuffoletti
   #   - icon: globe2
   #     text: Website 
-  #     href: https://mattiapzz.github.io/
+  #     href: https://
 ---
 
 <hr>
 
 
 :::{#about}
+
+Sabrina Ciuffoletti is a Research Fellow at the University of Trento, where she achieved her M.S. in Mechatronics Engineering in 2026 and her B.S. in Industrial Engineering in 2023. Her research focuses on the development of modular and scalable planners for vehicles and robotic systems.
 
 
 

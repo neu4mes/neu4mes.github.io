@@ -1,0 +1,65 @@
+---
+title: &TITLE Giovanni Maria Francesco La Scala 
+last: La scala
+first: Giovanni Maria Francesco
+people_group: "phdstudent"
+email: "giovanni.lascala@unitn.it"
+education:
+  - M.S. Mechatronics Engineering | University of Trento | 2025 <br> B.S. Industrial Engineering | University of Trento | 2022
+subtitle: "PhD Candidate in System Engineering"
+description: ""
+project: "neu4mes"
+affiliation: University of Trento
+# image: avatar.jpg
+image: https://cdn-icons-png.flaticon.com/512/5580/5580993.png
+listing:
+  id: pubs
+  template: ../../_ejs/publications-people.ejs 
+  contents: 
+    - "../../../publications/**/*.qmd"
+    - "!../../../publications/_template/"
+  sort: "pub_number desc"
+  # sort-ui: true
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+page-layout: full
+about: 
+  id: about
+  template: trestles
+  image-shape: round
+  image: https://cdn-icons-png.flaticon.com/512/5580/5580993.png
+  # image: avatar.jpg
+  # links:
+  #   - icon: envelope
+  #     text: Email
+  #     href: mailto:mattia.piazza@unitn.it
+  #   - text: Google Scholar
+  #     icon: mortarboard 
+  #     href: https://scholar.google.com/citations?user=_csJIOYAAAAJ&hl=it&oi=ao
+  #   - icon: github
+  #     text: GitHub 
+  #     href: https://github.com/Mattiapzz
+  #   - icon: globe2
+  #     text: Website 
+  #     href: https://mattiapzz.github.io/
+---
+
+<hr>
+
+
+:::{#about}
+
+
+
+## Education
+{{< meta education >}}
+
+<br>
+
+:::
+## Group Publications
+
+:::{#pubs}
+:::

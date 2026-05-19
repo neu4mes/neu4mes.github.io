@@ -36,6 +36,15 @@ listing:
     sort: last
     type: grid
     fields: [title, subtitle, image, education]
+  - id: ResearchFellow
+    include: 
+      people_group: "ResearchFellow"
+    exclude:
+      external: true
+    template: ../_ejs/people-box.ejs
+    sort: last
+    type: grid
+    fields: [title, subtitle, image, education]
 page-layout: full
 ---
 
@@ -67,6 +76,10 @@ page-layout: full
 ::: {#phdstudent}
 :::
 
+## Research Fellows
+
+::: {#ResearchFellow}
+:::
 
 
 

@@ -45,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e9d96ee580158f14aa5ddf7348594603.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-8e1c5cf7f09bc0923da65154f799e103.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -169,11 +169,39 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-subtitle','listing-image','listing-education',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-last","listing-first","listing-people_group","listing-email","listing-education","listing-subtitle","listing-description","listing-image","listing-listing","listing-page-layout","listing-about","listing-path","listing-outputHref","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-from"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-last","listing-first","listing-people_group","listing-email","listing-education","listing-subtitle","listing-description","listing-image","listing-listing","listing-page-layout","listing-about","listing-path","listing-outputHref","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-affiliation","listing-from"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-phdstudent'] = new List('listing-phdstudent', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-ResearchFellow .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-subtitle','listing-image','listing-education',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-last","listing-first","listing-people_group","listing-seniority","listing-email","listing-education","listing-subtitle","listing-description","listing-affiliation","listing-image","listing-listing","listing-page-layout","listing-about","listing-path","listing-outputHref","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-ResearchFellow'] = new List('listing-ResearchFellow', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -294,6 +322,7 @@ window.Quarto = {
   <li><a href="#postdoctoral-researchers" id="toc-postdoctoral-researchers" class="nav-link" data-scroll-target="#postdoctoral-researchers">Postdoctoral Researchers</a></li>
   </ul></li>
   <li><a href="#phd-students" id="toc-phd-students" class="nav-link" data-scroll-target="#phd-students">PhD Students</a></li>
+  <li><a href="#research-fellows" id="toc-research-fellows" class="nav-link" data-scroll-target="#research-fellows">Research Fellows</a></li>
   </ul>
 </nav>
     </div>
@@ -771,6 +800,49 @@ window.Quarto = {
       
       
       
+      <a href="../people/la-scala-giovanni-maria-francesco/index.html" role="button" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-left">
+          
+          
+          <p class="card-img-top">
+            <img alt="Giovanni Maria Francesco La Scala" src="https://cdn-icons-png.flaticon.com/512/5580/5580993.png" class="thumbnail-image card-img listing-box-image" style="height" 150px;"="">
+          </p>
+          
+          <div class="card-body post-contents">
+            
+            <div class="listing-box-title">
+              Giovanni Maria Francesco La Scala<br> 
+            </div>
+               
+            <div class="listing-box-subtitle">
+              PhD Candidate in System Engineering<br>
+            </div>
+                
+            
+              
+              <div class="listing-box-education">
+                
+                
+                  M.S. Mechatronics Engineering | University of Trento | 2025 <br> B.S. Industrial Engineering | University of Trento | 2022<br>
+                  
+                    
+              </div>  
+                  
+
+            
+            
+          </div>  
+        </div>  
+      </a>
+      
+    </div>
+  
+     
+    
+    <div class="g-col-1 listing-box">
+      
+      
+      
       <a href="../people/scialla-giovanni/index.html" role="button" class="quarto-grid-link">
         <div class="quarto-grid-item card h-100 card-left">
           
@@ -795,6 +867,65 @@ window.Quarto = {
                 
                 
                   MS in Artificial Intelligence Systems | University of Trento | 2024  <br> BS in Computer Engineering | University of Modena and Reggio Emilia | 2021<br>
+                  
+                    
+              </div>  
+                  
+
+            
+            
+          </div>  
+        </div>  
+      </a>
+      
+    </div>
+  
+    
+  
+</div>
+</div>
+
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="research-fellows" class="level2">
+<h2 class="anchored" data-anchor-id="research-fellows">Research Fellows</h2>
+<div id="listing-ResearchFellow" class="quarto-listing quarto-listing-container-custom">
+
+<div class="quarto-listing quarto-listing-container-grid">
+  
+  <div class="list grid quarto-listing-cols-3"> 
+
+     
+    
+    <div class="g-col-1 listing-box">
+      
+      
+      
+      <a href="../people/ciuffoletti-sabrina/index.html" role="button" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-left">
+          
+          
+          <p class="card-img-top">
+            <img alt="Sabrina Ciuffoletti" src="https://cdn-icons-png.flaticon.com/512/5580/5580993.png" class="thumbnail-image card-img listing-box-image" style="height" 150px;"="">
+          </p>
+          
+          <div class="card-body post-contents">
+            
+            <div class="listing-box-title">
+              Sabrina Ciuffoletti<br> 
+            </div>
+               
+            <div class="listing-box-subtitle">
+              PhD Candidate in System Engineering<br>
+            </div>
+                
+            
+              
+              <div class="listing-box-education">
+                
+                
+                  M.S. Mechatronics Engineering | University of Trento | 2026 <br> B.S. Industrial Engineering | University of Trento | 2023<br>
                   
                     
               </div>  

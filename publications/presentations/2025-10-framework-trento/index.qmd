@@ -1,0 +1,28 @@
+---
+title: "A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems"
+author:
+  - "Gastone Pietro Rosati Papini"
+publication: "University of Trento, Italy (2025)"
+type: presentation
+categories:
+  - "Presentations"
+  - "Model-Structured Neural Networks"
+url_source: 
+url_preprint: 
+journ: "University of Trento, Italy"
+venue: "Workshop-COSENO, University of Trento, Italy"
+year: 2025
+doi: ""
+pdf: presentation.pdf
+pub_number: 29
+order: -29
+image: slide.png
+---
+
+## Summary
+
+Presentation by **Gastone Pietro Rosati Papini** at the **Workshop-COSENO, University of Trento, Italy** (2025). The talk *A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems* reviews limitations of standard MLPs, introduces model-structured learning, describes the **nnodely** tool chain, and presents use cases on autonomous mechanical and mechatronic systems.
+
+::: {.presentation-preview}
+![](slide.png){fig-alt="First slide: Framework for MSNN modeling, control and estimation" width=95%}
+:::

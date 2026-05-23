@@ -1,0 +1,8 @@
+# Opzionale: rinomina in links.yaml nella tua cartella
+doi: "10.1109/XXXXXXXX"
+venue: "Journal or conference, City"
+publication: "Journal name (2024)"
+journ: "Journal name"
+year: 2024
+authors:
+  - "Nome Cognome"

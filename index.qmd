@@ -1,7 +1,36 @@
 ---
-title: "Neu4mes Research Group"
+title: Neu4mes
 ---
 
-Welcome to the Neu4mes Research Group website! 
+Neu4mes (*Model-structured neural network framework for modeling and control of autonomous systems*) is a research initiative that combines classical mechanics and control theory with machine learning. The goal is to model and control autonomous systems—wheel vehicles, quadruped robots, and flying drones—using **model-structured neural networks** (MSNN): neural models whose architecture reflects physical principles rather than opaque black-box structures.
 
-We are dedicated to advancing the field of physically informed neural networks for mechanical and mechatronic systems. Our team of researchers and students work collaboratively to develop innovative solutions that bridge the gap between traditional engineering methods and modern machine learning techniques.
+## The challenge
+
+Robots are leaving factories and entering everyday environments. Classical model-based control can be very accurate but struggles with unmodeled dynamics, disturbances, and unforeseen conditions. Pure data-driven deep learning offers flexibility but needs large datasets, heavy hardware, and rarely provides the stability and performance guarantees required in safety-critical robotics.
+
+Neu4mes addresses this gap by merging both worlds: Newtonian structure in the network, parameters learned from experimental data, and controllers synthesized through the model—enabling effective training even with limited, costly, or risky experimental campaigns.
+
+## The approach
+
+The project follows a six-phase **nnodely** methodology (from neural model definition through training, validation, composition, and export), applied to three demonstrative domains:
+
+- **Wheel vehicles** — e.g. autonomous and scale platforms for longitudinal/lateral dynamics
+- **Quadruped robots** — legged locomotion and control on industrial and research platforms
+- **Flying drones** — aerial systems in unstructured environments
+
+Results from these case studies are generalized into two main deliverables: an open-source **framework** and a public **wiki** for theory and documentation.
+
+## Objectives
+
+- **Framework** — Develop and release an open-source software framework (MIT license) to design, train, validate, and deploy MSNN models and controllers on real hardware, with libraries of neural models (NMs) and neural controllers (NCs), export to embedded targets, and integration with tools such as Modelica, Simulink, and standard formats (FMI, ONNX).
+- **Wiki** — Build a public MediaWiki site that collects the theoretical foundations of the project (aligned with the PH1–PH6 workflow), documents implementation choices, shares case-study results, and supports collaboration with the scientific and industrial community.
+
+Learn more on the dedicated pages: [Framework](framework/index.qmd) and [Wiki](wiki.qmd).
+
+## Funding
+
+::: {.home-fis-ack}
+We acknowledge financial support under the FIS 2 Call, Grant Assignment Decree No. 1236 adopted on 01/08/2023 by the Italian Ministry of University and Research (MUR), for the project FIS-2023-03684 'Structured neural network framework for modeling and control of autonomous systems – Neu4mes', CUP E53C24003800001.
+:::
+
+![](/assets/images/loghiFIS.png){fig-alt="Loghi del Fondo Italiano per la Scienza (FIS) e partner del progetto" .home-fis-logos}

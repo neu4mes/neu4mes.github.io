@@ -11,7 +11,7 @@ description: "In case I don't see ya, good afternoon, good evening, and good nig
 image: avatar.jpg
 listing:
   id: pubs
-  template: ../../_ejs/publications-people.ejs 
+  template: ../../_ejs/publications.ejs 
   contents: 
     - "../../../publications/**/*.qmd"
     - "!../../../publications/_template/"

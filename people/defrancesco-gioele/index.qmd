@@ -9,6 +9,17 @@ education:
 subtitle: "PhD student" ## 
 description: "" ## Short description (optional) ##
 image: gioele.jpeg
+listing:
+  id: pubs
+  template: ../../_ejs/publications.ejs
+  contents:
+    - "../../../publications/**/*.qmd"
+    - "!../../../publications/_template/"
+  sort: "pub_number desc"
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
 page-layout: full
 about: 
   id: about

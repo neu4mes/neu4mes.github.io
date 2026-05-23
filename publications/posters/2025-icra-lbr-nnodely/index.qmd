@@ -1,0 +1,29 @@
+---
+title: "Model-Structured Neural Networks
+to Model & Control Robots"
+author:
+  - "Mattia Piccinini"
+  - "Aniello Mungiello"
+  - "Johannes Betz"
+  - "Gastone Pietro Rosati Papini"
+publication: "ICRA 2025 — Late breaking results (2025)"
+type: poster
+categories:
+  - "Posters"
+  - "Model-Structured Neural Networks"
+url_source: 
+url_preprint: 
+journ: "ICRA 2025 — Late breaking results"
+venue: "ICRA 2025 — Late breaking results"
+year: 2025
+doi: ""
+poster_pdf: poster.pdf
+pub_number: 53
+order: -53
+image: poster.png
+---
+
+::: {.poster-preview}
+![](poster.png){fig-alt="Poster: Open-source PyTorch library for model-structured neural networks (nnodely)" width=95%}
+:::
+

@@ -1,0 +1,28 @@
+---
+title: "A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems"
+author:
+  - "Gastone Pietro Rosati Papini"
+publication: "2nd International Conference on Machine Learning Algorithms – ICML-ALGO, India (2025)"
+type: presentation
+categories:
+  - "Presentations"
+  - "Model-Structured Neural Networks"
+url_source: 
+url_preprint: 
+journ: "2nd International Conference on Machine Learning Algorithms – ICML-ALGO 2025"
+venue: "Chitkara University, India"
+year: 2025
+doi: ""
+pdf: presentation.pdf
+pub_number: 31
+order: -31
+image: slide.png
+---
+
+## Summary
+
+Presentation by **Gastone Pietro Rosati Papini** at **Chitkara University, India** (2025), for the **2nd International Conference on Machine Learning Algorithms (ICML-ALGO)**. The talk *A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems* introduces MSNNs for modeling, control, and estimation, the **Neu4mes** program, the **nnodely** framework, and application examples on autonomous platforms.
+
+::: {.presentation-preview}
+![](slide.png){fig-alt="First slide: Framework for designing MSNNs, ICML-ALGO 2025" width=95%}
+:::

@@ -1,1 +1,128 @@
 /* css styles */
+
+img.navbar-logo {
+  max-height: 3rem;
+  width: auto;
+}
+
+p:has(> img.framework-diagram) {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+img.framework-diagram {
+  width: 60%;
+  max-width: 100%;
+  height: auto;
+}
+
+.framework-phases-table th:last-child,
+.framework-phases-table td:last-child {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.home-fis-ack {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+p:has(> img.home-fis-logos) {
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+img.home-fis-logos {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.paper-network-figures {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.paper-network-figures p {
+  margin: 1.25rem 0;
+}
+
+.paper-network-figures img {
+  max-width: 100%;
+  height: auto;
+}
+
+.poster-preview {
+  text-align: center;
+  margin: 1.5rem 0 2rem;
+}
+
+.poster-preview p {
+  margin: 0;
+}
+
+.poster-preview img {
+  max-width: 100%;
+  width: min(100%, 52rem);
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.presentation-preview {
+  text-align: center;
+  margin: 1.5rem 0 2rem;
+}
+
+.presentation-preview p {
+  margin: 0;
+}
+
+.presentation-preview img {
+  max-width: 100%;
+  width: min(100%, 48rem);
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Paper title block: authors left, DOI/code right (always two columns) */
+#title-block-header .paper-title-meta-grid {
+  grid-template-columns: 1fr auto;
+  align-items: start;
+}
+
+#title-block-header .paper-title-meta-grid > .quarto-title-meta-column-start {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+#title-block-header .paper-publication-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 1em;
+}
+
+#title-block-header .paper-publication-links > div:first-child .quarto-title-meta-heading {
+  margin-top: 0;
+}
+
+#title-block-header .paper-code-link,
+#title-block-header .paper-pdf-link {
+  text-decoration: none;
+}
+
+#title-block-header .paper-code-link:hover,
+#title-block-header .paper-pdf-link:hover {
+  text-decoration: underline;
+}
+
+#quarto-document-content .quarto-video {
+  margin: 1rem 0 1.5rem;
+  max-width: 56rem;
+}
+

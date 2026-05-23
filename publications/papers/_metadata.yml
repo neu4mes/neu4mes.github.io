@@ -1,0 +1,4 @@
+format:
+  html:
+    include-after-body:
+      - ../../assets/js/toc-short-titles.html

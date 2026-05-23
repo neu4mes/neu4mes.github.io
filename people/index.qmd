@@ -8,7 +8,7 @@ listing:
       external: true
     template: ../_ejs/people-box.ejs
     type: grid
-    fields: [title, subtitle, image, education]
+    fields: [title, subtitle, image]
   - id: AssistantProf
     include: 
       people_group: "AssistantProf"
@@ -17,7 +17,7 @@ listing:
     template: ../_ejs/people-box.ejs
     sort: last
     type: grid
-    fields: [title, subtitle, image, education]
+    fields: [title, subtitle, image]
   - id: PostDoc
     include: 
       people_group: "PostDoc"
@@ -26,7 +26,7 @@ listing:
     template: ../_ejs/people-box.ejs
     sort: last
     type: grid
-    fields: [title, subtitle, image, education]
+    fields: [title, subtitle, image]
   - id: phdstudent
     include: 
       people_group: "phdstudent"
@@ -35,7 +35,7 @@ listing:
     template: ../_ejs/people-box.ejs
     sort: last
     type: grid
-    fields: [title, subtitle, image, education]
+    fields: [title, subtitle, image]
   - id: ResearchFellow
     include: 
       people_group: "ResearchFellow"
@@ -44,7 +44,7 @@ listing:
     template: ../_ejs/people-box.ejs
     sort: last
     type: grid
-    fields: [title, subtitle, image, education]
+    fields: [title, subtitle, image]
 page-layout: full
 ---
 

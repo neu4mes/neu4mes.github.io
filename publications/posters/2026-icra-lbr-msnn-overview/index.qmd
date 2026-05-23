@@ -1,0 +1,35 @@
+---
+title: "nnodely – neuralize your model"
+author:
+  - "Gastone Pietro Rosati Papini"
+  - "Alice Plebe"
+  - "Mojtaba Sharifzadeh"
+  - "Mattia Piazza"
+  - "Sebastiano Taddei"
+  - "Giovanni Scialla"
+  - "Francesco Baroni"
+  - "Davide De Martini"
+  - "Giovanni Maria Francesco La Scala"
+  - "Gioele Defrancesco"
+  - "Filippo Faccini"
+publication: "ICRA 2026 — Late breaking results (2026)"
+type: poster
+categories:
+  - "Posters"
+  - "Model-Structured Neural Networks"
+url_source: 
+url_preprint: 
+journ: "ICRA 2026 — Late breaking results"
+venue: "ICRA 2026 — Late breaking results"
+year: 2026
+doi: ""
+poster_pdf: poster.pdf
+article_pdf: paper.pdf
+pub_number: 52
+order: -52
+image: poster.png
+---
+
+::: {.poster-preview}
+![](poster.png){fig-alt="Poster: nnodely – neuralize your model" width=95%}
+:::

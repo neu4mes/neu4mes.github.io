@@ -6,7 +6,7 @@ people_group: "phdstudent"
 email: "giovanni.lascala@unitn.it"
 education:
   - M.S. Mechatronics Engineering | University of Trento | 2025  <br> B.S. Cybernetic Engineering | University of Palermo | 2022
-subtitle: "PhD Student in System Engineering"
+subtitle: "PhD Student"
 description: ""
 project: "neu4mes"
 affiliation: University of Trento
@@ -14,7 +14,7 @@ affiliation: University of Trento
 image: https://avatars.githubusercontent.com/u/130652685?v=4
 listing:
   id: pubs
-  template: ../../_ejs/publications-people.ejs 
+  template: ../../_ejs/publications.ejs 
   contents: 
     - "../../../publications/**/*.qmd"
     - "!../../../publications/_template/"
@@ -51,8 +51,7 @@ about:
 
 
 :::{#about}
-Giovanni Maria Francesco La Scala is a PhD student in System Engineering at the University of Trento working on
-development of Model Structured Neural Network for modeling estimation and control of an aerial drone.
+Giovanni Maria Francesco La Scala is a PhD student in System Engineering at the University of Trento working on development of model-structured neural networks (MSNN) for modeling, estimation, and control of an aerial drone.
 
 He received the BSc from the University of Palermo in Cybernetic Engineering with focus in Mechatronics in 2022 while the MSc in Mechatronics Engineering from the University of Trento focusing on Robotics and Electronics in 2025. He is now a PhD student.
 
@@ -63,7 +62,7 @@ He received the BSc from the University of Palermo in Cybernetic Engineering wit
 <br>
 
 :::
-## Group Publications
+## {{< meta first >}}'s Group Publications
 
 :::{#pubs}
 :::

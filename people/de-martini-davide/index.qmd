@@ -12,7 +12,7 @@ image: avatar.jpg
 page-layout: full
 listing:
   id: pubs
-  template: ../../_ejs/publications-people.ejs 
+  template: ../../_ejs/publications.ejs 
   contents: 
     - "../../../publications/**/*.qmd"
     - "!../../../publications/_template/"

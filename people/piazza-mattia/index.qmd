@@ -14,7 +14,7 @@ affiliation: University of Trento
 image: avatar.jpg
 listing:
   id: pubs
-  template: ../../_ejs/publications-people.ejs 
+  template: ../../_ejs/publications.ejs 
   contents: 
     - "../../../publications/**/*.qmd"
     - "!../../../publications/_template/"
@@ -58,7 +58,7 @@ Mattia Piazza is a PhD candidate in System Engineering at the University of Tren
 <br>
 
 :::
-## Group Publications
+## {{< meta first >}}'s Group Publications
 
 :::{#pubs}
 :::

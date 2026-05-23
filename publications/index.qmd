@@ -1,21 +1,53 @@
 ---
 title: "Publications"
 listing:
-  - id: journals
+  - id: papers
     template: ../_ejs/publications.ejs
-    contents: ../publications/**/*.qmd
+    contents: papers/**/index.qmd
     sort: "pub_number desc"
     page-size: 30
-    filter-ui: true
-    fields: [image, pub_number, title, publication, author,url_source]
+    filter-ui: false
+    fields: [image, pub_number, title, publication, author, url_source, doi, pdf, code]
+  - id: posters
+    template: ../_ejs/publications.ejs
+    contents: posters/**/index.qmd
+    sort: "pub_number desc"
+    page-size: 30
+    filter-ui: false
+    fields: [image, pub_number, title, publication, author, venue, pdf, poster_pdf, article_pdf]
+  - id: presentations
+    template: ../_ejs/publications.ejs
+    contents: presentations/**/index.qmd
+    sort: "pub_number desc"
+    page-size: 30
+    filter-ui: false
+    fields: [image, pub_number, title, publication, author, venue, pdf, video]
+  - id: related
+    template: ../_ejs/publications.ejs
+    contents: related/**/index.qmd
+    sort: "pub_number desc"
+    page-size: 30
+    filter-ui: false
+    fields: [image, pub_number, title, publication, author, journ, doi, pdf]
 page-layout: full
 ---
 
-<hr>
+## Journal and conference papers
 
-:::{#pubs}
+:::{#papers}
+:::
+
+## Posters
+
+:::{#posters}
+:::
+
+## Presentations
+
+:::{#presentations}
 :::
 
 ## Related works
 
-[Click here](../related/index.qmd)
+:::{#related}
+:::

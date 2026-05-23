@@ -1,21 +1,21 @@
 ---
-title: &TITLE Gastone Pietro </br> Rosati Papini
+title: Gastone Pietro </br> Rosati Papini
+author-name: &AUTHOR_NAME Gastone Pietro Rosati Papini
 last: Rosati Papini
 first: Gastone Pietro
 people_group: "pi"
 email: "gastone.rosatipapini@unitn.it"
 education:
-  - Ph.D. in Emerging Digital Technologies | Sant’Anna University | 2016 
-  # - <br> M.S. Automation Engineering | University of Pisa | 2011 <br> B.S. Software Engineering | University of Pisa | 2007
+  - Ph.D. in Emerging Digital Technologies | Sant’Anna University (PERCRO), Pisa | 2016 <br> M.S. in Automation Engineering | University of Pisa | 2011 <br> B.S. in Software Engineering | University of Pisa | 2007
 subtitle: "Associate Professor in Applied Mechanics, University of Trento" 
 # <br> Post-Doc, PERCRO laboratory, Sant’Anna University"
 description: ""
 project: "neu4mes"
 affiliation: University of Trento
-image: avatar.jpg
+image: avatar.png
 listing:
   id: pubs
-  template: ../../_ejs/publications-people.ejs 
+  template: ../../_ejs/publications.ejs 
   contents: 
     - "../../../publications/**/*.qmd"
     - "!../../../publications/_template/"
@@ -23,14 +23,14 @@ listing:
   # sort-ui: true
   filter-ui: true
   include:
-    author: *TITLE
+    author: *AUTHOR_NAME
   fields: [publication, title, categories, image, date, author]
 page-layout: full
 about: 
   id: about
   template: trestles
   image-shape: round
-  image: avatar.jpg
+  image: avatar.png
   links:
     - icon: envelope
       text: Email
@@ -41,6 +41,9 @@ about:
     - icon: github
       text: GitHub 
       href: https://github.com/tonegas
+    - icon: globe2
+      text: Website 
+      href: https://tonegas.com
 ---
 
 <hr>
@@ -56,7 +59,7 @@ Gastone Pietro Rosati Papini is an Associate Professor in the Department of Indu
 <br>
 
 :::
-## Group Publications
+## {{< meta first >}}'s Group Publications
 
 :::{#pubs}
 :::

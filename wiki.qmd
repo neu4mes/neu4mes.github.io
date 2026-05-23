@@ -1,0 +1,44 @@
+---
+title: Wiki
+---
+
+The **Neu4mes wiki** will be the second main outcome of the project: a public knowledge base that documents the theory and practice behind **model-structured neural networks** (MSNNs) for autonomous systems.
+
+## Purpose
+
+The wiki will distill the project's theoretical foundations and make them accessible to researchers and industry. It will complement the [framework](framework/index.qmd) by explaining *why* design choices are made, not only *how* to run the tools.
+
+## Planned content
+
+The site is planned in **MediaWiki** format and will cover:
+
+- **Methodology** — The six nnodely phases (PH1–PH6): definition, data, training, validation, export, and composition
+- **Model-structured neural networks (MSNN)** — How physical structure (Newton–Euler principles, additive forces, rigid-body properties, etc.) is embedded in network architecture
+- **Modeling and control** — Neural models (NMs), neural controllers (NCs), training through the model, and validation strategies
+- **State of the art** — Positioning relative to physics-informed networks, learning-based MPC, and hybrid model/data-driven approaches
+- **Case studies** — Results and lessons from wheel vehicles, quadruped robots, and flying drones
+- **Risk mitigation** — Documented procedures where automation is limited (e.g. dataset creation, validation when formal proofs are not available)
+
+## Community
+
+The wiki is intended to be **open** to the scientific and industrial community. Once online, it will:
+
+- Guide MSNN development aligned with the Neu4mes framework
+- Receive feedback, improvements, and collaboration proposals
+- Publish updates as experimental and theoretical results mature over the project duration
+
+## Relation to the framework
+
+| Framework | Wiki |
+|-----------|------|
+| Software, libraries, export, APIs | Theory, documentation, state of the art |
+| PH1–PH6 implementation (nnodely) | PH1–PH6 foundations and explanations |
+| Deployment and integration | Knowledge sharing and community input |
+
+When the MediaWiki instance is online, its URL will be linked from this page and from the [home page](index.qmd).
+
+::: {.callout-warning}
+## Under development
+
+The Neu4mes wiki is **still being developed**. Content, structure, and the public MediaWiki instance are not yet available. This page will be updated as the knowledge base is published.
+:::

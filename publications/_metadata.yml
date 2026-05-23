@@ -1,3 +1,8 @@
+sidebar: publications
+page-navigation: true
+
 format:
   html:
     date-format: "YYYY"
+    template-partials:
+      - papers/title-metadata.html

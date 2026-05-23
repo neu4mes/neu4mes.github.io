@@ -1,19 +1,28 @@
+from: markdown+tex_math_single_backslash
+
 project:
   type: website
+  resources:
+    - assets/images/logo_noinfo.png
+    - assets/images/loghiFIS.png
+    - publications/**/paper.pdf
+    - publications/**/poster.pdf
+    - publications/**/presentation.pdf
   render:
     - "*.qmd"
     - "!publications/_template/"
+    - "!publications/data/**"
     - "!people/_template/"
+    - "!about.qmd"
+    - "!framework.qmd"
 include-in-header:
   - text: |
       <meta name="google-site-verification" content="j_gTCzWnr1jevnfvO9Y_sxECPpvnmmr3i7nuJjhDkiw" />
 website:
-  title: "Neu4mes"
-  description: "Research Group focused on Phisically Informed Neural Networks for Mechanical and Mechatronic Systems"
-  favicon: /assets/images/logomodely.png
-  margin-header: |
-    ![](/assets/images/logomodely.png)
-  # image: /assets/images/<file>.png
+  title: neu4mes
+  description: "Research group focused on model-structured neural networks (MSNN) for mechanical and mechatronic systems"
+  favicon: /assets/images/neu4mes_minilogo.png
+  image: /assets/images/neu4mes_logo.png
   # site-url: https://<owner>.github.io/<repository>
   # repo-url: https://github.com/<owner>/<repository>
   repo-actions: [edit, issue]
@@ -30,27 +39,57 @@ website:
     right: |
       License: [CC BY NC SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0).
   navbar:
+    title: false
+    logo: /assets/images/neu4mes_logo.png
+    logo-alt: Neu4mes
+    logo-href: /index.html
     left:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: About
+      - href: framework/index.qmd
+        text: Framework
+      - href: wiki.qmd
+        text: Wiki
       - href: publications/index.qmd
         text: Publications
       - href: people/index.qmd
         text: People
-      - href: neu4mes.qmd
-        text: Neu4mes
+      - href: work-with-us.qmd
+        text: Work with us
       - href: contacts.qmd
         text: Contacts
+  sidebar:
+    - id: publications
+      title: Publications
+      collapse-level: 1
+      contents:
+        - href: publications/index.qmd
+        - section: "Journal and conference papers"
+          contents:
+            - auto: "publications/papers/*/index.qmd"
+        - text: "---"
+        - section: Posters
+          contents:
+            - auto: "publications/posters/*/index.qmd"
+        - text: "---"
+        - section: Presentations
+          contents:
+            - auto: "publications/presentations/*/index.qmd"
+        - text: "---"
+        - section: "Related works"
+          contents:
+            - auto: "publications/related/*/index.qmd"
 
 format:
   html:
+    html-math-method: mathjax
     theme:
       - cosmo
       - brand
     css: styles.css
     toc: true
+    margin-header: |
+      [![](/assets/images/neu4mes_logo.png){width=150px}](/index.html)
 
 
 

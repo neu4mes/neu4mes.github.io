@@ -1,0 +1,29 @@
+---
+title: "A Framework for Model-Structured Neural Networks"
+author:
+  - "Gastone Pietro Rosati Papini"
+  - "Mattia Piccinini"
+publication: "Department of Industrial Engineering, University of Trento (2024)"
+type: presentation
+categories:
+  - "Presentations"
+  - "Model-Structured Neural Networks"
+url_source: 
+url_preprint: 
+journ: "Department of Industrial Engineering, University of Trento"
+venue: "Department of Industrial Engineering, University of Trento"
+year: 2024
+doi: ""
+pdf: presentation.pdf
+pub_number: 33
+order: -33
+image: slide.png
+---
+
+## Summary
+
+Presentation by **Gastone Pietro Rosati Papini** and **Mattia Piccinini** at the **Department of Industrial Engineering, University of Trento** (2024). The seminar *A Framework for Model-Structured Neural Networks* motivates MSNNs versus generic MLPs, reviews related approaches, presents the **nnodely** workflow, and outlines use cases for modeling and control of physical systems.
+
+::: {.presentation-preview}
+![](slide.png){fig-alt="First slide: A Framework for Model-Structured Neural Networks" width=95%}
+:::

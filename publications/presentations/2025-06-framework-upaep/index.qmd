@@ -1,0 +1,28 @@
+---
+title: "A framework for design model-structured neural networks for model and control physical systems"
+author:
+  - "Gastone Pietro Rosati Papini"
+publication: "UPAEP University, Puebla, Mexico (2025)"
+type: presentation
+categories:
+  - "Presentations"
+  - "Model-Structured Neural Networks"
+url_source: 
+url_preprint: 
+journ: "UPAEP University, Puebla, Mexico"
+venue: "UPAEP University, Puebla, Mexico"
+year: 2025
+doi: ""
+pdf: presentation.pdf
+pub_number: 32
+order: -32
+image: slide.png
+---
+
+## Summary
+
+Presentation by **Gastone Pietro Rosati Papini** at **UPAEP University, Puebla, Mexico** (2025) on a **framework for designing model-structured neural networks for modeling and control of physical systems**. The talk covers the **Neu4mes** project, motivation for MSNNs versus black-box networks, the **nnodely** workflow, and demonstrative use cases on drones, quadrupeds, and vehicles.
+
+::: {.presentation-preview}
+![](slide.png){fig-alt="First slide: framework for MSNN design at UPAEP" width=95%}
+:::

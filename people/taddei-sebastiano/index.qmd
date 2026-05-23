@@ -11,7 +11,7 @@ description: "PhD researcher in autonomous systems working on real-time motion p
 image: avatar.jpeg
 listing:
   id: pubs
-  template: ../../_ejs/publications-people.ejs 
+  template: ../../_ejs/publications.ejs 
   contents: 
     - "../../../publications/**/*.qmd"
     - "!../../../publications/_template/"

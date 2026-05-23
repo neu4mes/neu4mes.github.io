@@ -1,0 +1,16 @@
+<script>
+  function applyTocShortTitles() {
+    document.querySelectorAll("nav#TOC a[data-scroll-target]").forEach((link) => {
+      const id = link.getAttribute("data-scroll-target")?.slice(1);
+      if (!id) return;
+      const section = document.getElementById(id);
+      if (!section) return;
+      const short =
+        section.getAttribute("data-toc-text") ||
+        section.querySelector("h1,h2,h3,h4,h5,h6")?.getAttribute("data-toc-text");
+      if (short) link.textContent = short;
+    });
+  }
+
+  window.document.addEventListener("DOMContentLoaded", applyTocShortTitles);
+</script>

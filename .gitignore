@@ -1,2 +1,7 @@
 /.quarto/
 _site/
+.venv/
+.vscode/
+
+**/*.quarto_ipynb
+**/index_files/

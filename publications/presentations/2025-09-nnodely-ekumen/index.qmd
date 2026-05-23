@@ -1,0 +1,34 @@
+---
+title: "NNodely: An Open Framework for Model-Structured Neural Networks in Robotics"
+author:
+  - "Gastone Pietro Rosati Papini"
+  - "Mattia Piccinini"
+publication: "Technical University of Munich & University of Trento (2025)"
+type: presentation
+categories:
+  - "Presentations"
+  - "Model-Structured Neural Networks"
+url_source: 
+url_preprint: 
+journ: "Ekumen Robotics Software Company, Germany"
+venue: "Ekumen Robotics Software Company, Germany"
+year: 2025
+video: mz70WepnwMM
+doi: ""
+pdf: presentation.pdf
+pub_number: 30
+order: -30
+image: slide.png
+---
+
+## Summary
+
+Presentation by **Gastone Pietro Rosati Papini** and **Mattia Piccinini** **University of Trento & Technical University of Munich** at **Ekumen Robotics Software Company, Germany** (2025). The talk *NNodely: An Open Framework for Model-Structured Neural Networks in Robotics* presents the open **nnodely** framework, contrasts black-box deep learning with physics-guided MSNNs, and discusses robotic use cases and deployment.
+
+## Video {#video}
+
+{{< video https://www.youtube.com/watch?v=mz70WepnwMM >}}
+
+::: {.presentation-preview}
+![](slide.png){fig-alt="First slide: NNodely open framework for MSNNs in robotics" width=95%}
+:::

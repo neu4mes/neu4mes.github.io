@@ -1,22 +1,43 @@
 ```{=html}
+<%
+var authorProfileSlugs = {
+  "alice plebe": "plebe-alice",
+  "baroni francesco": "baroni-francesco",
+  "ciuffoletti sabrina": "ciuffoletti-sabrina",
+  "davide de martini": "de-martini-davide",
+  "de martini davide": "de-martini-davide",
+  "defrancesco gioele": "defrancesco-gioele",
+  "faccini filippo": "filippo-faccini",
+  "filippo faccini": "filippo-faccini",
+  "francesco baroni": "baroni-francesco",
+  "gastone pietro rosati papini": "rosati-papini-gastone-pietro",
+  "gioele defrancesco": "defrancesco-gioele",
+  "giovanni maria francesco la scala": "la-scala-giovanni-maria-francesco",
+  "giovanni scialla": "scialla-giovanni",
+  "la scala giovanni maria francesco": "la-scala-giovanni-maria-francesco",
+  "mattia piazza": "piazza-mattia",
+  "mojtaba sharifzadeh": "Sharifzadeh-Mojtaba",
+  "piazza mattia": "piazza-mattia",
+  "plebe alice": "plebe-alice",
+  "rosati papini gastone pietro": "rosati-papini-gastone-pietro",
+  "sabrina ciuffoletti": "ciuffoletti-sabrina",
+  "scialla giovanni": "scialla-giovanni",
+  "sebastiano taddei": "taddei-sebastiano",
+  "sharifzadeh mojtaba": "Sharifzadeh-Mojtaba",
+  "taddei sebastiano": "taddei-sebastiano",
+};
+var profilePathForAuthor = function(author) {
+  var key = author.toLowerCase().replace(/\s+/g, " ").trim();
+  var slug = authorProfileSlugs[key];
+  return slug ? "/people/" + slug + "/" : null;
+};
+%>
 <div class="list quarto-listing-default">
     <% for (const item of items) { %>
     
     <div class="quarto-post image-left" <%= metadataAttrs(item) %> >
         <div class="thumbnail">
-            <% if (item.video) { %>
-            <a href="<%- item.path %>">
-                <p>
-                    <img alt="<%= item.title %>" src="https://img.youtube.com/vi/<%= item.video %>/0.jpg" class="thumbnail-image">
-                </p>
-            </a>
-            <% } else if (item.logo) { %>
-            <a href="<%- item.path %>">
-                <p>
-                    <img alt="<%= item.logo %> logo" src="/_images/_third_parties_logos/<%= item.logo %>" class="thumbnail-image">
-                </p>
-            </a>
-            <% } else if (item.image) { %>
+            <% if (item.image) { %>
             <a href="<%- item.path %>">
                 <p>
                     <% 
@@ -28,6 +49,18 @@
                     <img alt="<%= item.title %>" src="<%= imagePath %>" class="thumbnail-image">
                 </p>
             </a>
+            <% } else if (item.video) { %>
+            <a href="<%- item.path %>">
+                <p>
+                    <img alt="<%= item.title %>" src="https://img.youtube.com/vi/<%= item.video %>/0.jpg" class="thumbnail-image">
+                </p>
+            </a>
+            <% } else if (item.logo) { %>
+            <a href="<%- item.path %>">
+                <p>
+                    <img alt="<%= item.logo %> logo" src="/_images/_third_parties_logos/<%= item.logo %>" class="thumbnail-image">
+                </p>
+            </a>
             <% } %>
         </div>
         <div class="body">
@@ -37,25 +70,23 @@
             
             <div class="listing-pub-author listing-author">
                 <% 
-                const authors = item.author.split(',').map(a => a.trim());
+                const authorRaw = Array.isArray(item.author) ? item.author.join(', ') : (item.author || '');
+                const authors = authorRaw.split(',').map(a => a.trim()).filter(a => a.length > 0);
                 authors.forEach((author, index) => {
-                    // Try to match author to profile path
-                    const nameParts = author.split(' ');
-                    const firstName = nameParts[0].toLowerCase();
-                    const lastName = nameParts[nameParts.length - 1].toLowerCase();
-                    const profilePath = `/people/${lastName}-${firstName}/`;
-                    
-                    // Check if this author has a profile (we'll create links for all, browser will handle 404s)
+                    const profilePath = profilePathForAuthor(author);
                     %>
-                    <a href="<%- profilePath %>"><%= author %></a><% 
+                    <% if (profilePath) { %><a href="<%- profilePath %>"><%= author %></a><% } else { %><%= author %><% } %><% 
                     if (index < authors.length - 1) { %>, <% }
                 }); 
                 %><br> 
             </div>
             
             <div class="metadata-value listing-pub-journal listing-publication">
-                <% if (item.journ) { %>
-                    <i><%= item.journ %></i><% if (item.issue) { %>, <b><%= item.issue %></b><% } %><% if (item.page) { %>, <%= item.page %><% } %><% if (item.year) { %> (<%= item.year %>)<% } %><br>
+                <% const venueLabel = item.venue || item.journ; %>
+                <% if (venueLabel) { %>
+                    <i><%= venueLabel %></i><% if (item.issue) { %>, <b><%= item.issue %></b><% } %><% if (item.page) { %>, <%= item.page %><% } %><% if (item.year) { %> (<%= item.year %>)<% } %><br>
+                <% } else if (item.year) { %>
+                    <%= item.year %><br>
                 <% } %>
             </div>
             
@@ -80,27 +111,35 @@
                 </a>
                 <% } %>
                 
-                <% if (item.pdf) { %>
+                <% if (item.code) { %>
                 <% if (item.url_source || item.url_preprint || item.doi) { %> | <% } %>
-                <% 
-                // Get directory path from item.path and construct full PDF path
-                const dirPath = item.path.substring(0, item.path.lastIndexOf('/') + 1);
-                const pdfPath = dirPath + item.pdf;
-                %>
-                <a href="<%- pdfPath %>" download style="text-decoration: none;">
-                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
+                <a href="<%- item.code %>" target="_blank" rel="noopener" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">CODE <i class="bi bi-box-arrow-up-right"></i></span>
                 </a>
                 <% } %>
                 
                 <% if (item.bibtex) { %>
-                <% if (item.url_source || item.url_preprint || item.doi || item.pdf) { %> | <% } %>
+                <% if (item.url_source || item.url_preprint || item.doi || item.code) { %> | <% } %>
                 <% 
-                // Get directory path from item.path and construct full bibtex path
-                const dirPath = item.path.substring(0, item.path.lastIndexOf('/') + 1);
-                const bibtexPath = dirPath + item.bibtex;
+                const dirPathBib = item.path.substring(0, item.path.lastIndexOf('/') + 1);
+                const bibtexPath = dirPathBib + item.bibtex;
                 %>
                 <a href="<%- bibtexPath %>" download style="text-decoration: none;">
                     <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">CITE <i class="bi bi-download"></i></span>
+                </a>
+                <% } %>
+                
+                <% 
+                const listingPdf = item.poster_pdf || item.article_pdf || item.pdf;
+                %>
+                <% if (listingPdf) { %>
+                <% if (item.url_source || item.url_preprint || item.doi || item.code || item.bibtex) { %> | <% } %>
+                <% 
+                const dirPathPdf = item.path.substring(0, item.path.lastIndexOf('/') + 1);
+                const pdfPath = dirPathPdf + listingPdf;
+                %>
+                <a href="<%- pdfPath %>" download style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
                 </a>
                 <% } %>
             </div>

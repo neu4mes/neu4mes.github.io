@@ -1,0 +1,21 @@
+---
+title: Work with us
+---
+
+Join the Neu4mes team for theses, PhD research, or postdoctoral positions in model-structured neural networks (MSNN), robotics, and autonomous systems.
+
+## Student's Theses
+
+Theses are available for both bachelor's and master's degrees. The required skills mainly concern mechanical fields of robotics and automation, with particular attention to modeling and control through model-structured neural networks (MSNN). The thesis can be experimental, with hardware platforms such as quadrupeds, manipulators, drones, and scale vehicles available. Additionally, there is the possibility of doing the thesis abroad or in a company.
+
+Browse current thesis proposals on the [University of Trento portal](https://webapps.unitn.it/du/en/Persona/PER0203525/ProposteTesi).
+
+## PhD Positions
+
+PhD positions will primarily focus on the application of model-structured neural networks (MSNN) for modeling and controlling specific test platforms. In particular, the experimentation will be conducted on quadruped robots, manipulators, drones, and scale vehicles. Another topic of interest for the project concerns the development of a navigation agent for autonomous systems. This agent will be generic and adaptable to different hardware platforms.
+
+## Postdoc Positions
+
+Senior positions will involve supervising experimental applications by proposing approaches from other research fields, integrating knowledge from experimental areas into the Neu4mes framework, and maintaining the wiki that will collect models and controls developed within the project or found in the state of the art. Positions are sought with both hardware expertise for experimental supervision and mechanical and machine learning expertise for integration into the framework.
+
+For more information, see the [Contacts](contacts.qmd) page.

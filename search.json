@@ -1,24 +1,338 @@
 [
   {
-    "objectID": "related/index.html",
-    "href": "related/index.html",
-    "title": "Related works",
+    "objectID": "work-with-us.html",
+    "href": "work-with-us.html",
+    "title": "Work with us",
     "section": "",
-    "text": "A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks\n            \n            \n            \n                \n                    Mattia Piccinini, \n                    Matteo Zumerle, \n                    Johannes Betz, \n                    Gastone Pietro Rosati Papini \n            \n            \n            \n                \n                    IEEE Open Journal of Intelligent Transportation Systems, pp. 522-536 (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items\n Back to top"
+    "text": "Join the Neu4mes team for theses, PhD research, or postdoctoral positions in model-structured neural networks (MSNN), robotics, and autonomous systems."
+  },
+  {
+    "objectID": "work-with-us.html#students-theses",
+    "href": "work-with-us.html#students-theses",
+    "title": "Work with us",
+    "section": "Student’s Theses",
+    "text": "Student’s Theses\nTheses are available for both bachelor’s and master’s degrees. The required skills mainly concern mechanical fields of robotics and automation, with particular attention to modeling and control through model-structured neural networks (MSNN). The thesis can be experimental, with hardware platforms such as quadrupeds, manipulators, drones, and scale vehicles available. Additionally, there is the possibility of doing the thesis abroad or in a company.\nBrowse current thesis proposals on the University of Trento portal."
+  },
+  {
+    "objectID": "work-with-us.html#phd-positions",
+    "href": "work-with-us.html#phd-positions",
+    "title": "Work with us",
+    "section": "PhD Positions",
+    "text": "PhD Positions\nPhD positions will primarily focus on the application of model-structured neural networks (MSNN) for modeling and controlling specific test platforms. In particular, the experimentation will be conducted on quadruped robots, manipulators, drones, and scale vehicles. Another topic of interest for the project concerns the development of a navigation agent for autonomous systems. This agent will be generic and adaptable to different hardware platforms."
+  },
+  {
+    "objectID": "work-with-us.html#postdoc-positions",
+    "href": "work-with-us.html#postdoc-positions",
+    "title": "Work with us",
+    "section": "Postdoc Positions",
+    "text": "Postdoc Positions\nSenior positions will involve supervising experimental applications by proposing approaches from other research fields, integrating knowledge from experimental areas into the Neu4mes framework, and maintaining the wiki that will collect models and controls developed within the project or found in the state of the art. Positions are sought with both hardware expertise for experimental supervision and mechanical and machine learning expertise for integration into the framework.\nFor more information, see the Contacts page."
+  },
+  {
+    "objectID": "publications/related/2022-mauro-da-lio-complex-self-driving-behaviors-emerging-fr/index.html",
+    "href": "publications/related/2022-mauro-da-lio-complex-self-driving-behaviors-emerging-fr/index.html",
+    "title": "Complex self-driving behaviors emerging from affordance competition in layered control architectures",
+    "section": "",
+    "text": "Autonomous driving is slowed by corner cases: rare, nuanced situations that narrow-AI stacks fail to handle. The paper argues that many such failures come from architectures that lack the broad, embodied knowledge humans use in emergencies. As an alternative inspired by biological organization, it uses affordance competition inside a layered control architecture: many action opportunities are primed in parallel, then a central competition selects the best instantaneous control—producing polite, adaptive merge, overtake, and interaction behaviours without scenario-specific rule programming. Six simulated examples (including motorway merge) are shown in Dreams4Cars; merge behaviour is contrasted with a conventional algorithmic ramp-entry solution from the literature. The architectural ideas can strengthen robustness of self-driving stacks even when the full sensorimotor agent is not deployed as-is.",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "Complex self-driving behaviors emerging from affordance competition in layered control architectures"
+    ]
+  },
+  {
+    "objectID": "publications/related/2022-mauro-da-lio-complex-self-driving-behaviors-emerging-fr/index.html#abstract",
+    "href": "publications/related/2022-mauro-da-lio-complex-self-driving-behaviors-emerging-fr/index.html#abstract",
+    "title": "Complex self-driving behaviors emerging from affordance competition in layered control architectures",
+    "section": "",
+    "text": "Autonomous driving is slowed by corner cases: rare, nuanced situations that narrow-AI stacks fail to handle. The paper argues that many such failures come from architectures that lack the broad, embodied knowledge humans use in emergencies. As an alternative inspired by biological organization, it uses affordance competition inside a layered control architecture: many action opportunities are primed in parallel, then a central competition selects the best instantaneous control—producing polite, adaptive merge, overtake, and interaction behaviours without scenario-specific rule programming. Six simulated examples (including motorway merge) are shown in Dreams4Cars; merge behaviour is contrasted with a conventional algorithmic ramp-entry solution from the literature. The architectural ideas can strengthen robustness of self-driving stacks even when the full sensorimotor agent is not deployed as-is.",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "Complex self-driving behaviors emerging from affordance competition in layered control architectures"
+    ]
+  },
+  {
+    "objectID": "publications/related/2022-mauro-da-lio-complex-self-driving-behaviors-emerging-fr/index.html#autonomous-systems-and-layered-msnn-planning",
+    "href": "publications/related/2022-mauro-da-lio-complex-self-driving-behaviors-emerging-fr/index.html#autonomous-systems-and-layered-msnn-planning",
+    "title": "Complex self-driving behaviors emerging from affordance competition in layered control architectures",
+    "section": "Autonomous systems and layered MSNN planning",
+    "text": "Autonomous systems and layered MSNN planning\nWithin the Neu4mes project, wheel vehicles are a primary demonstrator for model-structured neural networks (MSNN): networks whose topology reflects mechanics and control theory rather than opaque MLPs, trained with limited data and deployed via nnodely. A full autonomous stack still needs a planner that turns perception into safe motion—but the planner need not be a monolithic “think” block plus hand-written merge/overtake scripts.\nThis paper sketches a layered alternative aligned with Neu4mes goals: separate layers for longitudinal intent (free flow, car-following, speed limit, curve), lateral affordances (stay lane / change left / change right), and low-level control in a shared motor space \\((r_0, j_0)\\) (curvature rate and longitudinal jerk). High-level directives—speed limits, caution toward pedestrians (SSNN), traffic rules—can bias affordance weights \\(w_i\\) instead of rewriting ad hoc planners for each corner case. Inverse models in the stack (learned as in mental simulation) are natural candidates for MSNN blocks: structured forward/inverse dynamics at each layer, while affordance competition plays the role of a flexible, interpretable action selector over parallel hypotheses. In that vision, a “planner” is not one optimizer returning a single trajectory, but the aggregation and selection over topographic value maps \\(Q_i(r_0,j_0)\\)—computable with structured nets and competition, as in the Dreams4Cars implementation below.",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "Complex self-driving behaviors emerging from affordance competition in layered control architectures"
+    ]
+  },
+  {
+    "objectID": "publications/related/2022-mauro-da-lio-complex-self-driving-behaviors-emerging-fr/index.html#two-approaches-to-the-driving-stack",
+    "href": "publications/related/2022-mauro-da-lio-complex-self-driving-behaviors-emerging-fr/index.html#two-approaches-to-the-driving-stack",
+    "title": "Complex self-driving behaviors emerging from affordance competition in layered control architectures",
+    "section": "Two approaches to the driving stack",
+    "text": "Two approaches to the driving stack\nThe paper contrasts the dominant narrow-AI decomposition with a cognitively inspired layered stack. Figures 1 and 3 capture that opposition.\n\nSense–think–act (Figure 1)\nFigure 1 is the sense–think–act pipeline used in most industrial AD software: perception builds a world model, a central module reasons on symbolic states, actuation executes the chosen manoeuvre. Engineers fix object classes (car, pedestrian, …) and program behaviours per class. That decomposition works when states are fully specifiable in advance; it becomes brittle when symbols carry no physics, when representations are wrong (e.g. a parked car with an open door treated like traffic), or when behaviour logic must enumerate many subcases (merge, cut-in, courtesy yield). Corner cases often trace to this Cartesian split rather than to sensing alone.\n\n\n\n\n\nLayered control and affordance competition (Figure 3)\nFigure 3 replaces the single “think” stage with a layered control architecture. A subsumption stack (left, violet) continuously primes many affordances detected in the scene—parallel “what I could do now” options (orange pool). Affordance competition (Cisek) then selects one action from that pool via a robust centralized process, so the system always knows which alternatives were active and why one won. Behaviour is emergent from competition over primed controls, not from a growing catalogue of scenario-specific algorithms. This is the architectural template Neu4mes-style autonomy can adopt at the planning/behaviour level: parallel structured hypotheses plus selection, instead of one brittle sequential planner.\n\n\n\nFor merge on a ramp, a traditional stack may rely on a dedicated GIDM-style speed law (Kreutz & Eggert, 2021) with tuned 1D schematizations; the layered agent in Section 4.2 obtains comparable time-to-collision adaptation without that separate merge algorithm—emergent from affordance navigation.",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "Complex self-driving behaviors emerging from affordance competition in layered control architectures"
+    ]
+  },
+  {
+    "objectID": "publications/related/2022-mauro-da-lio-complex-self-driving-behaviors-emerging-fr/index.html#dreams4cars-affordance-maps-and-selection-figure-4",
+    "href": "publications/related/2022-mauro-da-lio-complex-self-driving-behaviors-emerging-fr/index.html#dreams4cars-affordance-maps-and-selection-figure-4",
+    "title": "Complex self-driving behaviors emerging from affordance competition in layered control architectures",
+    "section": "Dreams4Cars: affordance maps and selection (Figure 4)",
+    "text": "Dreams4Cars: affordance maps and selection (Figure 4)\nFigure 4 shows the Dreams4Cars realisation of Figure 3 (Da Lio et al., 2020). Each affordance \\(a_i\\)—e.g. stay in lane (\\(a_1\\)) or move left (\\(a_2\\))—has its own topographic value map \\(Q_i(r_0, j_0)\\) over instantaneous lateral and longitudinal controls. Excitatory loops raise value in free navigable regions (green contours, brighter = higher salience); inhibitory loops suppress areas near obstacles (yellow) or collisions (red). Maps are merged into a single decision surface\n\\[Q(r_0, j_0) = \\max_i \\bigl( w_i \\, Q_i(r_0, j_0) \\bigr),\\]\nwhere weights \\(w_i\\) implement high-level steering of behaviour (legal rules, long-term caution, human–vehicle interaction) without replacing the competition mechanism. Final choice uses MSPRT (multihypothesis sequential probability ratio test) to pick the highest-salience control under noise and a time bound—favouring minimum commitment: selecting one \\((r_0,j_0)\\) commits to a family of nearby future manoeuvres, preserving adaptability when the scene changes (e.g. merge, overtake, obstacle pass in Section 4).\n\n\n\nRead together, Figure 1 is the conventional stack Neu4mes aims to enrich layer by layer; Figure 3 is the target organisation; Figure 4 is how planning-relevant structure (parallel \\(Q_i\\), weights, competition) can be implemented on a vehicle platform—with MSNN modules supplying the learned inverse dynamics and structured high-level maps in future Neu4mes/nnodely deployments.",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "Complex self-driving behaviors emerging from affordance competition in layered control architectures"
+    ]
+  },
+  {
+    "objectID": "publications/related/2021-alessandro-antonucci-efficient-prediction-of-human-motion-for/index.html",
+    "href": "publications/related/2021-alessandro-antonucci-efficient-prediction-of-human-motion-for/index.html",
+    "title": "Efficient Prediction of Human Motion for Real-Time Robotics Applications With Physics-Inspired Neural Networks",
+    "section": "",
+    "text": "Generating accurate and efficient predictions for the motion of humans in the scene is key to effective motion planning for robots in crowded spaces, where poor forecasts can create safety hazards or socially unacceptable behaviour. The approach uses a physics-inspired neural network: unlike a conventional deep MLP, the architecture embeds the Social Force Model (SFM) so that neurons implement the known force balance while learning only the uncertain parameters. Training can rely on a small synthetic dataset; accuracy remains acceptable on scenarios very different from training, and decisions remain interpretable in physical terms. Comparative and experimental results on human-motion prediction support the design.",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "Efficient Prediction of Human Motion for Real-Time Robotics Applications With Physics-Inspired Neural Networks"
+    ]
+  },
+  {
+    "objectID": "publications/related/2021-alessandro-antonucci-efficient-prediction-of-human-motion-for/index.html#abstract",
+    "href": "publications/related/2021-alessandro-antonucci-efficient-prediction-of-human-motion-for/index.html#abstract",
+    "title": "Efficient Prediction of Human Motion for Real-Time Robotics Applications With Physics-Inspired Neural Networks",
+    "section": "",
+    "text": "Generating accurate and efficient predictions for the motion of humans in the scene is key to effective motion planning for robots in crowded spaces, where poor forecasts can create safety hazards or socially unacceptable behaviour. The approach uses a physics-inspired neural network: unlike a conventional deep MLP, the architecture embeds the Social Force Model (SFM) so that neurons implement the known force balance while learning only the uncertain parameters. Training can rely on a small synthetic dataset; accuracy remains acceptable on scenarios very different from training, and decisions remain interpretable in physical terms. Comparative and experimental results on human-motion prediction support the design.",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "Efficient Prediction of Human Motion for Real-Time Robotics Applications With Physics-Inspired Neural Networks"
+    ]
+  },
+  {
+    "objectID": "publications/related/2021-alessandro-antonucci-efficient-prediction-of-human-motion-for/index.html#physics-inspired-networks-for-human-motion",
+    "href": "publications/related/2021-alessandro-antonucci-efficient-prediction-of-human-motion-for/index.html#physics-inspired-networks-for-human-motion",
+    "title": "Efficient Prediction of Human Motion for Real-Time Robotics Applications With Physics-Inspired Neural Networks",
+    "section": "Physics-inspired networks for human motion",
+    "text": "Physics-inspired networks for human motion\nThe paper targets real-time pedestrian trajectory prediction for mobile robots. Motion is not learned as an unstructured sequence model; it is decomposed into attractive forces toward goals (open space) and repulsive forces from obstacles (structured environments), matching the SFM. Two dedicated network branches—Net1 and Net2 in Figure 1—implement these cases with fixed connectivity derived from the differential equations, so learning focuses on weights that realise velocities, goal direction, and force magnitudes rather than on an arbitrary topology.\n\nNetwork schemes: Net1 and Net2 (Figure 1)\nFigure 1 summarises the full structured architecture. Panel (a) — Net1 applies when the pedestrian moves in an open environment toward a goal and only the attractive SFM term \\(f^o\\) in (2) is active. Inputs are the last \\(n\\) position samples \\(\\mathbf{p}(t)\\) (shifted to remove spatial bias, Eq. (4)); stacked layers estimate instantaneous velocities \\(v_x, v_y\\), then \\(\\tanh\\) activations keep estimates in range. Recent displacement \\(\\Delta\\mathbf{p}(t)\\) yields the unit vector \\(\\mathbf{e}_d\\) toward the goal; a parallel path estimates desired-speed magnitudes \\(V(t)\\) from successive position differences (5). A Lambda layer combines these signals with learnable weights \\(W_v\\), \\(w_{vs}\\) to match the SFM attractive force in (6): desired velocity \\(\\mathbf{v}_d\\) scaled by mass and relaxation time \\(\\tau\\), minus current velocity feedback. Net1 has 123 parameters (most tied to desired-velocity estimation).\nPanel (b) — Net2 covers the structured environment with obstacles. Two parallel sub-branches run in parallel: one reproduces the Net1-style path to estimate \\(f^o = [f^o_x, f^o_y]^T\\); the other estimates wall-repulsion components \\(f^w_k = [f^w_x, f^w_y]^T\\) from (3), using occupancy information and relative geometry so repulsion activates near barriers. Their outputs are summed to give the total predicted force driving the pedestrian. Connectivity sizes on the arrows in the figure indicate layer widths at each stage.\nAt runtime, predicted forces integrate into short-horizon trajectories; goal hypotheses inside the pedestrian’s area of immediate interest (AoII) are scored (e.g. with IMM/GPB estimators) to pick the most likely intent. This explicit structure—separate branches for physical effects, hand-wired SFM layout—is an early form of model structuring aligned with later MSNN and nnodely work in Neu4mes.",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "Efficient Prediction of Human Motion for Real-Time Robotics Applications With Physics-Inspired Neural Networks"
+    ]
+  },
+  {
+    "objectID": "publications/related/2019-mauro-da-lio-modelling-longitudinal-vehicle-dynamics-wi/index.html",
+    "href": "publications/related/2019-mauro-da-lio-modelling-longitudinal-vehicle-dynamics-wi/index.html",
+    "title": "Modelling longitudinal vehicle dynamics with neural networks",
+    "section": "",
+    "text": "This paper studies neural network models of vehicle dynamics. We consider both models with a generic layer architecture and models with specialised topologies that hard-wire physics principles. Network pre-wiring is limited to universal laws; hence it does not limit the network modelling abilities on one side but allows more robust and interpretable models on the other side. Four different network types (with and without pre-wired structure, recursive and non-recursive) are compared for the longitudinal dynamics of a car with gears and two controls (brake and engine). Results show that pre-wiring effectively improves the performance. Non-recursive networks also look to be preferable for several reasons.",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "Modelling longitudinal vehicle dynamics with neural networks"
+    ]
+  },
+  {
+    "objectID": "publications/related/2019-mauro-da-lio-modelling-longitudinal-vehicle-dynamics-wi/index.html#abstract",
+    "href": "publications/related/2019-mauro-da-lio-modelling-longitudinal-vehicle-dynamics-wi/index.html#abstract",
+    "title": "Modelling longitudinal vehicle dynamics with neural networks",
+    "section": "",
+    "text": "This paper studies neural network models of vehicle dynamics. We consider both models with a generic layer architecture and models with specialised topologies that hard-wire physics principles. Network pre-wiring is limited to universal laws; hence it does not limit the network modelling abilities on one side but allows more robust and interpretable models on the other side. Four different network types (with and without pre-wired structure, recursive and non-recursive) are compared for the longitudinal dynamics of a car with gears and two controls (brake and engine). Results show that pre-wiring effectively improves the performance. Non-recursive networks also look to be preferable for several reasons.",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "Modelling longitudinal vehicle dynamics with neural networks"
+    ]
+  },
+  {
+    "objectID": "publications/related/2019-mauro-da-lio-modelling-longitudinal-vehicle-dynamics-wi/index.html#physics-pre-wired-longitudinal-dynamics",
+    "href": "publications/related/2019-mauro-da-lio-modelling-longitudinal-vehicle-dynamics-wi/index.html#physics-pre-wired-longitudinal-dynamics",
+    "title": "Modelling longitudinal vehicle dynamics with neural networks",
+    "section": "Physics-pre-wired longitudinal dynamics",
+    "text": "Physics-pre-wired longitudinal dynamics\nThe study compares four convolutional and recurrent architectures for predicting longitudinal acceleration from brake pressure, engine torque, road grade, gear, and speed, using real data from a passenger car. The central idea is to implement the generic input–output map as a sum of physically meaningful contributions rather than as a single black-box MLP. The structured convolutional network (ii) in Figure 2 is the most relevant design for later model-structured thinking in Neu4mes.\n\nStructured convolutional network (Figure 2)\nFigure 2 shows network (ii): a shallow, physics-pre-wired architecture with only 248 learnable parameters (versus 821 for the unstructured network (i) in Figure 1 of the paper). Inputs are processed on four parallel branches that model distinct terms in the longitudinal force balance; their outputs are summed to predict acceleration \\(\\hat{a}_x\\). The dotted boxes in the figure correspond to:\n\nAir drag and rolling resistance (top) — instantaneous speed \\(v_x\\) is squared and passed through a single neuron that learns drag coefficient and rolling-resistance offset (gain and bias). Only current speed is used here, so drag is modelled without differentiating velocity.\nBraking (second row) — a history of \\(n=25\\) past brake pressures (1.25 s at 20 Hz) feeds a small layer that learns brake-induced acceleration, assumed linear in pressure. A ReLU enforces that braking can only produce deceleration, which stabilises training.\nRoad slope (third row) — estimates the acceleration component due to grade from height/slope-related inputs along the same convolutional logic as the other branches.\nEngine torque and driveline (bottom) — \\(n=25\\) past engine-torque samples enter a layer with eight outputs, one per gear (including neutral encoded as a one-hot vector elsewhere in the network). Only the output neuron for the active gear is passed downstream, so each gear learns its own propulsive acceleration characteristic while sharing the same torque history window.\n\nEach branch realises one term \\(f_i(\\cdot)\\) in the paper’s structured decomposition (Equation (3)): a learned nonlinear function of the relevant input history, combined by summation at the output. Because connectivity mirrors universal longitudinal physics (drag \\(\\propto v^2\\), brake force, slope, traction per gear), the model stays interpretable and needs fewer parameters, yet matches measured acceleration more closely than the unstructured baseline—including driveline oscillations after gear shifts.\n\n\n\nThis pre-wired longitudinal model is an early precursor of model-structured neural networks (MSNN) and of the structured modelling philosophy pursued in the Neu4mes project with the nnodely framework.",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "Modelling longitudinal vehicle dynamics with neural networks"
+    ]
+  },
+  {
+    "objectID": "publications/presentations/2025-10-framework-trento/index.html",
+    "href": "publications/presentations/2025-10-framework-trento/index.html",
+    "title": "A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems",
+    "section": "",
+    "text": "Presentation by Gastone Pietro Rosati Papini at the Workshop-COSENO, University of Trento, Italy (2025). The talk A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems reviews limitations of standard MLPs, introduces model-structured learning, describes the nnodely tool chain, and presents use cases on autonomous mechanical and mechatronic systems.",
+    "crumbs": [
+      "Home",
+      "Presentations",
+      "A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems"
+    ]
+  },
+  {
+    "objectID": "publications/presentations/2025-10-framework-trento/index.html#summary",
+    "href": "publications/presentations/2025-10-framework-trento/index.html#summary",
+    "title": "A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems",
+    "section": "",
+    "text": "Presentation by Gastone Pietro Rosati Papini at the Workshop-COSENO, University of Trento, Italy (2025). The talk A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems reviews limitations of standard MLPs, introduces model-structured learning, describes the nnodely tool chain, and presents use cases on autonomous mechanical and mechatronic systems.",
+    "crumbs": [
+      "Home",
+      "Presentations",
+      "A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems"
+    ]
+  },
+  {
+    "objectID": "publications/presentations/2025-08-framework-design-trento/index.html",
+    "href": "publications/presentations/2025-08-framework-design-trento/index.html",
+    "title": "A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems",
+    "section": "",
+    "text": "Presentation by Gastone Pietro Rosati Papini at Chitkara University, India (2025), for the 2nd International Conference on Machine Learning Algorithms (ICML-ALGO). The talk A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems introduces MSNNs for modeling, control, and estimation, the Neu4mes program, the nnodely framework, and application examples on autonomous platforms.",
+    "crumbs": [
+      "Home",
+      "Presentations",
+      "A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems"
+    ]
+  },
+  {
+    "objectID": "publications/presentations/2025-08-framework-design-trento/index.html#summary",
+    "href": "publications/presentations/2025-08-framework-design-trento/index.html#summary",
+    "title": "A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems",
+    "section": "",
+    "text": "Presentation by Gastone Pietro Rosati Papini at Chitkara University, India (2025), for the 2nd International Conference on Machine Learning Algorithms (ICML-ALGO). The talk A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems introduces MSNNs for modeling, control, and estimation, the Neu4mes program, the nnodely framework, and application examples on autonomous platforms.",
+    "crumbs": [
+      "Home",
+      "Presentations",
+      "A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems"
+    ]
+  },
+  {
+    "objectID": "publications/presentations/2024-11-framework-dii/index.html",
+    "href": "publications/presentations/2024-11-framework-dii/index.html",
+    "title": "A Framework for Model-Structured Neural Networks",
+    "section": "",
+    "text": "Presentation by Gastone Pietro Rosati Papini and Mattia Piccinini at the Department of Industrial Engineering, University of Trento (2024). The seminar A Framework for Model-Structured Neural Networks motivates MSNNs versus generic MLPs, reviews related approaches, presents the nnodely workflow, and outlines use cases for modeling and control of physical systems.",
+    "crumbs": [
+      "Home",
+      "Presentations",
+      "A Framework for Model-Structured Neural Networks"
+    ]
+  },
+  {
+    "objectID": "publications/presentations/2024-11-framework-dii/index.html#summary",
+    "href": "publications/presentations/2024-11-framework-dii/index.html#summary",
+    "title": "A Framework for Model-Structured Neural Networks",
+    "section": "",
+    "text": "Presentation by Gastone Pietro Rosati Papini and Mattia Piccinini at the Department of Industrial Engineering, University of Trento (2024). The seminar A Framework for Model-Structured Neural Networks motivates MSNNs versus generic MLPs, reviews related approaches, presents the nnodely workflow, and outlines use cases for modeling and control of physical systems.",
+    "crumbs": [
+      "Home",
+      "Presentations",
+      "A Framework for Model-Structured Neural Networks"
+    ]
+  },
+  {
+    "objectID": "publications/posters/2025-icra-lbr-nnodely/index.html",
+    "href": "publications/posters/2025-icra-lbr-nnodely/index.html",
+    "title": "Model-Structured Neural Networks to Model & Control Robots",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Home",
+      "Posters",
+      "Model-Structured Neural Networks to Model & Control Robots"
+    ]
+  },
+  {
+    "objectID": "publications/papers/2025-road-friction-aware-abs/index.html",
+    "href": "publications/papers/2025-road-friction-aware-abs/index.html",
+    "title": "A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks",
+    "section": "",
+    "text": "The anti-lock braking system (ABS) is a vital safety feature in modern vehicles, preventing wheel lock during emergency braking. However, the performance of conventional ABS is often limited by the lack of real-time road friction information. This paper introduces a novel road friction-aware ABS, leveraging model-structured neural networks (MSNNs) to learn the vehicle longitudinal dynamics in different road conditions. Our framework uses a robust criterion to dynamically select from a set of pre-trained MSNNs based on the available sensor data, enabling real-time road friction estimation and autonomous adaptation of the ABS parameters. Simulation experiments demonstrate that the proposed MSNN-based ABS significantly improves safety and performance across varying road conditions: the braking distances are reduced by 3.0%–40.4% compared to a conventional ABS, tuned for a specific road condition. Furthermore, the MSNN architecture shows better accuracy, generalization and sample-efficiency compared to other neural networks in the literature, and is suitable for real-time deployment on automotive-grade hardware. Our implementation is open source and available in a public repository.",
+    "crumbs": [
+      "Home",
+      "Journal and conference papers",
+      "A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks"
+    ]
+  },
+  {
+    "objectID": "publications/papers/2025-road-friction-aware-abs/index.html#abstract",
+    "href": "publications/papers/2025-road-friction-aware-abs/index.html#abstract",
+    "title": "A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks",
+    "section": "",
+    "text": "The anti-lock braking system (ABS) is a vital safety feature in modern vehicles, preventing wheel lock during emergency braking. However, the performance of conventional ABS is often limited by the lack of real-time road friction information. This paper introduces a novel road friction-aware ABS, leveraging model-structured neural networks (MSNNs) to learn the vehicle longitudinal dynamics in different road conditions. Our framework uses a robust criterion to dynamically select from a set of pre-trained MSNNs based on the available sensor data, enabling real-time road friction estimation and autonomous adaptation of the ABS parameters. Simulation experiments demonstrate that the proposed MSNN-based ABS significantly improves safety and performance across varying road conditions: the braking distances are reduced by 3.0%–40.4% compared to a conventional ABS, tuned for a specific road condition. Furthermore, the MSNN architecture shows better accuracy, generalization and sample-efficiency compared to other neural networks in the literature, and is suitable for real-time deployment on automotive-grade hardware. Our implementation is open source and available in a public repository.",
+    "crumbs": [
+      "Home",
+      "Journal and conference papers",
+      "A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks"
+    ]
+  },
+  {
+    "objectID": "publications/papers/2025-road-friction-aware-abs/index.html#model-structured-neural-network-for-road-friction-aware-abs",
+    "href": "publications/papers/2025-road-friction-aware-abs/index.html#model-structured-neural-network-for-road-friction-aware-abs",
+    "title": "A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks",
+    "section": "Model-structured neural network for road friction-aware ABS",
+    "text": "Model-structured neural network for road friction-aware ABS\nThe friction-aware ABS relies on a bank of MS-NNs, each trained offline on a specific road condition (dry, wet, snowy, icy asphalt). Every model predicts the longitudinal acceleration \\(\\hat{a}_x\\) from past measurements of vehicle speed \\(v_x\\), brake pedal \\(p_b\\), engine torque \\(T_e\\), and road slope \\(\\theta\\).\nAt runtime, a noise-robust selection criterion compares the measured acceleration \\(a_x\\) with the predictions \\(\\hat{a}_{x,i}\\) of all models \\(i = 1,\\ldots,Q\\) and estimates the current friction level. The estimate adapts the ABS parameters \\(\\beta\\) (e.g. slip targets and pressure modulation) without requiring an explicit friction sensor.\n\nFramework overview (Figure 1)\nFigure 1 summarizes the proposed road friction-aware ABS. On the left, the offline phase collects vehicle telemetries from a high-fidelity simulator in different road conditions and trains one MS-NN per friction level. On the right, during online operation the driver commands the brake pedal \\(p_b\\); the adaptive ABS modulates the brake torques \\(\\mathbf{T}_b^{\\mathrm{ABS}}\\) at the front and rear wheels using vehicle speed \\(v_x\\), wheel speeds \\(\\omega\\), and parameters \\(\\beta\\) that are updated from the estimated road condition. Road friction is inferred by comparing the measured longitudinal acceleration \\(a_x\\) with the predictions \\(\\hat{a}_{x,i}\\) of the MS-NNs and selecting the most consistent model with a noise-robust criterion.\n\n\n\n\n\nMS-NN architecture (Figure 2)\nFigure 2(a) shows the internal structure of the MS-NN used to learn longitudinal vehicle dynamics. The network takes windows of engine torque \\(T_e\\) and brake pedal \\(p_b\\), the current speed \\(v_x\\), and road slope \\(\\theta\\), and outputs \\(\\hat{a}_x\\). It combines a model-based branch (Newton equation with neuro-fuzzy local models for the front brake torque \\(T_{bf}\\)) and a data-driven branch that captures residual effects; the two contributions are summed as \\(\\hat{a}_x = \\hat{a}_{x_{\\mathrm{model}}} + \\hat{a}_{x_{\\mathrm{DD}}}\\). Figure 2(b) details the local neuro-fuzzy models that estimate \\(T_{bf}\\) from \\(p_b\\) and \\(T_e\\): membership functions \\(\\psi_{bi}(p_b)\\) and \\(\\psi_{ej}(T_e)\\) activate \\(N\\) local models whose outputs are blended with coefficients \\(F_i\\). Gray numbers on the signal arrows indicate tensor sizes in the implementation.\n\n\n\nThe MSNN blocks are implemented with the nnodely framework for structured architectures and real-time deployment on automotive-grade hardware.",
+    "crumbs": [
+      "Home",
+      "Journal and conference papers",
+      "A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks"
+    ]
+  },
+  {
+    "objectID": "publications/index.html",
+    "href": "publications/index.html",
+    "title": "Publications",
+    "section": "",
+    "text": "A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks\n            \n            \n            \n                \n                    Mattia Piccinini, \n                    Matteo Zumerle, \n                    Johannes Betz, \n                    Gastone Pietro Rosati Papini \n            \n            \n            \n                \n                \n                    IEEE Open Journal of Intelligent Transportation Systems (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                 | \n                \n                    CODE \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                Vehicle Dynamics Learning From Physics Priors With Model-Structured Neural Networks\n            \n            \n            \n                \n                    Aniello Mungiello, \n                    Felix Jahncke, \n                    Stefania Santini, \n                    Johannes Betz, \n                    Gastone Pietro Rosati Papini, \n                    Mattia Piccinini \n            \n            \n            \n                \n                \n                    IEEE Open Journal of Intelligent Transportation Systems (2026)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                 | \n                \n                    CODE \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                Model-Structured Neural Networks to Control the Steering Dynamics of Autonomous Race Cars\n            \n            \n            \n                \n                    Mattia Piccinini, \n                    Aniello Mungiello, \n                    Georg Jank, \n                    Gastone Pietro Rosati Papini, \n                    Francesco Biral, \n                    Johannes Betz \n            \n            \n            \n                \n                \n                    ITSC 2025 (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    CODE \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items",
+    "crumbs": [
+      "Home",
+      "Publications"
+    ]
+  },
+  {
+    "objectID": "publications/index.html#journal-and-conference-papers",
+    "href": "publications/index.html#journal-and-conference-papers",
+    "title": "Publications",
+    "section": "",
+    "text": "A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks\n            \n            \n            \n                \n                    Mattia Piccinini, \n                    Matteo Zumerle, \n                    Johannes Betz, \n                    Gastone Pietro Rosati Papini \n            \n            \n            \n                \n                \n                    IEEE Open Journal of Intelligent Transportation Systems (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                 | \n                \n                    CODE \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                Vehicle Dynamics Learning From Physics Priors With Model-Structured Neural Networks\n            \n            \n            \n                \n                    Aniello Mungiello, \n                    Felix Jahncke, \n                    Stefania Santini, \n                    Johannes Betz, \n                    Gastone Pietro Rosati Papini, \n                    Mattia Piccinini \n            \n            \n            \n                \n                \n                    IEEE Open Journal of Intelligent Transportation Systems (2026)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                 | \n                \n                    CODE \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                Model-Structured Neural Networks to Control the Steering Dynamics of Autonomous Race Cars\n            \n            \n            \n                \n                    Mattia Piccinini, \n                    Aniello Mungiello, \n                    Georg Jank, \n                    Gastone Pietro Rosati Papini, \n                    Francesco Biral, \n                    Johannes Betz \n            \n            \n            \n                \n                \n                    ITSC 2025 (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    CODE \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items",
+    "crumbs": [
+      "Home",
+      "Publications"
+    ]
+  },
+  {
+    "objectID": "publications/index.html#posters",
+    "href": "publications/index.html#posters",
+    "title": "Publications",
+    "section": "Posters",
+    "text": "Posters\n\n\n\n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                Model-Structured Neural Networks to Model & Control Robots\n            \n            \n            \n                \n                    Mattia Piccinini, \n                    Aniello Mungiello, \n                    Johannes Betz, \n                    Gastone Pietro Rosati Papini \n            \n            \n            \n                \n                \n                    ICRA 2025 — Late breaking results (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                nnodely – neuralize your model\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini, \n                    Alice Plebe, \n                    Mojtaba Sharifzadeh, \n                    Mattia Piazza, \n                    Sebastiano Taddei, \n                    Giovanni Scialla, \n                    Francesco Baroni, \n                    Davide De Martini, \n                    Giovanni Maria Francesco La Scala, \n                    Gioele Defrancesco, \n                    Filippo Faccini \n            \n            \n            \n                \n                \n                    ICRA 2026 — Late breaking results (2026)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items",
+    "crumbs": [
+      "Home",
+      "Publications"
+    ]
+  },
+  {
+    "objectID": "publications/index.html#presentations",
+    "href": "publications/index.html#presentations",
+    "title": "Publications",
+    "section": "Presentations",
+    "text": "Presentations\n\n\n\n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                A Framework for Model-Structured Neural Networks\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini, \n                    Mattia Piccinini \n            \n            \n            \n                \n                \n                    Department of Industrial Engineering, University of Trento (2024)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                A framework for design model-structured neural networks for model and control physical systems\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini \n            \n            \n            \n                \n                \n                    UPAEP University, Puebla, Mexico (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini \n            \n            \n            \n                \n                \n                    Chitkara University, India (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                NNodely: An Open Framework for Model-Structured Neural Networks in Robotics\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini, \n                    Mattia Piccinini \n            \n            \n            \n                \n                \n                    Ekumen Robotics Software Company, Germany (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini \n            \n            \n            \n                \n                \n                    Workshop-COSENO, University of Trento, Italy (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items",
+    "crumbs": [
+      "Home",
+      "Publications"
+    ]
   },
   {
     "objectID": "publications/index.html#related-works",
     "href": "publications/index.html#related-works",
     "title": "Publications",
     "section": "Related works",
-    "text": "Related works\nClick here"
-  },
-  {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Our research publications\n\n\n\n Back to top"
+    "text": "Related works\n\n\n\n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                Complex self-driving behaviors emerging from affordance competition in layered control architectures\n            \n            \n            \n                \n                    Mauro Da Lio, \n                    Antonello Cherubini, \n                    Gastone Pietro Rosati Papini, \n                    Alice Plebe \n            \n            \n            \n                \n                \n                    Cognitive Systems Research (2022)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                Efficient Prediction of Human Motion for Real-Time Robotics Applications With Physics-Inspired Neural Networks\n            \n            \n            \n                \n                    Alessandro Antonucci, \n                    Gastone Pietro Rosati Papini, \n                    Paolo Bevilacqua, \n                    Luigi Palopoli, \n                    Daniele Fontanelli \n            \n            \n            \n                \n                \n                    IEEE Access (2021)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                A Reinforcement Learning Approach for Enacting Cautious Behaviours in Autonomous Driving\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini, \n                    Alice Plebe, \n                    Mauro Da Lio, \n                    Riccardo Donà \n            \n            \n            \n                \n                \n                    IEEE Transactions on Intelligent Transportation Systems (2021)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                A Mental Simulation Approach for Learning Neural-Network Predictive Control (in Self-Driving Cars)\n            \n            \n            \n                \n                    Mauro Da Lio, \n                    Riccardo Donà, \n                    Gastone Pietro Rosati Papini, \n                    Francesco Biral, \n                    Henrik Svensson \n            \n            \n            \n                \n                \n                    IEEE Access (2020)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                Modelling longitudinal vehicle dynamics with neural networks\n            \n            \n            \n                \n                    Mauro Da Lio, \n                    Daniele Bortoluzzi, \n                    Gastone Pietro Rosati Papini \n            \n            \n            \n                \n                \n                    Vehicle System Dynamics (2019)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                Learning Equations for Extrapolation and Control\n            \n            \n            \n                \n                    Subham S. Sahoo, \n                    Christoph H. Lampert, \n                    Georg Martius \n            \n            \n            \n                \n                \n                    ICML (2018)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items",
+    "crumbs": [
+      "Home",
+      "Publications"
+    ]
   },
   {
     "objectID": "people/scialla-giovanni/index.html#programming-languages",
@@ -39,7 +353,7 @@
     "href": "people/scialla-giovanni/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications",
     "title": "Giovanni Scialla",
     "section": "Giovanni’s Group Publications",
-    "text": "Giovanni’s Group Publications\n\n\n    \n      \n      \n    \n\n\n    \n    \n\nNo matching items"
+    "text": "Giovanni’s Group Publications\n\n\n    \n      \n      \n    \n\n\n\n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                nnodely – neuralize your model\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini, \n                    Alice Plebe, \n                    Mojtaba Sharifzadeh, \n                    Mattia Piazza, \n                    Sebastiano Taddei, \n                    Giovanni Scialla, \n                    Francesco Baroni, \n                    Davide De Martini, \n                    Giovanni Maria Francesco La Scala, \n                    Gioele Defrancesco, \n                    Filippo Faccini \n            \n            \n            \n                \n                \n                    ICRA 2026 — Late breaking results (2026)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items"
   },
   {
     "objectID": "people/plebe-alice/index.html#education",
@@ -53,7 +367,7 @@
     "href": "people/plebe-alice/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications",
     "title": "Alice Plebe",
     "section": "Alice’s Group Publications",
-    "text": "Alice’s Group Publications\n\n\n    \n      \n      \n    \n\n\n    \n    \n\nNo matching items"
+    "text": "Alice’s Group Publications\n\n\n    \n      \n      \n    \n\n\n\n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                nnodely – neuralize your model\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini, \n                    Alice Plebe, \n                    Mojtaba Sharifzadeh, \n                    Mattia Piazza, \n                    Sebastiano Taddei, \n                    Giovanni Scialla, \n                    Francesco Baroni, \n                    Davide De Martini, \n                    Giovanni Maria Francesco La Scala, \n                    Gioele Defrancesco, \n                    Filippo Faccini \n            \n            \n            \n                \n                \n                    ICRA 2026 — Late breaking results (2026)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                Complex self-driving behaviors emerging from affordance competition in layered control architectures\n            \n            \n            \n                \n                    Mauro Da Lio, \n                    Antonello Cherubini, \n                    Gastone Pietro Rosati Papini, \n                    Alice Plebe \n            \n            \n            \n                \n                \n                    Cognitive Systems Research (2022)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                A Reinforcement Learning Approach for Enacting Cautious Behaviours in Autonomous Driving\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini, \n                    Alice Plebe, \n                    Mauro Da Lio, \n                    Riccardo Donà \n            \n            \n            \n                \n                \n                    IEEE Transactions on Intelligent Transportation Systems (2021)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items"
   },
   {
     "objectID": "people/la-scala-giovanni-maria-francesco/index.html#education",
@@ -63,11 +377,11 @@
     "text": "Education\nM.S. Mechatronics Engineering | University of Trento | 2025  B.S. Cybernetic Engineering | University of Palermo | 2022"
   },
   {
-    "objectID": "people/la-scala-giovanni-maria-francesco/index.html#group-publications",
-    "href": "people/la-scala-giovanni-maria-francesco/index.html#group-publications",
+    "objectID": "people/la-scala-giovanni-maria-francesco/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications",
+    "href": "people/la-scala-giovanni-maria-francesco/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications",
     "title": "Giovanni Maria Francesco La Scala",
-    "section": "Group Publications",
-    "text": "Group Publications\n\n\n    \n      \n      \n    \n\n\n    \n    \n\nNo matching items"
+    "section": "Giovanni Maria Francesco’s Group Publications",
+    "text": "Giovanni Maria Francesco’s Group Publications\n\n\n    \n      \n      \n    \n\n\n\n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                nnodely – neuralize your model\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini, \n                    Alice Plebe, \n                    Mojtaba Sharifzadeh, \n                    Mattia Piazza, \n                    Sebastiano Taddei, \n                    Giovanni Scialla, \n                    Francesco Baroni, \n                    Davide De Martini, \n                    Giovanni Maria Francesco La Scala, \n                    Gioele Defrancesco, \n                    Filippo Faccini \n            \n            \n            \n                \n                \n                    ICRA 2026 — Late breaking results (2026)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items"
   },
   {
     "objectID": "people/filippo-faccini/index.html#education",
@@ -81,7 +395,7 @@
     "href": "people/filippo-faccini/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications",
     "title": "Filippo Faccini",
     "section": "Filippo’s Group Publications",
-    "text": "Filippo’s Group Publications\n\n\n    \n      \n      \n    \n\n\n    \n    \n\nNo matching items"
+    "text": "Filippo’s Group Publications\n\n\n    \n      \n      \n    \n\n\n\n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                nnodely – neuralize your model\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini, \n                    Alice Plebe, \n                    Mojtaba Sharifzadeh, \n                    Mattia Piazza, \n                    Sebastiano Taddei, \n                    Giovanni Scialla, \n                    Francesco Baroni, \n                    Davide De Martini, \n                    Giovanni Maria Francesco La Scala, \n                    Gioele Defrancesco, \n                    Filippo Faccini \n            \n            \n            \n                \n                \n                    ICRA 2026 — Late breaking results (2026)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items"
   },
   {
     "objectID": "people/de-martini-davide/index.html#education",
@@ -95,7 +409,7 @@
     "href": "people/de-martini-davide/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications",
     "title": "Davide De Martini",
     "section": "Davide’s Group Publications",
-    "text": "Davide’s Group Publications\n\n\n    \n      \n      \n    \n\n\n    \n    \n\nNo matching items"
+    "text": "Davide’s Group Publications\n\n\n    \n      \n      \n    \n\n\n\n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                nnodely – neuralize your model\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini, \n                    Alice Plebe, \n                    Mojtaba Sharifzadeh, \n                    Mattia Piazza, \n                    Sebastiano Taddei, \n                    Giovanni Scialla, \n                    Francesco Baroni, \n                    Davide De Martini, \n                    Giovanni Maria Francesco La Scala, \n                    Gioele Defrancesco, \n                    Filippo Faccini \n            \n            \n            \n                \n                \n                    ICRA 2026 — Late breaking results (2026)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items"
   },
   {
     "objectID": "people/baroni-francesco/index.html#hello-world",
@@ -123,28 +437,42 @@
     "href": "people/baroni-francesco/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications",
     "title": "Francesco Baroni",
     "section": "Francesco’s Group Publications",
-    "text": "Francesco’s Group Publications\n\n\n    \n      \n      \n    \n\n\n    \n    \n\nNo matching items"
+    "text": "Francesco’s Group Publications\n\n\n    \n      \n      \n    \n\n\n\n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                nnodely – neuralize your model\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini, \n                    Alice Plebe, \n                    Mojtaba Sharifzadeh, \n                    Mattia Piazza, \n                    Sebastiano Taddei, \n                    Giovanni Scialla, \n                    Francesco Baroni, \n                    Davide De Martini, \n                    Giovanni Maria Francesco La Scala, \n                    Gioele Defrancesco, \n                    Filippo Faccini \n            \n            \n            \n                \n                \n                    ICRA 2026 — Late breaking results (2026)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items"
   },
   {
-    "objectID": "neu4mes.html",
-    "href": "neu4mes.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Neu4mes",
     "section": "",
-    "text": "Neu4mes project aims to develop a new approach to model and control mechanical system with particular attention to autonomous systems using model-structured neural networks. Robots are rapidly moving out of factories and becoming a part of our everyday lives. To make robots able to cope with unknown situations and environments, the scientific community has largely embraced machine learning to tackle the limits of the analytical modeling approaches. Developing models and controls for autonomous systems need multidisciplinary expertise to overcome potential limitations and risks, such as guaranteeing safety and performance while achieving a high level of autonomy. Using a model-driven approach requires specific expertise for high accuracy, limiting the integration of advanced sensors like lidar, radar, and cameras. Meanwhile, a data-driven approach relies on vast data, lacks performance and safety guarantees due to its black-box nature. Neu4mes addresses this challenge by merging these approaches, using neural networks that base their structure on physical foundations. The project deliberately combines applied mechanics and control theory expertise with machine learning capabilities and flexibility. Neu4mes will study and build the groundwork to demonstrate the potential of this hybrid approach, starting from theory and then applying it to three relevant autonomous system applications: wheel vehicles, quadruped robots, and flying drones. The theoretical and practical knowledge acquired will be summarized and generalized: - An open-source framework nnodely released on GitHub under the MIT license will make the power of the hybrid approach immediately accessible to users. nnodely will manage the deployment pipeline for structured neural models and controllers on embedded hardware, interacting with third-party software by a custom application programming interface.\n- A website in Wikimedia format will collect the knowledge generated during the project and the results obtained within the case studies. The site will be open and serve as an information aggregator on the topic. Neu4mes will provide the scientific and industrial community with a powerful prototyping and deployment tool for structured neural network models and controllers supported by a solid theoretical basis."
+    "text": "Neu4mes (Model-structured neural network framework for modeling and control of autonomous systems) is a research initiative that combines classical mechanics and control theory with machine learning. The goal is to model and control autonomous systems—wheel vehicles, quadruped robots, and flying drones—using model-structured neural networks (MSNN): neural models whose architecture reflects physical principles rather than opaque black-box structures."
   },
   {
-    "objectID": "neu4mes.html#what-is-neu4mes",
-    "href": "neu4mes.html#what-is-neu4mes",
+    "objectID": "index.html#the-challenge",
+    "href": "index.html#the-challenge",
     "title": "Neu4mes",
-    "section": "",
-    "text": "Neu4mes project aims to develop a new approach to model and control mechanical system with particular attention to autonomous systems using model-structured neural networks. Robots are rapidly moving out of factories and becoming a part of our everyday lives. To make robots able to cope with unknown situations and environments, the scientific community has largely embraced machine learning to tackle the limits of the analytical modeling approaches. Developing models and controls for autonomous systems need multidisciplinary expertise to overcome potential limitations and risks, such as guaranteeing safety and performance while achieving a high level of autonomy. Using a model-driven approach requires specific expertise for high accuracy, limiting the integration of advanced sensors like lidar, radar, and cameras. Meanwhile, a data-driven approach relies on vast data, lacks performance and safety guarantees due to its black-box nature. Neu4mes addresses this challenge by merging these approaches, using neural networks that base their structure on physical foundations. The project deliberately combines applied mechanics and control theory expertise with machine learning capabilities and flexibility. Neu4mes will study and build the groundwork to demonstrate the potential of this hybrid approach, starting from theory and then applying it to three relevant autonomous system applications: wheel vehicles, quadruped robots, and flying drones. The theoretical and practical knowledge acquired will be summarized and generalized: - An open-source framework nnodely released on GitHub under the MIT license will make the power of the hybrid approach immediately accessible to users. nnodely will manage the deployment pipeline for structured neural models and controllers on embedded hardware, interacting with third-party software by a custom application programming interface.\n- A website in Wikimedia format will collect the knowledge generated during the project and the results obtained within the case studies. The site will be open and serve as an information aggregator on the topic. Neu4mes will provide the scientific and industrial community with a powerful prototyping and deployment tool for structured neural network models and controllers supported by a solid theoretical basis."
+    "section": "The challenge",
+    "text": "The challenge\nRobots are leaving factories and entering everyday environments. Classical model-based control can be very accurate but struggles with unmodeled dynamics, disturbances, and unforeseen conditions. Pure data-driven deep learning offers flexibility but needs large datasets, heavy hardware, and rarely provides the stability and performance guarantees required in safety-critical robotics.\nNeu4mes addresses this gap by merging both worlds: Newtonian structure in the network, parameters learned from experimental data, and controllers synthesized through the model—enabling effective training even with limited, costly, or risky experimental campaigns."
   },
   {
-    "objectID": "neu4mes.html#work-with-us",
-    "href": "neu4mes.html#work-with-us",
+    "objectID": "index.html#the-approach",
+    "href": "index.html#the-approach",
     "title": "Neu4mes",
-    "section": "Work with us",
-    "text": "Work with us\n\nStudent’s Theses\nTheses are available for both bachelor’s and master’s degrees. The required skills mainly concern mechanical fields of robotics and automation, with particular attention to modeling and control through model-based neural networks. The thesis can be experimental, with hardware platforms such as quadrupeds, manipulators, drones, and scale vehicles available. Additionally, there is the possibility of doing the thesis abroad or in a company. Looks the page for more information.\n\n\nPhD Positions\nPhD positions will primarily focus on the application of model-structured neural networks for modeling and controlling specific test platforms. In particular, the experimentation will be conducted on quadruped robots, manipulators, drones, and scale vehicles. Another topic of interest for the project concerns the development of a navigation agent for autonomous systems. This agent will be generic and adaptable to different hardware platforms.Send an email for more details.\n\n\nPostdoc Positions\nSenior positions will involve supervising experimental applications by proposing approaches from other research fields, integrating knowledge from experimental areas into the nnodely framework, and maintaining the website that will collect models and controls developed within the project or found in the state of the art. Positions are sought with both hardware expertise for experimental supervision and mechanical and machine learning expertise for integration into the framework. Send an email for more details."
+    "section": "The approach",
+    "text": "The approach\nThe project follows a six-phase nnodely methodology (from neural model definition through training, validation, composition, and export), applied to three demonstrative domains:\n\nWheel vehicles — e.g. autonomous and scale platforms for longitudinal/lateral dynamics\nQuadruped robots — legged locomotion and control on industrial and research platforms\nFlying drones — aerial systems in unstructured environments\n\nResults from these case studies are generalized into two main deliverables: an open-source framework and a public wiki for theory and documentation."
+  },
+  {
+    "objectID": "index.html#objectives",
+    "href": "index.html#objectives",
+    "title": "Neu4mes",
+    "section": "Objectives",
+    "text": "Objectives\n\nFramework — Develop and release an open-source software framework (MIT license) to design, train, validate, and deploy MSNN models and controllers on real hardware, with libraries of neural models (NMs) and neural controllers (NCs), export to embedded targets, and integration with tools such as Modelica, Simulink, and standard formats (FMI, ONNX).\nWiki — Build a public MediaWiki site that collects the theoretical foundations of the project (aligned with the PH1–PH6 workflow), documents implementation choices, shares case-study results, and supports collaboration with the scientific and industrial community.\n\nLearn more on the dedicated pages: Framework and Wiki."
+  },
+  {
+    "objectID": "index.html#funding",
+    "href": "index.html#funding",
+    "title": "Neu4mes",
+    "section": "Funding",
+    "text": "Funding\n\nWe acknowledge financial support under the FIS 2 Call, Grant Assignment Decree No. 1236 adopted on 01/08/2023 by the Italian Ministry of University and Research (MUR), for the project FIS-2023-03684 ‘Structured neural network framework for modeling and control of autonomous systems – Neu4mes’, CUP E53C24003800001."
   },
   {
     "objectID": "contacts.html",
@@ -154,18 +482,32 @@
     "text": "gastone.rosatipapini@unitn.it\n\n\n   +39 0461 285352\n\n\n   Department of Industrial Engineering, Via Sommarive 9, 38123, Trento (TN), Italy\n\n\n    \n  \n\n\n123moviesmap for website\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "framework/index.html",
+    "href": "framework/index.html",
+    "title": "Framework",
     "section": "",
-    "text": "Welcome to the Neu4mes Research Group!\nWe are dedicated to advancing the field of physically informed neural networks for mechanical and mechatronic systems. Our team of researchers and students work collaboratively to develop innovative solutions that bridge the gap between traditional engineering methods and modern machine learning techniques.\nOur research focuses on leveraging the power of neural networks to model, simulate, and optimize complex mechanical systems. By integrating physical laws and constraints into our models, we aim to enhance their accuracy, reliability, and interpretability.\nWe believe in fostering a collaborative and inclusive research environment. Our group actively engages with the broader scientific community through publications, conferences, and workshops. We also prioritize mentoring and supporting the next generation of researchers in this exciting field.\n\n\n\n Back to top"
+    "text": "Within the Neu4mes project, the framework is the first main outcome: open-source software to design, train, validate, and deploy model-structured neural networks (MSNN) for modelling and control of autonomous mechanical systems.\nThe released implementation is named nnodely (“nn” can be read as “m”, forming Modely). It is the practical tool that supports the project methodology on real hardware and in the demonstrative case studies (wheel vehicles, quadruped robots, flying drones)."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Neu4mes Research Group",
-    "section": "",
-    "text": "Welcome to the Neu4mes Research Group website!\nWe are dedicated to advancing the field of physically informed neural networks for mechanical and mechatronic systems. Our team of researchers and students work collaboratively to develop innovative solutions that bridge the gap between traditional engineering methods and modern machine learning techniques.\n\n\n\n Back to top"
+    "objectID": "framework/index.html#purpose",
+    "href": "framework/index.html#purpose",
+    "title": "Framework",
+    "section": "Purpose",
+    "text": "Purpose\nThe framework guides development from early experimentation through deployment on embedded platforms. In particular it provides:\n\nA library of neural models (NMs) and neural controllers (NCs) for components and complete devices, used as building blocks for full system models\nTools to investigate different neural modelling and control strategies and to validate stability and performance of models and closed-loop systems\nExport of trained networks for embedded use (standalone C code, FPGA targets, and interchange via ONNX and Functional Mock-up Units FMU)\nIntegration with external tools through APIs\n\nThe library is developed as an abstraction layer on top of existing deep-learning backends (such as Keras3.0 or PyTorch), so that the hybrid MSNN approach remains flexible and usable without rebuilding a general-purpose learning stack from scratch."
+  },
+  {
+    "objectID": "framework/index.html#development-phases-ph1ph6",
+    "href": "framework/index.html#development-phases-ph1ph6",
+    "title": "Framework",
+    "section": "Development phases (PH1–PH6)",
+    "text": "Development phases (PH1–PH6)\nThe nnodely development pipeline organises MSNN work in six phases from design to deployment, with iterative composition, retraining, and selective export:\n\n\n\n\n\n\n\n\n\nDescription\nPhase\n\n\n\n\nNeural model definition — MSNN structure, inputs/outputs, and high-level specification (Neural Model abstraction) from mechanical principles and domain knowledge\nPH1\n\n\nDataset creation — experimental time-series (CSV, DataFrames), splitting, resampling, and automatic temporal windows\nPH2\n\n\nNeural model training — managed training with custom losses, optimizers, recurrent networks, and closed-loop learning\nPH3\n\n\nNeural model validation — analysis beyond standard ML metrics (e.g. FVU, AIC, residual and domain-specific checks)\nPH4\n\n\nModel export — JSON, PyTorch modules, and ONNX for embedded deployment and third-party tools (selective export supported)\nPH5\n\n\nModel composition — interconnecting modules via connect and closed-loop links; staged training and assembly of complex systems (including controllers)\nPH6"
+  },
+  {
+    "objectID": "framework/index.html#implementation",
+    "href": "framework/index.html#implementation",
+    "title": "Framework",
+    "section": "Implementation",
+    "text": "Implementation\nA preliminary version of the Neu4mes framework is already available under the name nnodely, distributed on GitHub under the MIT license (pip install nnodely). Tutorials, API reference, and case-study material are published in the online documentation.\nDuring the project, the library is extended with models and controllers from the experimental domains and generalized for reuse by the scientific and industrial community."
   },
   {
     "objectID": "people/Sharifzadeh-Mojtaba/index.html#education",
@@ -179,7 +521,7 @@
     "href": "people/Sharifzadeh-Mojtaba/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications",
     "title": "Mojtaba Sharifzadeh",
     "section": "Mojtaba’s Group Publications",
-    "text": "Mojtaba’s Group Publications\n\n\n    \n      \n      \n    \n\n\n    \n    \n\nNo matching items"
+    "text": "Mojtaba’s Group Publications\n\n\n    \n      \n      \n    \n\n\n\n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                nnodely – neuralize your model\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini, \n                    Alice Plebe, \n                    Mojtaba Sharifzadeh, \n                    Mattia Piazza, \n                    Sebastiano Taddei, \n                    Giovanni Scialla, \n                    Francesco Baroni, \n                    Davide De Martini, \n                    Giovanni Maria Francesco La Scala, \n                    Gioele Defrancesco, \n                    Filippo Faccini \n            \n            \n            \n                \n                \n                    ICRA 2026 — Late breaking results (2026)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items"
   },
   {
     "objectID": "people/ciuffoletti-sabrina/index.html#education",
@@ -189,11 +531,11 @@
     "text": "Education\nM.S. Mechatronics Engineering | University of Trento | 2026  B.S. Industrial Engineering | University of Trento | 2023"
   },
   {
-    "objectID": "people/ciuffoletti-sabrina/index.html#group-publications",
-    "href": "people/ciuffoletti-sabrina/index.html#group-publications",
+    "objectID": "people/ciuffoletti-sabrina/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications",
+    "href": "people/ciuffoletti-sabrina/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications",
     "title": "Sabrina Ciuffoletti",
-    "section": "Group Publications",
-    "text": "Group Publications\n\n\n    \n      \n      \n    \n\n\n    \n    \n\nNo matching items"
+    "section": "Sabrina’s Group Publications",
+    "text": "Sabrina’s Group Publications\n\n\n    \n      \n      \n    \n\n\n\n    \n    \n\nNo matching items"
   },
   {
     "objectID": "people/defrancesco-gioele/index.html#education",
@@ -207,42 +549,42 @@
     "href": "people/defrancesco-gioele/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications",
     "title": "Gioele Defrancesco",
     "section": "Gioele’s Group Publications",
-    "text": "Gioele’s Group Publications"
+    "text": "Gioele’s Group Publications\n\n\n    \n      \n      \n    \n\n\n\n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                nnodely – neuralize your model\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini, \n                    Alice Plebe, \n                    Mojtaba Sharifzadeh, \n                    Mattia Piazza, \n                    Sebastiano Taddei, \n                    Giovanni Scialla, \n                    Francesco Baroni, \n                    Davide De Martini, \n                    Giovanni Maria Francesco La Scala, \n                    Gioele Defrancesco, \n                    Filippo Faccini \n            \n            \n            \n                \n                \n                    ICRA 2026 — Late breaking results (2026)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items"
   },
   {
     "objectID": "people/index.html",
     "href": "people/index.html",
     "title": "Our Team",
     "section": "",
-    "text": "Gastone Pietro  Rosati Papini \n            \n               \n            \n              Associate Professor in Applied Mechanics, University of Trento\n            \n                \n            \n              \n              \n                \n                \n                  Ph.D. in Emerging Digital Technologies | Sant’Anna University | 2016\n                  \n                    \n                \n                  \n\n            \n            \n            \n          \n      \n      \n    \n  \n    \n  \n\n\n\nNo matching items"
+    "text": "Gastone Pietro  Rosati Papini \n            \n               \n            \n              Associate Professor in Applied Mechanics, University of Trento\n            \n\n            \n            \n          \n      \n      \n    \n  \n    \n  \n\n\n\nNo matching items"
   },
   {
     "objectID": "people/index.html#principal-investigator",
     "href": "people/index.html#principal-investigator",
     "title": "Our Team",
     "section": "",
-    "text": "Gastone Pietro  Rosati Papini \n            \n               \n            \n              Associate Professor in Applied Mechanics, University of Trento\n            \n                \n            \n              \n              \n                \n                \n                  Ph.D. in Emerging Digital Technologies | Sant’Anna University | 2016\n                  \n                    \n                \n                  \n\n            \n            \n            \n          \n      \n      \n    \n  \n    \n  \n\n\n\nNo matching items"
+    "text": "Gastone Pietro  Rosati Papini \n            \n               \n            \n              Associate Professor in Applied Mechanics, University of Trento\n            \n\n            \n            \n          \n      \n      \n    \n  \n    \n  \n\n\n\nNo matching items"
   },
   {
     "objectID": "people/index.html#research-scientists",
     "href": "people/index.html#research-scientists",
     "title": "Our Team",
     "section": "Research Scientists",
-    "text": "Research Scientists\n\nAssistant Professors\n\n\n\n  \n   \n\n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Alice Plebe \n            \n               \n            \n              Assistant Professor RTDa\n            \n                \n            \n              \n              \n                \n                \n                  PhD in Computer Science | University of Trento | 2020   MS in Computer Science | University of Catania | 2016  BS in Computer Science | University of Catania | 2014\n                  \n                    \n                \n                  \n\n            \n            \n            \n          \n      \n      \n    \n  \n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Mojtaba Sharifzadeh \n            \n               \n            \n              Assistant Professor RTDa\n            \n                \n            \n              \n              \n                \n                \n                  PhD in Industrial Engineering | University of Salerno | 2020   MS in Systems and Control Engineering | Tabriz University of Tech. | 2015   BS  in Systems and Control Engineering | University of Tabriz | 2012\n                  \n                    \n                \n                  \n\n            \n            \n            \n          \n      \n      \n    \n  \n    \n  \n\n\n\nNo matching items\n\n\n\nPostdoctoral Researchers\n\n\n\n  \n   \n\n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Mattia Piazza \n            \n               \n            \n              PhD Candidate in System Engineering\n            \n                \n            \n              \n              \n                \n                \n                  M.S. Mechatronics Engineering | University of Trento | 2020  B.S. Mechanical Engineering | University of Udine | 2017\n                  \n                    \n                \n                  \n\n            \n            \n            \n          \n      \n      \n    \n  \n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Sebastiano Taddei \n            \n               \n            \n              Research fellow\n            \n                \n            \n              \n              \n                \n                \n                  Ph.D. in Autonomous Systems | Polytechnic University of Bari | 2026  Master Degree | University of Trento | 2022   Bachelor Degree | University of Trento | 2020\n                  \n                    \n                \n                  \n\n            \n            \n            \n          \n      \n      \n    \n  \n    \n  \n\n\n\nNo matching items"
+    "text": "Research Scientists\n\nAssistant Professors\n\n\n\n  \n   \n\n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Alice Plebe \n            \n               \n            \n              Assistant Professor RTDa\n            \n\n            \n            \n          \n      \n      \n    \n  \n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Mojtaba Sharifzadeh \n            \n               \n            \n              Assistant Professor RTDa\n            \n\n            \n            \n          \n      \n      \n    \n  \n    \n  \n\n\n\nNo matching items\n\n\n\nPostdoctoral Researchers\n\n\n\n  \n   \n\n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Mattia Piazza \n            \n               \n            \n              PhD Candidate in System Engineering\n            \n\n            \n            \n          \n      \n      \n    \n  \n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Sebastiano Taddei \n            \n               \n            \n              Research fellow\n            \n\n            \n            \n          \n      \n      \n    \n  \n    \n  \n\n\n\nNo matching items"
   },
   {
     "objectID": "people/index.html#phd-students",
     "href": "people/index.html#phd-students",
     "title": "Our Team",
     "section": "PhD Students",
-    "text": "PhD Students\n\n\n\n  \n   \n\n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Francesco Baroni \n            \n               \n            \n              PhD student\n            \n                \n            \n              \n              \n                \n                \n                  MS in Artificial Intelligence Systems | University of Trento | 2025   BS in Computer Sciences | University of Trento | 2023\n                  \n                    \n                \n                  \n\n            \n            \n            \n          \n      \n      \n    \n  \n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Davide De Martini \n            \n               \n            \n              PhD student\n            \n                \n            \n              \n              \n                \n                \n                  MS in Artificial Intellicence Systems | University of Trento | 2025   BS in Information Engineering | University of Trento | 2023\n                  \n                    \n                \n                  \n\n            \n            \n            \n          \n      \n      \n    \n  \n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Gioele Defrancesco \n            \n               \n            \n              PhD student\n            \n                \n            \n              \n              \n                \n                \n                  M.S. in Mechatronics Engineering | University of Trento | 2025   B.S. in Industrial Engineering | University of Trento | 2022\n                  \n                    \n                \n                  \n\n            \n            \n            \n          \n      \n      \n    \n  \n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Filippo Faccini \n            \n               \n            \n              PhD student\n            \n                \n            \n              \n              \n                \n                \n                  MS in Mechatronics Engineering | University of Trento | 2025   BS in Industrial Engineering | University of Trento | 2022\n                  \n                    \n                \n                  \n\n            \n            \n            \n          \n      \n      \n    \n  \n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Giovanni Maria Francesco La Scala \n            \n               \n            \n              PhD Student in System Engineering\n            \n                \n            \n              \n              \n                \n                \n                  M.S. Mechatronics Engineering | University of Trento | 2025   B.S. Cybernetic Engineering | University of Palermo | 2022\n                  \n                    \n                \n                  \n\n            \n            \n            \n          \n      \n      \n    \n  \n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Giovanni Scialla \n            \n               \n            \n              PhD student\n            \n                \n            \n              \n              \n                \n                \n                  MS in Artificial Intelligence Systems | University of Trento | 2024   BS in Computer Engineering | University of Modena and Reggio Emilia | 2021\n                  \n                    \n                \n                  \n\n            \n            \n            \n          \n      \n      \n    \n  \n    \n  \n\n\n\nNo matching items"
+    "text": "PhD Students\n\n\n\n  \n   \n\n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Francesco Baroni \n            \n               \n            \n              PhD student\n            \n\n            \n            \n          \n      \n      \n    \n  \n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Davide De Martini \n            \n               \n            \n              PhD student\n            \n\n            \n            \n          \n      \n      \n    \n  \n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Gioele Defrancesco \n            \n               \n            \n              PhD student\n            \n\n            \n            \n          \n      \n      \n    \n  \n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Filippo Faccini \n            \n               \n            \n              PhD student\n            \n\n            \n            \n          \n      \n      \n    \n  \n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Giovanni Maria Francesco La Scala \n            \n               \n            \n              PhD Student\n            \n\n            \n            \n          \n      \n      \n    \n  \n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Giovanni Scialla \n            \n               \n            \n              PhD student\n            \n\n            \n            \n          \n      \n      \n    \n  \n    \n  \n\n\n\nNo matching items"
   },
   {
     "objectID": "people/index.html#research-fellows",
     "href": "people/index.html#research-fellows",
     "title": "Our Team",
     "section": "Research Fellows",
-    "text": "Research Fellows\n\n\n\n  \n   \n\n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Sabrina Ciuffoletti \n            \n               \n            \n              Research Fellow\n            \n                \n            \n              \n              \n                \n                \n                  M.S. Mechatronics Engineering | University of Trento | 2026  B.S. Industrial Engineering | University of Trento | 2023\n                  \n                    \n                \n                  \n\n            \n            \n            \n          \n      \n      \n    \n  \n    \n  \n\n\n\nNo matching items"
+    "text": "Research Fellows\n\n\n\n  \n   \n\n     \n    \n    \n      \n      \n      \n      \n        \n          \n          \n          \n            \n          \n          \n          \n            \n            \n              Sabrina Ciuffoletti \n            \n               \n            \n              Research Fellow\n            \n\n            \n            \n          \n      \n      \n    \n  \n    \n  \n\n\n\nNo matching items"
   },
   {
     "objectID": "people/piazza-mattia/index.html#education",
@@ -252,25 +594,25 @@
     "text": "Education\nM.S. Mechatronics Engineering | University of Trento | 2020  B.S. Mechanical Engineering | University of Udine | 2017"
   },
   {
-    "objectID": "people/piazza-mattia/index.html#group-publications",
-    "href": "people/piazza-mattia/index.html#group-publications",
+    "objectID": "people/piazza-mattia/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications",
+    "href": "people/piazza-mattia/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications",
     "title": "Mattia Piazza",
-    "section": "Group Publications",
-    "text": "Group Publications\n\n\n    \n      \n      \n    \n\n\n    \n    \n\nNo matching items"
+    "section": "Mattia’s Group Publications",
+    "text": "Mattia’s Group Publications\n\n\n    \n      \n      \n    \n\n\n\n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                nnodely – neuralize your model\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini, \n                    Alice Plebe, \n                    Mojtaba Sharifzadeh, \n                    Mattia Piazza, \n                    Sebastiano Taddei, \n                    Giovanni Scialla, \n                    Francesco Baroni, \n                    Davide De Martini, \n                    Giovanni Maria Francesco La Scala, \n                    Gioele Defrancesco, \n                    Filippo Faccini \n            \n            \n            \n                \n                \n                    ICRA 2026 — Late breaking results (2026)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items"
   },
   {
     "objectID": "people/rosati-papini-gastone-pietro/index.html#education",
     "href": "people/rosati-papini-gastone-pietro/index.html#education",
     "title": "Gastone Pietro  Rosati Papini",
     "section": "Education",
-    "text": "Education\nPh.D. in Emerging Digital Technologies | Sant’Anna University | 2016"
+    "text": "Education\nPh.D. in Emerging Digital Technologies | Sant’Anna University (PERCRO), Pisa | 2016  M.S. in Automation Engineering | University of Pisa | 2011  B.S. in Software Engineering | University of Pisa | 2007"
   },
   {
-    "objectID": "people/rosati-papini-gastone-pietro/index.html#group-publications",
-    "href": "people/rosati-papini-gastone-pietro/index.html#group-publications",
+    "objectID": "people/rosati-papini-gastone-pietro/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications",
+    "href": "people/rosati-papini-gastone-pietro/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications",
     "title": "Gastone Pietro  Rosati Papini",
-    "section": "Group Publications",
-    "text": "Group Publications\n\n\n    \n      \n      \n    \n\n\n    \n    \n\nNo matching items"
+    "section": "Gastone Pietro’s Group Publications",
+    "text": "Gastone Pietro’s Group Publications\n\n\n    \n      \n      \n    \n\n\n\n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks\n            \n            \n            \n                \n                    Mattia Piccinini, \n                    Matteo Zumerle, \n                    Johannes Betz, \n                    Gastone Pietro Rosati Papini \n            \n            \n            \n                \n                \n                    IEEE Open Journal of Intelligent Transportation Systems (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                 | \n                \n                    CODE \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                Vehicle Dynamics Learning From Physics Priors With Model-Structured Neural Networks\n            \n            \n            \n                \n                    Aniello Mungiello, \n                    Felix Jahncke, \n                    Stefania Santini, \n                    Johannes Betz, \n                    Gastone Pietro Rosati Papini, \n                    Mattia Piccinini \n            \n            \n            \n                \n                \n                    IEEE Open Journal of Intelligent Transportation Systems (2026)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                 | \n                \n                    CODE \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                Model-Structured Neural Networks to Control the Steering Dynamics of Autonomous Race Cars\n            \n            \n            \n                \n                    Mattia Piccinini, \n                    Aniello Mungiello, \n                    Georg Jank, \n                    Gastone Pietro Rosati Papini, \n                    Francesco Biral, \n                    Johannes Betz \n            \n            \n            \n                \n                \n                    ITSC 2025 (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    CODE \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                Model-Structured Neural Networks to Model & Control Robots\n            \n            \n            \n                \n                    Mattia Piccinini, \n                    Aniello Mungiello, \n                    Johannes Betz, \n                    Gastone Pietro Rosati Papini \n            \n            \n            \n                \n                \n                    ICRA 2025 — Late breaking results (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                nnodely – neuralize your model\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini, \n                    Alice Plebe, \n                    Mojtaba Sharifzadeh, \n                    Mattia Piazza, \n                    Sebastiano Taddei, \n                    Giovanni Scialla, \n                    Francesco Baroni, \n                    Davide De Martini, \n                    Giovanni Maria Francesco La Scala, \n                    Gioele Defrancesco, \n                    Filippo Faccini \n            \n            \n            \n                \n                \n                    ICRA 2026 — Late breaking results (2026)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                A Framework for Model-Structured Neural Networks\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini, \n                    Mattia Piccinini \n            \n            \n            \n                \n                \n                    Department of Industrial Engineering, University of Trento (2024)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                A framework for design model-structured neural networks for model and control physical systems\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini \n            \n            \n            \n                \n                \n                    UPAEP University, Puebla, Mexico (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini \n            \n            \n            \n                \n                \n                    Chitkara University, India (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                NNodely: An Open Framework for Model-Structured Neural Networks in Robotics\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini, \n                    Mattia Piccinini \n            \n            \n            \n                \n                \n                    Ekumen Robotics Software Company, Germany (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini \n            \n            \n            \n                \n                \n                    Workshop-COSENO, University of Trento, Italy (2025)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                Complex self-driving behaviors emerging from affordance competition in layered control architectures\n            \n            \n            \n                \n                    Mauro Da Lio, \n                    Antonello Cherubini, \n                    Gastone Pietro Rosati Papini, \n                    Alice Plebe \n            \n            \n            \n                \n                \n                    Cognitive Systems Research (2022)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                Efficient Prediction of Human Motion for Real-Time Robotics Applications With Physics-Inspired Neural Networks\n            \n            \n            \n                \n                    Alessandro Antonucci, \n                    Gastone Pietro Rosati Papini, \n                    Paolo Bevilacqua, \n                    Luigi Palopoli, \n                    Daniele Fontanelli \n            \n            \n            \n                \n                \n                    IEEE Access (2021)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                A Reinforcement Learning Approach for Enacting Cautious Behaviours in Autonomous Driving\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini, \n                    Alice Plebe, \n                    Mauro Da Lio, \n                    Riccardo Donà \n            \n            \n            \n                \n                \n                    IEEE Transactions on Intelligent Transportation Systems (2021)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                A Mental Simulation Approach for Learning Neural-Network Predictive Control (in Self-Driving Cars)\n            \n            \n            \n                \n                    Mauro Da Lio, \n                    Riccardo Donà, \n                    Gastone Pietro Rosati Papini, \n                    Francesco Biral, \n                    Henrik Svensson \n            \n            \n            \n                \n                \n                    IEEE Access (2020)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                Modelling longitudinal vehicle dynamics with neural networks\n            \n            \n            \n                \n                    Mauro Da Lio, \n                    Daniele Bortoluzzi, \n                    Gastone Pietro Rosati Papini \n            \n            \n            \n                \n                \n                    Vehicle System Dynamics (2019)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                    DOI \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                 | \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items"
   },
   {
     "objectID": "people/taddei-sebastiano/index.html#education",
@@ -284,27 +626,305 @@
     "href": "people/taddei-sebastiano/index.html#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications",
     "title": "Sebastiano Taddei",
     "section": "Sebastiano’s Group Publications",
-    "text": "Sebastiano’s Group Publications\n\n\n    \n      \n      \n    \n\n\n    \n    \n\nNo matching items"
+    "text": "Sebastiano’s Group Publications\n\n\n    \n      \n      \n    \n\n\n\n    \n    \n    \n        \n            \n            \n                \n                    \n                    \n                \n            \n            \n        \n        \n            \n                nnodely – neuralize your model\n            \n            \n            \n                \n                    Gastone Pietro Rosati Papini, \n                    Alice Plebe, \n                    Mojtaba Sharifzadeh, \n                    Mattia Piazza, \n                    Sebastiano Taddei, \n                    Giovanni Scialla, \n                    Francesco Baroni, \n                    Davide De Martini, \n                    Giovanni Maria Francesco La Scala, \n                    Gioele Defrancesco, \n                    Filippo Faccini \n            \n            \n            \n                \n                \n                    ICRA 2026 — Late breaking results (2026)\n                \n            \n            \n            \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                \n                    PDF \n                \n                \n            \n        \n    \n    \n    \n    \n\nNo matching items"
   },
   {
-    "objectID": "publications/2025_RoadFrictionAware_IEEE_OJITS/index.html",
-    "href": "publications/2025_RoadFrictionAware_IEEE_OJITS/index.html",
-    "title": "A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks",
+    "objectID": "publications/papers/2025-itsc-steering-dynamics-a2rl/index.html",
+    "href": "publications/papers/2025-itsc-steering-dynamics-a2rl/index.html",
+    "title": "Model-Structured Neural Networks to Control the Steering Dynamics of Autonomous Race Cars",
     "section": "",
-    "text": "The anti-lock braking system (ABS) is a vital safety feature in modern vehicles, preventing wheel lock during emergency braking. However, the performance of conventional ABS is often limited by the lack of real-time road friction information. This paper introduces a novel road friction-aware ABS, leveraging model-structured neural networks (MS-NNs) to learn the vehicle longitudinal dynamics in different road conditions. Our framework uses a robust criterion to dynamically select from a set of pre-trained MS-NNs based on the available sensor data, enabling real-time road friction estimation and autonomous adaptation of the ABS parameters. Simulation experiments demonstrate that the proposed MS-NN-based ABS significantly improves safety and performance across varying road conditions: the braking distances are reduced by 3.0%-40.4% compared to a conventional ABS, tuned for a specific road condition. Furthermore, the MS-NN’s architecture shows better accuracy, generalization and sample-efficiency compared to other neural networks in the literature, and is suitable for real-time deployment on automotive-grade hardware. Our implementation is open source and available in a public repository."
+    "text": "Autonomous vehicle racing has attracted increasing attention in recent years, as a safe and controlled environment to accelerate the development of autonomous driving. This has led to the development of advanced algorithms in vehicle perception, motion planning, and control. Deep learning models, predominantly based on neural networks (NNs), have demonstrated significant potential in modeling the vehicle dynamics and in performing various tasks in autonomous driving. However, their black-box nature is critical in the context of autonomous racing, where safety and robustness demand a thorough understanding of the decision-making algorithms. To address this challenge, this paper proposes MS-NN-steer, a new model-structured neural network for vehicle steering control, integrating the prior knowledge of the nonlinear vehicle dynamics into the neural architecture. The proposed controller is validated using real-world data from the Abu Dhabi Autonomous Racing League (A2RL) competition, with full-scale autonomous race cars. In comparison with general-purpose NNs, MS-NN-steer is shown to achieve better accuracy and generalization with small training datasets, while being less sensitive to the weights’ initialization. Also, MS-NN-steer outperforms the steering controller used by the A2RL winning team. Our implementation is available open-source in a public repository.",
+    "crumbs": [
+      "Home",
+      "Journal and conference papers",
+      "Model-Structured Neural Networks to Control the Steering Dynamics of Autonomous Race Cars"
+    ]
   },
   {
-    "objectID": "publications/2025_RoadFrictionAware_IEEE_OJITS/index.html#abstract",
-    "href": "publications/2025_RoadFrictionAware_IEEE_OJITS/index.html#abstract",
-    "title": "A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks",
+    "objectID": "publications/papers/2025-itsc-steering-dynamics-a2rl/index.html#abstract",
+    "href": "publications/papers/2025-itsc-steering-dynamics-a2rl/index.html#abstract",
+    "title": "Model-Structured Neural Networks to Control the Steering Dynamics of Autonomous Race Cars",
     "section": "",
-    "text": "The anti-lock braking system (ABS) is a vital safety feature in modern vehicles, preventing wheel lock during emergency braking. However, the performance of conventional ABS is often limited by the lack of real-time road friction information. This paper introduces a novel road friction-aware ABS, leveraging model-structured neural networks (MS-NNs) to learn the vehicle longitudinal dynamics in different road conditions. Our framework uses a robust criterion to dynamically select from a set of pre-trained MS-NNs based on the available sensor data, enabling real-time road friction estimation and autonomous adaptation of the ABS parameters. Simulation experiments demonstrate that the proposed MS-NN-based ABS significantly improves safety and performance across varying road conditions: the braking distances are reduced by 3.0%-40.4% compared to a conventional ABS, tuned for a specific road condition. Furthermore, the MS-NN’s architecture shows better accuracy, generalization and sample-efficiency compared to other neural networks in the literature, and is suitable for real-time deployment on automotive-grade hardware. Our implementation is open source and available in a public repository."
+    "text": "Autonomous vehicle racing has attracted increasing attention in recent years, as a safe and controlled environment to accelerate the development of autonomous driving. This has led to the development of advanced algorithms in vehicle perception, motion planning, and control. Deep learning models, predominantly based on neural networks (NNs), have demonstrated significant potential in modeling the vehicle dynamics and in performing various tasks in autonomous driving. However, their black-box nature is critical in the context of autonomous racing, where safety and robustness demand a thorough understanding of the decision-making algorithms. To address this challenge, this paper proposes MS-NN-steer, a new model-structured neural network for vehicle steering control, integrating the prior knowledge of the nonlinear vehicle dynamics into the neural architecture. The proposed controller is validated using real-world data from the Abu Dhabi Autonomous Racing League (A2RL) competition, with full-scale autonomous race cars. In comparison with general-purpose NNs, MS-NN-steer is shown to achieve better accuracy and generalization with small training datasets, while being less sensitive to the weights’ initialization. Also, MS-NN-steer outperforms the steering controller used by the A2RL winning team. Our implementation is available open-source in a public repository.",
+    "crumbs": [
+      "Home",
+      "Journal and conference papers",
+      "Model-Structured Neural Networks to Control the Steering Dynamics of Autonomous Race Cars"
+    ]
   },
   {
-    "objectID": "related/2025_RoadFrictionAware_IEEE_OJITS/index.html",
-    "href": "related/2025_RoadFrictionAware_IEEE_OJITS/index.html",
-    "title": "A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks",
+    "objectID": "publications/papers/2025-itsc-steering-dynamics-a2rl/index.html#video",
+    "href": "publications/papers/2025-itsc-steering-dynamics-a2rl/index.html#video",
+    "title": "Model-Structured Neural Networks to Control the Steering Dynamics of Autonomous Race Cars",
+    "section": "Video",
+    "text": "Video",
+    "crumbs": [
+      "Home",
+      "Journal and conference papers",
+      "Model-Structured Neural Networks to Control the Steering Dynamics of Autonomous Race Cars"
+    ]
+  },
+  {
+    "objectID": "publications/papers/2025-itsc-steering-dynamics-a2rl/index.html#model-structured-neural-network-for-steering-dynamics",
+    "href": "publications/papers/2025-itsc-steering-dynamics-a2rl/index.html#model-structured-neural-network-for-steering-dynamics",
+    "title": "Model-Structured Neural Networks to Control the Steering Dynamics of Autonomous Race Cars",
+    "section": "Model-structured neural network for steering dynamics",
+    "text": "Model-structured neural network for steering dynamics\nMS-NN-steer is a feedforward steering controller in the TUM Autonomous Motorsport stack: it maps planned trajectories from a Tube-MPC planner to the steering angle \\(\\delta_k\\) at the current time step. Inputs are windows of future planned lateral acceleration \\(a_y\\), longitudinal acceleration \\(a_x\\), and speed \\(v_x\\) (Eq. (1) in the paper). The controller is combined with a feedback steering loop and a longitudinal controller so that \\(\\delta_k = \\delta_{\\mathrm{ff},k} + \\delta_{\\mathrm{fb},k}\\).\n\nControl framework overview (Figure 2)\nFigure 2 shows how MS-NN-steer is integrated in the full-scale A2RL control architecture. The trajectory planner provides target \\(v_x\\), \\(a_x\\), and a horizon of \\([a_y, v_x, a_x]_{k,\\ldots,k+q}\\). The longitudinal controller commands the pedal \\(p_k\\) from \\(v_x\\) and \\(a_x\\) targets and measured \\(\\hat{v}_{x_k}\\), \\(\\hat{a}_{x_k}\\). MS-NN-steer (feedforward) outputs \\(\\delta_{\\mathrm{ff},k}\\) from the planned trajectory; the feedback steering controller adds \\(\\delta_{\\mathrm{fb},k}\\) from the measured lateral acceleration \\(\\hat{a}_{y_k}\\). The sum \\(\\delta_{D,k}\\) is applied to the race car, closing the loop with onboard estimates.\n\n\n\n\n\nMS-NN-steer architecture (Figure 4)\nFigure 4 details the internal structure of MS-NN-steer. The network extends MS-NN-base with a learnable understeering term \\(k_y(v_x)\\) in the quasi steady-state block \\(G(a_y, v_x, a_x, k_y(v_x))\\), which captures how steering characteristics change at racing speeds. Local neuro-fuzzy models \\(g_{il}(\\cdot)\\) are activated by membership functions \\(\\phi_{il}(|a_{y_k}|, a_{x_k})\\) and blended in \\(G(\\cdot)\\). A transient dynamics stage then applies local layers \\(F_{jl}\\) with \\(\\phi_{jl}(v_{x_k}, a_{x_k})\\) over the input window to output the steering angle \\(\\delta_k\\). The expanded view at the bottom of the figure shows the parallel local models inside \\(G(\\cdot)\\).\n\n\n\nThe MS-NN-steer blocks are implemented with the nnodely framework for structured architectures and deployment in the autonomous racing stack.",
+    "crumbs": [
+      "Home",
+      "Journal and conference papers",
+      "Model-Structured Neural Networks to Control the Steering Dynamics of Autonomous Race Cars"
+    ]
+  },
+  {
+    "objectID": "publications/papers/2026-vehicle-dynamics-msnn/index.html",
+    "href": "publications/papers/2026-vehicle-dynamics-msnn/index.html",
+    "title": "Vehicle Dynamics Learning From Physics Priors With Model-Structured Neural Networks",
     "section": "",
-    "text": "Back to top"
+    "text": "Modeling the vehicle dynamics near the handling limits is crucial for autonomous driving and racing. However, building accurate models remains challenging due to strong nonlinearities, limited data availability, and changing environmental conditions. Physics-based models offer interpretability but require costly parameter identification, while general-purpose neural networks typically need large datasets to generalize. This paper introduces a new model-structured neural network (MS-NN-full) that learns the coupled lateral–longitudinal vehicle dynamics by embedding physical knowledge into its internal architecture. MS-NN-full combines physics-inspired neuro-fuzzy models with data-driven components to capture the quasi-steady-state and transient behavior, as well as the mutual coupling between the lateral and longitudinal dynamics. Experimental results on a 1:10-scale autonomous vehicle show that MS-NN-full outperforms existing MSNN baselines and general-purpose neural networks in accuracy and generalization, using less than two minutes of training data. The model also demonstrates rapid adaptation to new tire configurations and increased vehicle mass with minimal fine-tuning. We release our implementation and datasets to support further research in physics-guided learning for autonomous systems.",
+    "crumbs": [
+      "Home",
+      "Journal and conference papers",
+      "Vehicle Dynamics Learning From Physics Priors With Model-Structured Neural Networks"
+    ]
+  },
+  {
+    "objectID": "publications/papers/2026-vehicle-dynamics-msnn/index.html#abstract",
+    "href": "publications/papers/2026-vehicle-dynamics-msnn/index.html#abstract",
+    "title": "Vehicle Dynamics Learning From Physics Priors With Model-Structured Neural Networks",
+    "section": "",
+    "text": "Modeling the vehicle dynamics near the handling limits is crucial for autonomous driving and racing. However, building accurate models remains challenging due to strong nonlinearities, limited data availability, and changing environmental conditions. Physics-based models offer interpretability but require costly parameter identification, while general-purpose neural networks typically need large datasets to generalize. This paper introduces a new model-structured neural network (MS-NN-full) that learns the coupled lateral–longitudinal vehicle dynamics by embedding physical knowledge into its internal architecture. MS-NN-full combines physics-inspired neuro-fuzzy models with data-driven components to capture the quasi-steady-state and transient behavior, as well as the mutual coupling between the lateral and longitudinal dynamics. Experimental results on a 1:10-scale autonomous vehicle show that MS-NN-full outperforms existing MSNN baselines and general-purpose neural networks in accuracy and generalization, using less than two minutes of training data. The model also demonstrates rapid adaptation to new tire configurations and increased vehicle mass with minimal fine-tuning. We release our implementation and datasets to support further research in physics-guided learning for autonomous systems.",
+    "crumbs": [
+      "Home",
+      "Journal and conference papers",
+      "Vehicle Dynamics Learning From Physics Priors With Model-Structured Neural Networks"
+    ]
+  },
+  {
+    "objectID": "publications/papers/2026-vehicle-dynamics-msnn/index.html#model-structured-neural-network-for-vehicle-dynamics",
+    "href": "publications/papers/2026-vehicle-dynamics-msnn/index.html#model-structured-neural-network-for-vehicle-dynamics",
+    "title": "Vehicle Dynamics Learning From Physics Priors With Model-Structured Neural Networks",
+    "section": "Model-structured neural network for vehicle dynamics",
+    "text": "Model-structured neural network for vehicle dynamics\nMS-NN-full learns coupled lateral–longitudinal dynamics on a RoboRacer platform. It takes windows of longitudinal speed \\(v_x\\), steering angle \\(\\delta\\), motor current \\(i\\), and road slope \\(\\theta\\), and predicts yaw rate \\(\\Omega\\) and longitudinal acceleration \\(a_x\\). The architecture comprises two interconnected sub-networks—MS-NN-lat and MS-NN-long—trained in two stages: independent fitting of each sub-network, then fine-tuning of the closed-loop MS-NN-full. Gray signals in the full model close the loop: \\(a_x\\) from MS-NN-long feeds MS-NN-lat, and \\(\\Omega\\) from MS-NN-lat feeds MS-NN-long.\n\nMS-NN-full architecture (Figure 1)\nFigure 1(a) shows the overall MS-NN-full architecture. Green arrows denote inputs (past windows of \\(v_x\\), \\(\\delta\\), \\(i\\), and \\(\\theta\\)) and outputs (\\(\\hat{\\Omega}\\), \\(\\hat{a}_x\\)). Gray signals are internal variables linking MS-NN-lat (lateral) and MS-NN-long (longitudinal), capturing their mutual influence near the handling limits.\n\n\n\n\n\nMS-NN-lat architecture (Figure 1b)\nFigure 1(b) details MS-NN-lat, which learns the combined lateral vehicle dynamics. The network combines a quasi steady-state block \\(S(\\delta, v_x, a_x)\\)—built from local neuro-fuzzy models on the handling diagram—with a transient dynamics stage. Local fully connected layers \\(F_{lp}\\) (purple blocks) are activated by membership functions \\(\\psi_{lp}(v_x, a_x)\\); their outputs are blended over the input window and multiplied by \\(v_{x_k}\\) to obtain \\(\\hat{\\Omega}_k\\), following Eq. (5) in the paper.\n\n\n\n\n\nMS-NN-long architecture (Figure 3)\nFigure 3 shows MS-NN-long, which predicts longitudinal acceleration \\(\\hat{a}_{x_k}\\) from windows of motor current \\(i\\), speed \\(v_x\\), steering \\(\\delta_k\\), road slope \\(\\theta_k\\), and yaw rate \\(\\Omega\\) (from MS-NN-lat). The architecture includes a lateral force model (steady-state and transient blocks estimating front lateral force \\(F_{y_{f_k}}\\)), an actuation model (neural networks \\(G_1\\)–\\(G_4\\) learning motor torque \\(T_{t_k}\\) and brake torque \\(T_{b_k}\\) from \\(i_k\\)), and a physics model \\(\\pi\\) that integrates these contributions with \\(\\delta_k\\), \\(v_{x_k}\\), and \\(\\theta_k\\) to output \\(\\hat{a}_{x_k}\\). The symbol \\(\\odot\\) denotes the Hadamard (element-wise) product.\n\n\n\nThe MS-NN blocks are implemented with the nnodely framework for structured architectures and deployment on embedded platforms.",
+    "crumbs": [
+      "Home",
+      "Journal and conference papers",
+      "Vehicle Dynamics Learning From Physics Priors With Model-Structured Neural Networks"
+    ]
+  },
+  {
+    "objectID": "publications/posters/2026-icra-lbr-msnn-overview/index.html",
+    "href": "publications/posters/2026-icra-lbr-msnn-overview/index.html",
+    "title": "nnodely – neuralize your model",
+    "section": "",
+    "text": "Back to top",
+    "crumbs": [
+      "Home",
+      "Posters",
+      "nnodely – neuralize your model"
+    ]
+  },
+  {
+    "objectID": "publications/presentations/2025-06-framework-upaep/index.html",
+    "href": "publications/presentations/2025-06-framework-upaep/index.html",
+    "title": "A framework for design model-structured neural networks for model and control physical systems",
+    "section": "",
+    "text": "Presentation by Gastone Pietro Rosati Papini at UPAEP University, Puebla, Mexico (2025) on a framework for designing model-structured neural networks for modeling and control of physical systems. The talk covers the Neu4mes project, motivation for MSNNs versus black-box networks, the nnodely workflow, and demonstrative use cases on drones, quadrupeds, and vehicles.",
+    "crumbs": [
+      "Home",
+      "Presentations",
+      "A framework for design model-structured neural networks for model and control physical systems"
+    ]
+  },
+  {
+    "objectID": "publications/presentations/2025-06-framework-upaep/index.html#summary",
+    "href": "publications/presentations/2025-06-framework-upaep/index.html#summary",
+    "title": "A framework for design model-structured neural networks for model and control physical systems",
+    "section": "",
+    "text": "Presentation by Gastone Pietro Rosati Papini at UPAEP University, Puebla, Mexico (2025) on a framework for designing model-structured neural networks for modeling and control of physical systems. The talk covers the Neu4mes project, motivation for MSNNs versus black-box networks, the nnodely workflow, and demonstrative use cases on drones, quadrupeds, and vehicles.",
+    "crumbs": [
+      "Home",
+      "Presentations",
+      "A framework for design model-structured neural networks for model and control physical systems"
+    ]
+  },
+  {
+    "objectID": "publications/presentations/2025-09-nnodely-ekumen/index.html",
+    "href": "publications/presentations/2025-09-nnodely-ekumen/index.html",
+    "title": "NNodely: An Open Framework for Model-Structured Neural Networks in Robotics",
+    "section": "",
+    "text": "Presentation by Gastone Pietro Rosati Papini and Mattia Piccinini University of Trento & Technical University of Munich at Ekumen Robotics Software Company, Germany (2025). The talk NNodely: An Open Framework for Model-Structured Neural Networks in Robotics presents the open nnodely framework, contrasts black-box deep learning with physics-guided MSNNs, and discusses robotic use cases and deployment.",
+    "crumbs": [
+      "Home",
+      "Presentations",
+      "NNodely: An Open Framework for Model-Structured Neural Networks in Robotics"
+    ]
+  },
+  {
+    "objectID": "publications/presentations/2025-09-nnodely-ekumen/index.html#summary",
+    "href": "publications/presentations/2025-09-nnodely-ekumen/index.html#summary",
+    "title": "NNodely: An Open Framework for Model-Structured Neural Networks in Robotics",
+    "section": "",
+    "text": "Presentation by Gastone Pietro Rosati Papini and Mattia Piccinini University of Trento & Technical University of Munich at Ekumen Robotics Software Company, Germany (2025). The talk NNodely: An Open Framework for Model-Structured Neural Networks in Robotics presents the open nnodely framework, contrasts black-box deep learning with physics-guided MSNNs, and discusses robotic use cases and deployment.",
+    "crumbs": [
+      "Home",
+      "Presentations",
+      "NNodely: An Open Framework for Model-Structured Neural Networks in Robotics"
+    ]
+  },
+  {
+    "objectID": "publications/presentations/2025-09-nnodely-ekumen/index.html#video",
+    "href": "publications/presentations/2025-09-nnodely-ekumen/index.html#video",
+    "title": "NNodely: An Open Framework for Model-Structured Neural Networks in Robotics",
+    "section": "Video",
+    "text": "Video",
+    "crumbs": [
+      "Home",
+      "Presentations",
+      "NNodely: An Open Framework for Model-Structured Neural Networks in Robotics"
+    ]
+  },
+  {
+    "objectID": "publications/related/2018-subham-s-sahoo-learning-equations-for-extrapolation-and/index.html",
+    "href": "publications/related/2018-subham-s-sahoo-learning-equations-for-extrapolation-and/index.html",
+    "title": "Learning Equations for Extrapolation and Control",
+    "section": "",
+    "text": "We present an approach to identify concise equations from data using a shallow neural network approach. In contrast to ordinary black-box regression, this approach allows understanding functional relations and generalizing them from observed data to unseen parts of the parameter space. We show how to extend the class of learnable equations for a recently proposed equation learning network to include divisions, and we improve the learning and model selection strategy to be useful for challenging real-world data. For systems governed by analytical expressions, our method can in many cases identify the true underlying equation and extrapolate to unseen domains. We demonstrate its effectiveness by experiments on a cart-pendulum system, where only 2 random rollouts are required to learn the forward dynamics and successfully achieve the swing-up task.",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "Learning Equations for Extrapolation and Control"
+    ]
+  },
+  {
+    "objectID": "publications/related/2018-subham-s-sahoo-learning-equations-for-extrapolation-and/index.html#abstract",
+    "href": "publications/related/2018-subham-s-sahoo-learning-equations-for-extrapolation-and/index.html#abstract",
+    "title": "Learning Equations for Extrapolation and Control",
+    "section": "",
+    "text": "We present an approach to identify concise equations from data using a shallow neural network approach. In contrast to ordinary black-box regression, this approach allows understanding functional relations and generalizing them from observed data to unseen parts of the parameter space. We show how to extend the class of learnable equations for a recently proposed equation learning network to include divisions, and we improve the learning and model selection strategy to be useful for challenging real-world data. For systems governed by analytical expressions, our method can in many cases identify the true underlying equation and extrapolate to unseen domains. We demonstrate its effectiveness by experiments on a cart-pendulum system, where only 2 random rollouts are required to learn the forward dynamics and successfully achieve the swing-up task.",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "Learning Equations for Extrapolation and Control"
+    ]
+  },
+  {
+    "objectID": "publications/related/2018-subham-s-sahoo-learning-equations-for-extrapolation-and/index.html#equation-learning-neural-network-eql",
+    "href": "publications/related/2018-subham-s-sahoo-learning-equations-for-extrapolation-and/index.html#equation-learning-neural-network-eql",
+    "title": "Learning Equations for Extrapolation and Control",
+    "section": "Equation-learning neural network (EQL)",
+    "text": "Equation-learning neural network (EQL)\nThe paper extends the Equation Learner (EQL) of Martius and Lampert with division units, yielding EQL: a shallow, structured network whose hidden units are algebraic building blocks rather than homogeneous nonlinearities. The goal is to recover concise symbolic dynamics that extrapolate outside the training region—relevant for control and for the later model-structured line of work in Neu4mes.\n\nArchitecture (Figure 1)\nFigure 1 shows EQL with \\(L = 3\\) layers and one neuron per function type (\\(u = 3\\) unary, \\(v = 1\\) binary unit per layer). Each layer \\(l = 1,\\ldots,L\\) is built as follows:\n\nLinear mixing of the previous layer output: \\(\\mathbf{z}^{(l)} = W^{(l)} \\mathbf{y}^{(l-1)} + \\mathbf{w}_o^{(l)}\\).\nUnary units on the first \\(u\\) components of \\(\\mathbf{z}^{(l)}\\), with fixed elementary functions \\(f_i \\in \\{\\mathrm{id}, \\sin, \\cos\\}\\), so each channel applies one interpretable nonlinearity to a scalar input.\nBinary units on the remaining \\(2v\\) components, taken in pairs; in the hidden layers these are multiplication gates \\(g_j(a,b) = a \\cdot b\\), which compose products of sub-expressions.\nConcatenation of all unary and binary outputs into \\(\\mathbf{y}^{(l)}\\), which feeds the next layer.\n\nIn the original EQL, the last layer is a linear read-out \\(\\mathbf{y}^{(L)} = W^{(L)} \\mathbf{y}^{(L-1)} + \\mathbf{w}_o^{(L)}\\). In EQL÷, the output layer replaces this with regularized division units \\(h_\\theta(a,b)\\) that return \\(a/b\\) when \\(b &gt; \\theta\\) and \\(0\\) otherwise, so rational terms can appear in the learned equation while avoiding poles during training. Divisions are confined to the final layer; hidden layers keep products and trigonometric/id blocks only. Together, the stack implements a sparse symbolic expression (sums of products, sines, cosines, and ratios) whose structure is fixed but whose connectivity and linear weights are learned from data.",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "Learning Equations for Extrapolation and Control"
+    ]
+  },
+  {
+    "objectID": "publications/related/2020-mauro-da-lio-a-mental-simulation-approach-for-learning-/index.html",
+    "href": "publications/related/2020-mauro-da-lio-a-mental-simulation-approach-for-learning-/index.html",
+    "title": "A Mental Simulation Approach for Learning Neural-Network Predictive Control (in Self-Driving Cars)",
+    "section": "",
+    "text": "This paper presents a novel approach to learning predictive motor control via mental simulations. The method, inspired by learning through mental imagery in natural cognition, develops in two phases: first, learning predictive (forward) models from data recorded during interaction with the environment; then, at a deferred time, synthesising inverse (control) models via offline episodic simulations. Compared with the classical human-engineered workflow—mathematical modelling of direct dynamics followed by optimal-control inversion—the mental-simulation pipeline gives the agent more autonomy while humans still provide efficient templates for the forward and inverse networks. The networks are built from interpretable local models, in line with cerebellar organisation. The work is demonstrated on lateral vehicle dynamics for a production car (Dreams4Cars), including a first-round forward/inverse pair contrasted with model predictive control, and a second iteration that refines the networks.",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "A Mental Simulation Approach for Learning Neural-Network Predictive Control (in Self-Driving Cars)"
+    ]
+  },
+  {
+    "objectID": "publications/related/2020-mauro-da-lio-a-mental-simulation-approach-for-learning-/index.html#abstract",
+    "href": "publications/related/2020-mauro-da-lio-a-mental-simulation-approach-for-learning-/index.html#abstract",
+    "title": "A Mental Simulation Approach for Learning Neural-Network Predictive Control (in Self-Driving Cars)",
+    "section": "",
+    "text": "This paper presents a novel approach to learning predictive motor control via mental simulations. The method, inspired by learning through mental imagery in natural cognition, develops in two phases: first, learning predictive (forward) models from data recorded during interaction with the environment; then, at a deferred time, synthesising inverse (control) models via offline episodic simulations. Compared with the classical human-engineered workflow—mathematical modelling of direct dynamics followed by optimal-control inversion—the mental-simulation pipeline gives the agent more autonomy while humans still provide efficient templates for the forward and inverse networks. The networks are built from interpretable local models, in line with cerebellar organisation. The work is demonstrated on lateral vehicle dynamics for a production car (Dreams4Cars), including a first-round forward/inverse pair contrasted with model predictive control, and a second iteration that refines the networks.",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "A Mental Simulation Approach for Learning Neural-Network Predictive Control (in Self-Driving Cars)"
+    ]
+  },
+  {
+    "objectID": "publications/related/2020-mauro-da-lio-a-mental-simulation-approach-for-learning-/index.html#mental-simulation-for-predictive-control",
+    "href": "publications/related/2020-mauro-da-lio-a-mental-simulation-approach-for-learning-/index.html#mental-simulation-for-predictive-control",
+    "title": "A Mental Simulation Approach for Learning Neural-Network Predictive Control (in Self-Driving Cars)",
+    "section": "Mental simulation for predictive control",
+    "text": "Mental simulation for predictive control\nThe paper reframes autonomous driving control learning as a two-stage cognitive workflow rather than a single monolithic optimisation. Stage A learns how the vehicle responds (forward dynamics); Stage B learns how to steer that response (inverse control) by imagining episodes on the already trained forward model—without collecting new on-road data for the inverse map.\n\nTraditional vs cognitive workflow (Figure 1)\nFigure 1 contrasts the traditional pipeline (human derives equations, then MPC or similar inverts them online) with the cognitive pipeline proposed here. In the cognitive path, a forward neural model is trained from vehicle logs (stage A, blue block). If needed, the forward model is refined (dashed feedback). Stage B (green) then trains an inverse model offline using mental simulations on the forward model, instead of hand-derived differential equations. This separation mirrors control engineering (model, then controller) but replaces explicit maths with structured neural templates at both steps.\n\n\n\n\n\nForward model: LTV lateral dynamics (Figure 3)\nFigure 3 shows the forward network for lateral dynamics, posed as a linear time-varying (LTV) map from steering \\(\\delta\\) and speed \\(v\\) to normalised lateral acceleration \\(\\kappa = \\ddot{y}/v^2\\). The architecture uses \\(M\\) local FIR models (here \\(M=3\\)), each active in a velocity band centred at \\(v_i\\). Past steering samples \\(\\delta_{t-n},\\ldots,\\delta_t\\) feed parallel branches; a velocity-dependent layer implements the under-steer gradient via \\((1 + A v^2)\\kappa\\), and the branches are blended so the network interpolates between impulse responses learned at the receptive-field centres. Training uses supervised pairs \\(\\{\\delta, v\\} \\rightarrow \\kappa\\) from a Jeep Renegade on a test track (lane-keeping and manoeuvres). The design encodes interpretable local dynamics—similar in spirit to cerebellar basis functions and to later model-structured networks in Neu4mes.\n\n\n\n\n\nLearning the inverse via mental simulations (Figure 5)\nFigure 5 explains stage B. The inverse model (white block) is still unknown; the forward model (cyan) is fixed after stage A. The agent proposes desired lateral-acceleration episodes \\(\\kappa_i(t)\\) and trains the inverse network so that its steering output \\(\\delta_i(t)\\), when passed through the forward model, reproduces \\(\\bar{\\kappa}_i(t) \\approx \\kappa_i(t)\\). This is an embodied mental simulation: control is tested on the learned plant in imagination, and weights are updated from the prediction error—no new physical rollouts for the inverse map. Episodes are built from short random segments of the training log combined with crossover, yielding thousands of imaginary trajectories.\n\n\n\n\n\nInverse model architecture (Figure 6)\nFigure 6 details the inverse network that realises the mental-simulation loop. A target \\(\\kappa\\) trajectory enters a single FIR branch (simpler than the forward net: one local model suffices in round 1). Past \\(\\kappa\\) values and speed thread through layers that reproduce the under-steer structure, including \\((1 + A v^2)\\kappa\\) with coefficient \\(A\\) reused from the forward model. The output is steering \\(\\delta\\). Because neither network is recurrent, FIFO buffers supply the delayed input vectors; the inverse output buffer feeds the forward network input during training. Round 2 in the paper extends the forward model (e.g. more local branches and nonlinear corrections); the same mental-simulation principle applies.\n\n\n\nTogether, the forward structure (Figure 3), the simulation-based training principle (Figure 5), and the inverse architecture (Figure 6) form an early structured-learning pipeline that foreshadows MSNN design and the nnodely framework in the Neu4mes project.",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "A Mental Simulation Approach for Learning Neural-Network Predictive Control (in Self-Driving Cars)"
+    ]
+  },
+  {
+    "objectID": "publications/related/2021-gastone-pietro-rosati-papini-a-reinforcement-learning-a/index.html",
+    "href": "publications/related/2021-gastone-pietro-rosati-papini-a-reinforcement-learning-a/index.html",
+    "title": "A Reinforcement Learning Approach for Enacting Cautious Behaviours in Autonomous Driving",
+    "section": "",
+    "text": "Driving requires handling unpredictable situations. When a pedestrian might suddenly cross the road, a prudent driver limits speed even before danger is certain. This work uses reinforcement learning to learn a safe speed function—a high-level behavioural directive that caps the requested cruising speed (RCS) of an existing autonomous driving system (ADS), rather than learning low-level control from scratch. A safe speed neural network (SSNN) maps the pedestrian context (gaps, orientation, speeds) onto discrete actions that decrease, keep, or increase the RCS so that emergency braking remains feasible if the pedestrian crosses unpredictably. Training uses deep Q-learning in the OpenDS simulator with distracted, crossing-prone pedestrians; the policy transfers to a real vehicle. Statistical analysis shows improved safety at comparable travel speeds. Code is available under MIT license (GitHub, Zenodo).",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "A Reinforcement Learning Approach for Enacting Cautious Behaviours in Autonomous Driving"
+    ]
+  },
+  {
+    "objectID": "publications/related/2021-gastone-pietro-rosati-papini-a-reinforcement-learning-a/index.html#abstract",
+    "href": "publications/related/2021-gastone-pietro-rosati-papini-a-reinforcement-learning-a/index.html#abstract",
+    "title": "A Reinforcement Learning Approach for Enacting Cautious Behaviours in Autonomous Driving",
+    "section": "",
+    "text": "Driving requires handling unpredictable situations. When a pedestrian might suddenly cross the road, a prudent driver limits speed even before danger is certain. This work uses reinforcement learning to learn a safe speed function—a high-level behavioural directive that caps the requested cruising speed (RCS) of an existing autonomous driving system (ADS), rather than learning low-level control from scratch. A safe speed neural network (SSNN) maps the pedestrian context (gaps, orientation, speeds) onto discrete actions that decrease, keep, or increase the RCS so that emergency braking remains feasible if the pedestrian crosses unpredictably. Training uses deep Q-learning in the OpenDS simulator with distracted, crossing-prone pedestrians; the policy transfers to a real vehicle. Statistical analysis shows improved safety at comparable travel speeds. Code is available under MIT license (GitHub, Zenodo).",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "A Reinforcement Learning Approach for Enacting Cautious Behaviours in Autonomous Driving"
+    ]
+  },
+  {
+    "objectID": "publications/related/2021-gastone-pietro-rosati-papini-a-reinforcement-learning-a/index.html#cautious-driving-with-a-structured-ssnn",
+    "href": "publications/related/2021-gastone-pietro-rosati-papini-a-reinforcement-learning-a/index.html#cautious-driving-with-a-structured-ssnn",
+    "title": "A Reinforcement Learning Approach for Enacting Cautious Behaviours in Autonomous Driving",
+    "section": "Cautious driving with a structured SSNN",
+    "text": "Cautious driving with a structured SSNN\nThe paper adopts a layered control architecture inspired by basal-ganglia inhibition of risky affordances: a full driver agent (ADS) still plans motion primitives, while a separate SSNN module assesses risk and adjusts only the RCS—the highest speed the agent is allowed to target. This extends cognition without relearning the entire sensorimotor stack.\nThe RL problem is model-free double DQL: state \\(\\mathbf{s}_t = \\langle v_t, q^*_t, p^*_t, \\alpha_t, w_t, \\Delta v_t \\rangle\\) collects vehicle speed, longitudinal and lateral gaps \\(q^*, p^*\\) to the pedestrian (normalised by vehicle and pedestrian size plus a safety margin \\(\\delta\\)), pedestrian orientation \\(\\alpha\\) and speed \\(w\\), and current RCS \\(\\Delta v\\). Actions \\(A = \\{-1, 0, 1\\}\\) step the RCS by \\(\\pm 0.25\\,\\mathrm{m/s}\\). The network outputs \\(\\langle Q(s,-1), Q(s,0), Q(s,1) \\rangle\\) directly (one Q-value per action) instead of a separate head per \\((s,a)\\) pair.\n\nChannel-coded architecture (Figure 5)\nFigure 5 is the core model-structured design. The first layer is not a conventional vectorisation of scalars: each continuous input is expanded with channel coding—a cumulative activation that turns a scalar into a population code where larger inputs progressively switch on more channels (logistic thresholds along the input range). This is an explicit structural choice, not an emergent representation inside a black-box MLP.\n\n\n\nInput\nRole\nChannels\n\n\n\n\n\\(v\\)\nVehicle speed\n10\n\n\n\\(\\Delta v\\)\nCurrent RCS\n10\n\n\n\\(q^*\\)\nLongitudinal gap to pedestrian\n10\n\n\n\\(p^*\\)\nLateral gap to pedestrian\n10\n\n\n\\(\\alpha\\)\nPedestrian orientation w.r.t. road\n5\n\n\n\\(w\\)\nPedestrian speed\n5\n\n\n\nTogether the channel layer has 50 input neurons. Channel coding supports piecewise policies, partitions the state space without collapse under imbalanced data, and yields disentangled channels that can be interpreted—e.g. thresholds on \\(p^*\\) are placed uniformly on \\([0, 10]\\,\\mathrm{m}\\) so the network is sensitive near the lane and saturates beyond \\(\\sim 10\\)–\\(12 m\\) (“far pedestrian”), avoiding over-trust in noisy lateral estimates; \\(q^*\\) uses similarly spaced channels to smooth behaviour along the road. After encoding, a single fully connected hidden layer (256 units, ELU) feeds a linear 3-neuron output for the Q-vector. Target and online networks share this layout in double DQL.\n\n\n\nTraining in OpenDS stresses rare but dangerous crossings; at inference the SSNN modulates RCS while the ADS still handles braking when the pedestrian is already on the road. The explicit channel-coding front-end—fixed topology, hand-placed receptive fields, interpretable saturation—is an early instance of embedding domain structure before learning, in line with later MSNN and nnodely work in Neu4mes.",
+    "crumbs": [
+      "Home",
+      "Related works",
+      "A Reinforcement Learning Approach for Enacting Cautious Behaviours in Autonomous Driving"
+    ]
+  },
+  {
+    "objectID": "wiki.html",
+    "href": "wiki.html",
+    "title": "Wiki",
+    "section": "",
+    "text": "The Neu4mes wiki will be the second main outcome of the project: a public knowledge base that documents the theory and practice behind model-structured neural networks (MSNNs) for autonomous systems."
+  },
+  {
+    "objectID": "wiki.html#purpose",
+    "href": "wiki.html#purpose",
+    "title": "Wiki",
+    "section": "Purpose",
+    "text": "Purpose\nThe wiki will distill the project’s theoretical foundations and make them accessible to researchers and industry. It will complement the framework by explaining why design choices are made, not only how to run the tools."
+  },
+  {
+    "objectID": "wiki.html#planned-content",
+    "href": "wiki.html#planned-content",
+    "title": "Wiki",
+    "section": "Planned content",
+    "text": "Planned content\nThe site is planned in MediaWiki format and will cover:\n\nMethodology — The six nnodely phases (PH1–PH6): definition, data, training, validation, export, and composition\nModel-structured neural networks (MSNN) — How physical structure (Newton–Euler principles, additive forces, rigid-body properties, etc.) is embedded in network architecture\nModeling and control — Neural models (NMs), neural controllers (NCs), training through the model, and validation strategies\nState of the art — Positioning relative to physics-informed networks, learning-based MPC, and hybrid model/data-driven approaches\nCase studies — Results and lessons from wheel vehicles, quadruped robots, and flying drones\nRisk mitigation — Documented procedures where automation is limited (e.g. dataset creation, validation when formal proofs are not available)"
+  },
+  {
+    "objectID": "wiki.html#community",
+    "href": "wiki.html#community",
+    "title": "Wiki",
+    "section": "Community",
+    "text": "Community\nThe wiki is intended to be open to the scientific and industrial community. Once online, it will:\n\nGuide MSNN development aligned with the Neu4mes framework\nReceive feedback, improvements, and collaboration proposals\nPublish updates as experimental and theoretical results mature over the project duration"
+  },
+  {
+    "objectID": "wiki.html#relation-to-the-framework",
+    "href": "wiki.html#relation-to-the-framework",
+    "title": "Wiki",
+    "section": "Relation to the framework",
+    "text": "Relation to the framework\n\n\n\n\n\n\n\nFramework\nWiki\n\n\n\n\nSoftware, libraries, export, APIs\nTheory, documentation, state of the art\n\n\nPH1–PH6 implementation (nnodely)\nPH1–PH6 foundations and explanations\n\n\nDeployment and integration\nKnowledge sharing and community input\n\n\n\nWhen the MediaWiki instance is online, its URL will be linked from this page and from the home page.\n\n\n\n\n\n\nWarningUnder development\n\n\n\nThe Neu4mes wiki is still being developed. Content, structure, and the public MediaWiki instance are not yet available. This page will be updated as the knowledge base is published."
   }
 ]

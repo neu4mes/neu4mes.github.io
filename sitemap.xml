@@ -1,91 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://neu4mes.github.io/related/index.html</loc>
-    <lastmod>2026-05-19T15:34:41.327Z</lastmod>
+    <loc>https://neu4mes.github.io/work-with-us.html</loc>
+    <lastmod>2026-05-23T13:49:37.652Z</lastmod>
+  </url>
+  <url>
+    <loc>https://neu4mes.github.io/publications/related/2022-mauro-da-lio-complex-self-driving-behaviors-emerging-fr/index.html</loc>
+    <lastmod>2026-05-23T13:49:37.640Z</lastmod>
+  </url>
+  <url>
+    <loc>https://neu4mes.github.io/publications/related/2021-alessandro-antonucci-efficient-prediction-of-human-motion-for/index.html</loc>
+    <lastmod>2026-05-23T13:49:37.614Z</lastmod>
+  </url>
+  <url>
+    <loc>https://neu4mes.github.io/publications/related/2019-mauro-da-lio-modelling-longitudinal-vehicle-dynamics-wi/index.html</loc>
+    <lastmod>2026-05-23T13:49:37.587Z</lastmod>
+  </url>
+  <url>
+    <loc>https://neu4mes.github.io/publications/presentations/2025-10-framework-trento/index.html</loc>
+    <lastmod>2026-05-23T13:49:37.573Z</lastmod>
+  </url>
+  <url>
+    <loc>https://neu4mes.github.io/publications/presentations/2025-08-framework-design-trento/index.html</loc>
+    <lastmod>2026-05-23T13:49:37.561Z</lastmod>
+  </url>
+  <url>
+    <loc>https://neu4mes.github.io/publications/presentations/2024-11-framework-dii/index.html</loc>
+    <lastmod>2026-05-23T13:49:37.517Z</lastmod>
+  </url>
+  <url>
+    <loc>https://neu4mes.github.io/publications/posters/2025-icra-lbr-nnodely/index.html</loc>
+    <lastmod>2026-05-23T13:49:37.464Z</lastmod>
+  </url>
+  <url>
+    <loc>https://neu4mes.github.io/publications/papers/2025-road-friction-aware-abs/index.html</loc>
+    <lastmod>2026-05-23T13:49:37.439Z</lastmod>
   </url>
   <url>
     <loc>https://neu4mes.github.io/publications/index.html</loc>
-    <lastmod>2026-05-19T15:34:41.326Z</lastmod>
-  </url>
-  <url>
-    <loc>https://neu4mes.github.io/publications.html</loc>
-    <lastmod>2026-05-19T15:34:41.325Z</lastmod>
+    <lastmod>2026-05-23T13:49:37.421Z</lastmod>
   </url>
   <url>
     <loc>https://neu4mes.github.io/people/scialla-giovanni/index.html</loc>
-    <lastmod>2026-05-19T15:34:41.319Z</lastmod>
+    <lastmod>2026-05-23T13:49:37.416Z</lastmod>
   </url>
   <url>
     <loc>https://neu4mes.github.io/people/plebe-alice/index.html</loc>
-    <lastmod>2026-05-19T15:34:41.318Z</lastmod>
+    <lastmod>2026-05-23T13:49:37.412Z</lastmod>
   </url>
   <url>
     <loc>https://neu4mes.github.io/people/la-scala-giovanni-maria-francesco/index.html</loc>
-    <lastmod>2026-05-19T15:34:41.310Z</lastmod>
+    <lastmod>2026-05-23T13:49:37.407Z</lastmod>
   </url>
   <url>
     <loc>https://neu4mes.github.io/people/filippo-faccini/index.html</loc>
-    <lastmod>2026-05-19T15:34:41.310Z</lastmod>
+    <lastmod>2026-05-23T13:49:37.407Z</lastmod>
   </url>
   <url>
     <loc>https://neu4mes.github.io/people/de-martini-davide/index.html</loc>
-    <lastmod>2026-05-19T15:34:41.308Z</lastmod>
+    <lastmod>2026-05-23T13:49:37.406Z</lastmod>
   </url>
   <url>
     <loc>https://neu4mes.github.io/people/baroni-francesco/index.html</loc>
-    <lastmod>2026-05-19T15:34:41.307Z</lastmod>
-  </url>
-  <url>
-    <loc>https://neu4mes.github.io/neu4mes.html</loc>
-    <lastmod>2026-05-19T15:34:41.304Z</lastmod>
-  </url>
-  <url>
-    <loc>https://neu4mes.github.io/contacts.html</loc>
-    <lastmod>2026-05-19T15:34:41.304Z</lastmod>
-  </url>
-  <url>
-    <loc>https://neu4mes.github.io/about.html</loc>
-    <lastmod>2026-05-19T15:34:41.301Z</lastmod>
+    <lastmod>2026-05-23T13:49:37.404Z</lastmod>
   </url>
   <url>
     <loc>https://neu4mes.github.io/index.html</loc>
-    <lastmod>2026-05-19T15:34:41.304Z</lastmod>
+    <lastmod>2026-05-23T13:49:37.401Z</lastmod>
+  </url>
+  <url>
+    <loc>https://neu4mes.github.io/contacts.html</loc>
+    <lastmod>2026-05-23T13:49:37.400Z</lastmod>
+  </url>
+  <url>
+    <loc>https://neu4mes.github.io/framework/index.html</loc>
+    <lastmod>2026-05-23T13:49:37.401Z</lastmod>
   </url>
   <url>
     <loc>https://neu4mes.github.io/people/Sharifzadeh-Mojtaba/index.html</loc>
-    <lastmod>2026-05-19T15:34:41.306Z</lastmod>
+    <lastmod>2026-05-23T13:49:37.403Z</lastmod>
   </url>
   <url>
     <loc>https://neu4mes.github.io/people/ciuffoletti-sabrina/index.html</loc>
-    <lastmod>2026-05-19T15:34:41.307Z</lastmod>
+    <lastmod>2026-05-23T13:49:37.405Z</lastmod>
   </url>
   <url>
     <loc>https://neu4mes.github.io/people/defrancesco-gioele/index.html</loc>
-    <lastmod>2026-05-19T15:34:41.309Z</lastmod>
+    <lastmod>2026-05-23T13:49:37.406Z</lastmod>
   </url>
   <url>
     <loc>https://neu4mes.github.io/people/index.html</loc>
-    <lastmod>2026-05-19T15:34:41.310Z</lastmod>
+    <lastmod>2026-05-23T13:49:37.407Z</lastmod>
   </url>
   <url>
     <loc>https://neu4mes.github.io/people/piazza-mattia/index.html</loc>
-    <lastmod>2026-05-19T15:34:41.317Z</lastmod>
+    <lastmod>2026-05-23T13:49:37.411Z</lastmod>
   </url>
   <url>
     <loc>https://neu4mes.github.io/people/rosati-papini-gastone-pietro/index.html</loc>
-    <lastmod>2026-05-19T15:34:41.318Z</lastmod>
+    <lastmod>2026-05-23T13:49:37.415Z</lastmod>
   </url>
   <url>
     <loc>https://neu4mes.github.io/people/taddei-sebastiano/index.html</loc>
-    <lastmod>2026-05-19T15:34:41.325Z</lastmod>
+    <lastmod>2026-05-23T13:49:37.420Z</lastmod>
   </url>
   <url>
-    <loc>https://neu4mes.github.io/publications/2025_RoadFrictionAware_IEEE_OJITS/index.html</loc>
-    <lastmod>2026-05-19T15:34:41.326Z</lastmod>
+    <loc>https://neu4mes.github.io/publications/papers/2025-itsc-steering-dynamics-a2rl/index.html</loc>
+    <lastmod>2026-05-23T13:49:37.423Z</lastmod>
   </url>
   <url>
-    <loc>https://neu4mes.github.io/related/2025_RoadFrictionAware_IEEE_OJITS/index.html</loc>
-    <lastmod>2026-05-19T15:34:41.327Z</lastmod>
+    <loc>https://neu4mes.github.io/publications/papers/2026-vehicle-dynamics-msnn/index.html</loc>
+    <lastmod>2026-05-23T13:49:37.453Z</lastmod>
+  </url>
+  <url>
+    <loc>https://neu4mes.github.io/publications/posters/2026-icra-lbr-msnn-overview/index.html</loc>
+    <lastmod>2026-05-23T13:49:37.478Z</lastmod>
+  </url>
+  <url>
+    <loc>https://neu4mes.github.io/publications/presentations/2025-06-framework-upaep/index.html</loc>
+    <lastmod>2026-05-23T13:49:37.558Z</lastmod>
+  </url>
+  <url>
+    <loc>https://neu4mes.github.io/publications/presentations/2025-09-nnodely-ekumen/index.html</loc>
+    <lastmod>2026-05-23T13:49:37.564Z</lastmod>
+  </url>
+  <url>
+    <loc>https://neu4mes.github.io/publications/related/2018-subham-s-sahoo-learning-equations-for-extrapolation-and/index.html</loc>
+    <lastmod>2026-05-23T13:49:37.581Z</lastmod>
+  </url>
+  <url>
+    <loc>https://neu4mes.github.io/publications/related/2020-mauro-da-lio-a-mental-simulation-approach-for-learning-/index.html</loc>
+    <lastmod>2026-05-23T13:49:37.600Z</lastmod>
+  </url>
+  <url>
+    <loc>https://neu4mes.github.io/publications/related/2021-gastone-pietro-rosati-papini-a-reinforcement-learning-a/index.html</loc>
+    <lastmod>2026-05-23T13:49:37.623Z</lastmod>
+  </url>
+  <url>
+    <loc>https://neu4mes.github.io/wiki.html</loc>
+    <lastmod>2026-05-23T13:49:37.652Z</lastmod>
   </url>
 </urlset>

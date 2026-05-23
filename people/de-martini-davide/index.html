@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Davide De Martini – Neu4mes</title>
+<title>Davide De Martini – neu4mes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,7 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../..//assets/images/logomodely.png" rel="icon" type="image/png">
+<link href="../..//assets/images/neu4mes_minilogo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-listing/list.min.js"></script>
 <script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -82,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-publication','listing-title','listing-categories','listing-image','listing-date','listing-author',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-publication','listing-title','listing-categories','listing-image','listing-date','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-from","listing-project","listing-include-in-header","listing-website","listing-format","listing-engines","listing-language","listing-sidebar","listing-page-navigation","listing-title","listing-author","listing-publication","listing-type","listing-categories","listing-url_source","listing-url_preprint","listing-journ","listing-venue","listing-year","listing-doi","listing-poster_pdf","listing-article_pdf","listing-pub_number","listing-order","listing-image","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -134,11 +134,11 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Davide De Martini – Neu4mes">
+<meta property="og:title" content="Davide De Martini – neu4mes">
 <meta property="og:description" content="PhD student">
 <meta property="og:image" content="https://neu4mes.github.io/people/de-martini-davide/avatar.jpg">
-<meta property="og:site_name" content="Neu4mes">
-<meta name="twitter:title" content="Davide De Martini – Neu4mes">
+<meta property="og:site_name" content="neu4mes">
+<meta name="twitter:title" content="Davide De Martini – neu4mes">
 <meta name="twitter:description" content="PhD student">
 <meta name="twitter:image" content="https://neu4mes.github.io/people/de-martini-davide/avatar.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -151,8 +151,9 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Neu4mes</span>
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/images/neu4mes_logo.png" alt="Neu4mes" class="navbar-logo light-content">
+    <img src="../../assets/images/neu4mes_logo.png" alt="Neu4mes" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -166,8 +167,12 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">About</span></a>
+    <a class="nav-link" href="../../framework/index.html"> 
+<span class="menu-text">Framework</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../wiki.html"> 
+<span class="menu-text">Wiki</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../publications/index.html"> 
@@ -178,8 +183,8 @@ window.Quarto = {
 <span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../neu4mes.html"> 
-<span class="menu-text">Neu4mes</span></a>
+    <a class="nav-link" href="../../work-with-us.html"> 
+<span class="menu-text">Work with us</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../contacts.html"> 
@@ -197,7 +202,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
-<p><img src="../../assets/images/logomodely.png" class="img-fluid"></p>
+<p><a href="../../index.html"><img src="../../assets/images/neu4mes_logo.png" class="img-fluid" width="150"></a></p>
 </div></div>
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
@@ -260,7 +265,71 @@ window.Quarto = {
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
+
 <div class="list quarto-listing-default">
+    
+    
+    <div class="quarto-post image-left" data-index="0" data-categories="UG9zdGVycyUyQ01vZGVsLVN0cnVjdHVyZWQlMjBOZXVyYWwlMjBOZXR3b3Jrcw==" data-listing-file-modified-sort="1779544177478" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
+        <div class="thumbnail">
+            
+            <a href="../../publications/posters/2026-icra-lbr-msnn-overview/index.html">
+                <p>
+                    
+                    <img alt="nnodely – neuralize your model" src="../../publications/posters/2026-icra-lbr-msnn-overview/poster.png" class="thumbnail-image">
+                </p>
+            </a>
+            
+        </div>
+        <div class="body">
+            <a href="../../publications/posters/2026-icra-lbr-msnn-overview/index.html">
+                <div class="no-anchor listing-pub-title listing-title">nnodely – neuralize your model</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                
+                    <a href="../../people/rosati-papini-gastone-pietro/">Gastone Pietro Rosati Papini</a>, 
+                    <a href="../../people/plebe-alice/">Alice Plebe</a>, 
+                    <a href="../../people/Sharifzadeh-Mojtaba/">Mojtaba Sharifzadeh</a>, 
+                    <a href="../../people/piazza-mattia/">Mattia Piazza</a>, 
+                    <a href="../../people/taddei-sebastiano/">Sebastiano Taddei</a>, 
+                    <a href="../../people/scialla-giovanni/">Giovanni Scialla</a>, 
+                    <a href="../../people/baroni-francesco/">Francesco Baroni</a>, 
+                    <a href="../../people/de-martini-davide/">Davide De Martini</a>, 
+                    <a href="../../people/la-scala-giovanni-maria-francesco/">Giovanni Maria Francesco La Scala</a>, 
+                    <a href="../../people/defrancesco-gioele/">Gioele Defrancesco</a>, 
+                    <a href="../../people/filippo-faccini/">Filippo Faccini</a><br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                
+                    <i>ICRA 2026 — Late breaking results</i> (2026)<br>
+                
+            </div>
+            
+            <div class="listing-pub-links">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <a href="../../publications/posters/2026-icra-lbr-msnn-overview/poster.pdf" download="" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
     
     </div>
 

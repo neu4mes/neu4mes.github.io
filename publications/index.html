@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Publications – Neu4mes</title>
+<title>Publications – neu4mes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,7 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="..//assets/images/logomodely.png" rel="icon" type="image/png">
+<link href="../publications/papers/2025-road-friction-aware-abs/index.html" rel="next">
+<link href="..//assets/images/neu4mes_minilogo.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
@@ -76,20 +77,104 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-journals .list');
+    const listingTargetEl = window.document.querySelector('#listing-papers .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-image','listing-pub_number','listing-title','listing-publication','listing-author','listing-url_source',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-image','listing-pub_number','listing-title','listing-publication','listing-author','listing-url_source','listing-doi','listing-pdf','listing-code',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-include-in-header","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-author","listing-publication","listing-type","listing-categories","listing-url_source","listing-url_preprint","listing-journ","listing-issue","listing-page","listing-doi","listing-year","listing-video","listing-bibtex","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-from","listing-project","listing-include-in-header","listing-website","listing-format","listing-engines","listing-language","listing-sidebar","listing-page-navigation","listing-title","listing-author","listing-publication","listing-type","listing-categories","listing-url_source","listing-url_preprint","listing-code","listing-journ","listing-video","listing-venue","listing-year","listing-image","listing-pdf","listing-pub_number","listing-order","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-doi"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-journals'] = new List('listing-journals', options);
+    window['quarto-listings']['listing-papers'] = new List('listing-papers', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-posters .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-pub_number','listing-title','listing-publication','listing-author','listing-venue','listing-pdf','listing-poster_pdf','listing-article_pdf',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-from","listing-project","listing-include-in-header","listing-website","listing-format","listing-engines","listing-language","listing-sidebar","listing-page-navigation","listing-title","listing-author","listing-publication","listing-type","listing-categories","listing-url_source","listing-url_preprint","listing-journ","listing-venue","listing-year","listing-doi","listing-poster_pdf","listing-pub_number","listing-order","listing-image","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-article_pdf"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-posters'] = new List('listing-posters', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-presentations .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-pub_number','listing-title','listing-publication','listing-author','listing-venue','listing-pdf','listing-video',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-from","listing-project","listing-include-in-header","listing-website","listing-format","listing-engines","listing-language","listing-sidebar","listing-page-navigation","listing-title","listing-author","listing-publication","listing-type","listing-categories","listing-url_source","listing-url_preprint","listing-journ","listing-venue","listing-year","listing-doi","listing-pdf","listing-pub_number","listing-order","listing-image","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-video"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-presentations'] = new List('listing-presentations', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-related .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-pub_number','listing-title','listing-publication','listing-author','listing-journ','listing-doi','listing-pdf',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-from","listing-project","listing-include-in-header","listing-website","listing-format","listing-engines","listing-language","listing-sidebar","listing-page-navigation","listing-title","listing-author","listing-publication","listing-type","listing-categories","listing-url_source","listing-url_preprint","listing-journ","listing-year","listing-doi","listing-pdf","listing-image","listing-pub_number","listing-order","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-related'] = new List('listing-related', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -135,23 +220,30 @@ window.Quarto = {
 </script>
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Publications – Neu4mes">
-<meta property="og:description" content="Research Group focused on Phisically Informed Neural Networks for Mechanical and Mechatronic Systems">
-<meta property="og:site_name" content="Neu4mes">
-<meta name="twitter:title" content="Publications – Neu4mes">
-<meta name="twitter:description" content="Research Group focused on Phisically Informed Neural Networks for Mechanical and Mechatronic Systems">
-<meta name="twitter:card" content="summary">
+<meta property="og:title" content="Publications – neu4mes">
+<meta property="og:image" content="https://neu4mes.github.io/publications/papers/2025-road-friction-aware-abs/main.png">
+<meta property="og:site_name" content="neu4mes">
+<meta property="og:image:alt" content="A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks">
+<meta property="og:image:height" content="576">
+<meta property="og:image:width" content="1002">
+<meta name="twitter:title" content="Publications – neu4mes">
+<meta name="twitter:image" content="https://neu4mes.github.io/publications/papers/2025-road-friction-aware-abs/main.png">
+<meta name="twitter:image:alt" content="A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks">
+<meta name="twitter:image-height" content="576">
+<meta name="twitter:image-width" content="1002">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Neu4mes</span>
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/images/neu4mes_logo.png" alt="Neu4mes" class="navbar-logo light-content">
+    <img src="../assets/images/neu4mes_logo.png" alt="Neu4mes" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -165,8 +257,12 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
-<span class="menu-text">About</span></a>
+    <a class="nav-link" href="../framework/index.html"> 
+<span class="menu-text">Framework</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../wiki.html"> 
+<span class="menu-text">Wiki</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../publications/index.html" aria-current="page"> 
@@ -177,8 +273,8 @@ window.Quarto = {
 <span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../neu4mes.html"> 
-<span class="menu-text">Neu4mes</span></a>
+    <a class="nav-link" href="../work-with-us.html"> 
+<span class="menu-text">Work with us</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../contacts.html"> 
@@ -190,24 +286,193 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../publications/index.html">Publications</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../publications/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Publications</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Journal and conference papers</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../publications/papers/2025-road-friction-aware-abs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../publications/papers/2026-vehicle-dynamics-msnn/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Vehicle Dynamics Learning From Physics Priors With Model-Structured Neural Networks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../publications/papers/2025-itsc-steering-dynamics-a2rl/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Model-Structured Neural Networks to Control the Steering Dynamics of Autonomous Race Cars</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Posters</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../publications/posters/2025-icra-lbr-nnodely/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Model-Structured Neural Networks to Model &amp; Control Robots</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../publications/posters/2026-icra-lbr-msnn-overview/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">nnodely – neuralize your model</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Presentations</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../publications/presentations/2024-11-framework-dii/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A Framework for Model-Structured Neural Networks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../publications/presentations/2025-06-framework-upaep/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A framework for design model-structured neural networks for model and control physical systems</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../publications/presentations/2025-08-framework-design-trento/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../publications/presentations/2025-09-nnodely-ekumen/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NNodely: An Open Framework for Model-Structured Neural Networks in Robotics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../publications/presentations/2025-10-framework-trento/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Related works</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../publications/related/2022-mauro-da-lio-complex-self-driving-behaviors-emerging-fr/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Complex self-driving behaviors emerging from affordance competition in layered control architectures</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../publications/related/2021-alessandro-antonucci-efficient-prediction-of-human-motion-for/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Efficient Prediction of Human Motion for Real-Time Robotics Applications With Physics-Inspired Neural Networks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../publications/related/2021-gastone-pietro-rosati-papini-a-reinforcement-learning-a/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A Reinforcement Learning Approach for Enacting Cautious Behaviours in Autonomous Driving</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../publications/related/2020-mauro-da-lio-a-mental-simulation-approach-for-learning-/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A Mental Simulation Approach for Learning Neural-Network Predictive Control (in Self-Driving Cars)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../publications/related/2019-mauro-da-lio-modelling-longitudinal-vehicle-dynamics-wi/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modelling longitudinal vehicle dynamics with neural networks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../publications/related/2018-subham-s-sahoo-learning-equations-for-extrapolation-and/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Learning Equations for Extrapolation and Control</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
-<p><img src="../assets/images/logomodely.png" class="img-fluid"></p>
+<p><a href="../index.html"><img src="../assets/images/neu4mes_logo.png" class="img-fluid" width="150"></a></p>
 </div></div>
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#related-works" id="toc-related-works" class="nav-link active" data-scroll-target="#related-works">Related works</a></li>
+  <li><a href="#journal-and-conference-papers" id="toc-journal-and-conference-papers" class="nav-link active" data-scroll-target="#journal-and-conference-papers">Journal and conference papers</a></li>
+  <li><a href="#posters" id="toc-posters" class="nav-link" data-scroll-target="#posters">Posters</a></li>
+  <li><a href="#presentations" id="toc-presentations" class="nav-link" data-scroll-target="#presentations">Presentations</a></li>
+  <li><a href="#related-works" id="toc-related-works" class="nav-link" data-scroll-target="#related-works">Related works</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -216,66 +481,54 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta paper-title-meta-grid column-body">
 
     
-  
-    
-  </div>
+  <div class="quarto-title-meta-column-end paper-publication-links">
+                  </div>
+
+</div>
   
 
 
 </header>
 
 
-<hr>
-<div id="pubs">
+<section id="journal-and-conference-papers" class="level2">
+<h2 class="anchored" data-anchor-id="journal-and-conference-papers">Journal and conference papers</h2>
+<div id="listing-papers" class="quarto-listing quarto-listing-container-custom">
 
-</div>
-<section id="related-works" class="level2">
-<h2 class="anchored" data-anchor-id="related-works">Related works</h2>
-<p><a href="../related/index.html">Click here</a></p>
-
-
-
-</section>
-
-<div class="quarto-listing quarto-listing-container-custom" id="listing-journals">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
 <div class="list quarto-listing-default">
     
     
-    <div class="quarto-post image-left" data-index="0" data-categories="UHVibGljYXRpb25zJTJDSm91cm5hbCUyMEFydGljbGVzJTJDTW9kZWwtU3RydWN0dXJlZCUyME5ldXJhbCUyME5ldHdvcmtzJTJDUm9hZCUyMEZyaWN0aW9uJTIwRXN0aW1hdGlvbiUyQ0FudGktTG9jayUyMEJyYWtpbmclMjBTeXN0ZW1zJTJDSW50ZWxsaWdlbnQlMjBUcmFuc3BvcnRhdGlvbiUyMFN5c3RlbXM=" data-listing-file-modified-sort="1779204881326" data-listing-reading-time-sort="1" data-listing-word-count-sort="171">
+    <div class="quarto-post image-left" data-index="0" data-categories="Sm91cm5hbCUyMEFydGljbGVzJTJDTW9kZWwtU3RydWN0dXJlZCUyME5ldXJhbCUyME5ldHdvcmtz" data-listing-file-modified-sort="1779544177439" data-listing-reading-time-sort="3" data-listing-word-count-sort="540">
         <div class="thumbnail">
             
-            <a href="../publications/2025_RoadFrictionAware_IEEE_OJITS/index.html">
+            <a href="../publications/papers/2025-road-friction-aware-abs/index.html">
                 <p>
-                    <img alt="A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks" src="https://img.youtube.com/vi/xQ_T96IjGP8/0.jpg" class="thumbnail-image">
+                    
+                    <img alt="A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks" src="../publications/papers/2025-road-friction-aware-abs/main.png" class="thumbnail-image">
                 </p>
             </a>
             
         </div>
         <div class="body">
-            <a href="../publications/2025_RoadFrictionAware_IEEE_OJITS/index.html">
+            <a href="../publications/papers/2025-road-friction-aware-abs/index.html">
                 <div class="no-anchor listing-pub-title listing-title">A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks</div>
             </a>
             
             <div class="listing-pub-author listing-author">
                 
-                    <a href="../people/piccinini-mattia/">Mattia Piccinini</a>, 
-                    <a href="../people/zumerle-matteo/">Matteo Zumerle</a>, 
-                    <a href="../people/betz-johannes/">Johannes Betz</a>, 
-                    <a href="../people/papini-gastone/">Gastone Pietro Rosati Papini</a><br> 
+                    Mattia Piccinini, 
+                    Matteo Zumerle, 
+                    Johannes Betz, 
+                    <a href="../people/rosati-papini-gastone-pietro/">Gastone Pietro Rosati Papini</a><br> 
             </div>
             
             <div class="metadata-value listing-pub-journal listing-publication">
                 
-                    <i>IEEE Open Journal of Intelligent Transportation Systems</i>, <b>Volume 6</b>, pp. 522-536 (2025)<br>
+                
+                    <i>IEEE Open Journal of Intelligent Transportation Systems</i> (2025)<br>
                 
             </div>
             
@@ -292,12 +545,151 @@ window.Quarto = {
                 
                 
                 
+                 | 
+                <a href="https://github.com/tonegas/nnodely-applications/tree/main/vehicle/road_friction_aware_ABS" target="_blank" rel="noopener" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">CODE <i class="bi bi-box-arrow-up-right"></i></span>
+                </a>
+                
+                
+                
+                
                 
                 
                  | 
                 
-                <a href="../publications/2025_RoadFrictionAware_IEEE_OJITS/bibtex.txt" download="" style="text-decoration: none;">
-                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">CITE <i class="bi bi-download"></i></span>
+                <a href="../publications/papers/2025-road-friction-aware-abs/paper.pdf" download="" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="quarto-post image-left" data-index="1" data-categories="Sm91cm5hbCUyMEFydGljbGVzJTJDTW9kZWwtU3RydWN0dXJlZCUyME5ldXJhbCUyME5ldHdvcmtz" data-listing-file-modified-sort="1779544177453" data-listing-reading-time-sort="3" data-listing-word-count-sort="508">
+        <div class="thumbnail">
+            
+            <a href="../publications/papers/2026-vehicle-dynamics-msnn/index.html">
+                <p>
+                    
+                    <img alt="Vehicle Dynamics Learning From Physics Priors With Model-Structured Neural Networks" src="../publications/papers/2026-vehicle-dynamics-msnn/main.png" class="thumbnail-image">
+                </p>
+            </a>
+            
+        </div>
+        <div class="body">
+            <a href="../publications/papers/2026-vehicle-dynamics-msnn/index.html">
+                <div class="no-anchor listing-pub-title listing-title">Vehicle Dynamics Learning From Physics Priors With Model-Structured Neural Networks</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                
+                    Aniello Mungiello, 
+                    Felix Jahncke, 
+                    Stefania Santini, 
+                    Johannes Betz, 
+                    <a href="../people/rosati-papini-gastone-pietro/">Gastone Pietro Rosati Papini</a>, 
+                    Mattia Piccinini<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                
+                    <i>IEEE Open Journal of Intelligent Transportation Systems</i> (2026)<br>
+                
+            </div>
+            
+            <div class="listing-pub-links">
+                
+                
+                
+                
+                
+                
+                <a href="https://doi.org/10.1109/OJITS.2026.3685078" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">DOI <i class="bi bi-box-arrow-up-right"></i></span>
+                </a>
+                
+                
+                
+                 | 
+                <a href="https://github.com/tonegas/nnodely-applications/tree/main/vehicle/model_combined_vehicle_dynamics_RoboRacer" target="_blank" rel="noopener" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">CODE <i class="bi bi-box-arrow-up-right"></i></span>
+                </a>
+                
+                
+                
+                
+                
+                
+                 | 
+                
+                <a href="../publications/papers/2026-vehicle-dynamics-msnn/paper.pdf" download="" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="quarto-post image-left" data-index="2" data-categories="Q29uZmVyZW5jZSUyMFBhcGVycyUyQ01vZGVsLVN0cnVjdHVyZWQlMjBOZXVyYWwlMjBOZXR3b3Jrcw==" data-listing-file-modified-sort="1779544177423" data-listing-reading-time-sort="3" data-listing-word-count-sort="493">
+        <div class="thumbnail">
+            
+            <a href="../publications/papers/2025-itsc-steering-dynamics-a2rl/index.html">
+                <p>
+                    
+                    <img alt="Model-Structured Neural Networks to Control the Steering Dynamics of Autonomous Race Cars" src="../publications/papers/2025-itsc-steering-dynamics-a2rl/main.png" class="thumbnail-image">
+                </p>
+            </a>
+            
+        </div>
+        <div class="body">
+            <a href="../publications/papers/2025-itsc-steering-dynamics-a2rl/index.html">
+                <div class="no-anchor listing-pub-title listing-title">Model-Structured Neural Networks to Control the Steering Dynamics of Autonomous Race Cars</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                
+                    Mattia Piccinini, 
+                    Aniello Mungiello, 
+                    Georg Jank, 
+                    <a href="../people/rosati-papini-gastone-pietro/">Gastone Pietro Rosati Papini</a>, 
+                    Francesco Biral, 
+                    Johannes Betz<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                
+                    <i>ITSC 2025</i> (2025)<br>
+                
+            </div>
+            
+            <div class="listing-pub-links">
+                
+                
+                
+                
+                
+                
+                
+                
+                <a href="https://github.com/tonegas/nnodely-applications/tree/main/vehicle/control_steer_dynamics_A2RL" target="_blank" rel="noopener" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">CODE <i class="bi bi-box-arrow-up-right"></i></span>
+                </a>
+                
+                
+                
+                
+                
+                
+                 | 
+                
+                <a href="../publications/papers/2025-itsc-steering-dynamics-a2rl/paper.pdf" download="" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
                 </a>
                 
             </div>
@@ -308,7 +700,793 @@ window.Quarto = {
     </div>
 
 <div class="listing-no-matching d-none">No matching items</div>
-</div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+</div>
+</section>
+<section id="posters" class="level2">
+<h2 class="anchored" data-anchor-id="posters">Posters</h2>
+<div id="listing-posters" class="quarto-listing quarto-listing-container-custom">
+
+<div class="list quarto-listing-default">
+    
+    
+    <div class="quarto-post image-left" data-index="0" data-categories="UG9zdGVycyUyQ01vZGVsLVN0cnVjdHVyZWQlMjBOZXVyYWwlMjBOZXR3b3Jrcw==" data-listing-file-modified-sort="1779544177464" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
+        <div class="thumbnail">
+            
+            <a href="../publications/posters/2025-icra-lbr-nnodely/index.html">
+                <p>
+                    
+                    <img alt="Model-Structured Neural Networks to Model &amp; Control Robots" src="../publications/posters/2025-icra-lbr-nnodely/poster.png" class="thumbnail-image">
+                </p>
+            </a>
+            
+        </div>
+        <div class="body">
+            <a href="../publications/posters/2025-icra-lbr-nnodely/index.html">
+                <div class="no-anchor listing-pub-title listing-title">Model-Structured Neural Networks to Model &amp; Control Robots</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                
+                    Mattia Piccinini, 
+                    Aniello Mungiello, 
+                    Johannes Betz, 
+                    <a href="../people/rosati-papini-gastone-pietro/">Gastone Pietro Rosati Papini</a><br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                
+                    <i>ICRA 2025 — Late breaking results</i> (2025)<br>
+                
+            </div>
+            
+            <div class="listing-pub-links">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <a href="../publications/posters/2025-icra-lbr-nnodely/poster.pdf" download="" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="quarto-post image-left" data-index="1" data-categories="UG9zdGVycyUyQ01vZGVsLVN0cnVjdHVyZWQlMjBOZXVyYWwlMjBOZXR3b3Jrcw==" data-listing-file-modified-sort="1779544177478" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
+        <div class="thumbnail">
+            
+            <a href="../publications/posters/2026-icra-lbr-msnn-overview/index.html">
+                <p>
+                    
+                    <img alt="nnodely – neuralize your model" src="../publications/posters/2026-icra-lbr-msnn-overview/poster.png" class="thumbnail-image">
+                </p>
+            </a>
+            
+        </div>
+        <div class="body">
+            <a href="../publications/posters/2026-icra-lbr-msnn-overview/index.html">
+                <div class="no-anchor listing-pub-title listing-title">nnodely – neuralize your model</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                
+                    <a href="../people/rosati-papini-gastone-pietro/">Gastone Pietro Rosati Papini</a>, 
+                    <a href="../people/plebe-alice/">Alice Plebe</a>, 
+                    <a href="../people/Sharifzadeh-Mojtaba/">Mojtaba Sharifzadeh</a>, 
+                    <a href="../people/piazza-mattia/">Mattia Piazza</a>, 
+                    <a href="../people/taddei-sebastiano/">Sebastiano Taddei</a>, 
+                    <a href="../people/scialla-giovanni/">Giovanni Scialla</a>, 
+                    <a href="../people/baroni-francesco/">Francesco Baroni</a>, 
+                    <a href="../people/de-martini-davide/">Davide De Martini</a>, 
+                    <a href="../people/la-scala-giovanni-maria-francesco/">Giovanni Maria Francesco La Scala</a>, 
+                    <a href="../people/defrancesco-gioele/">Gioele Defrancesco</a>, 
+                    <a href="../people/filippo-faccini/">Filippo Faccini</a><br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                
+                    <i>ICRA 2026 — Late breaking results</i> (2026)<br>
+                
+            </div>
+            
+            <div class="listing-pub-links">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <a href="../publications/posters/2026-icra-lbr-msnn-overview/poster.pdf" download="" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    </div>
+
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="presentations" class="level2">
+<h2 class="anchored" data-anchor-id="presentations">Presentations</h2>
+<div id="listing-presentations" class="quarto-listing quarto-listing-container-custom">
+
+<div class="list quarto-listing-default">
+    
+    
+    <div class="quarto-post image-left" data-index="0" data-categories="UHJlc2VudGF0aW9ucyUyQ01vZGVsLVN0cnVjdHVyZWQlMjBOZXVyYWwlMjBOZXR3b3Jrcw==" data-listing-file-modified-sort="1779544177517" data-listing-reading-time-sort="1" data-listing-word-count-sort="59">
+        <div class="thumbnail">
+            
+            <a href="../publications/presentations/2024-11-framework-dii/index.html">
+                <p>
+                    
+                    <img alt="A Framework for Model-Structured Neural Networks" src="../publications/presentations/2024-11-framework-dii/slide.png" class="thumbnail-image">
+                </p>
+            </a>
+            
+        </div>
+        <div class="body">
+            <a href="../publications/presentations/2024-11-framework-dii/index.html">
+                <div class="no-anchor listing-pub-title listing-title">A Framework for Model-Structured Neural Networks</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                
+                    <a href="../people/rosati-papini-gastone-pietro/">Gastone Pietro Rosati Papini</a>, 
+                    Mattia Piccinini<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                
+                    <i>Department of Industrial Engineering, University of Trento</i> (2024)<br>
+                
+            </div>
+            
+            <div class="listing-pub-links">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <a href="../publications/presentations/2024-11-framework-dii/presentation.pdf" download="" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="quarto-post image-left" data-index="1" data-categories="UHJlc2VudGF0aW9ucyUyQ01vZGVsLVN0cnVjdHVyZWQlMjBOZXVyYWwlMjBOZXR3b3Jrcw==" data-listing-file-modified-sort="1779544177558" data-listing-reading-time-sort="1" data-listing-word-count-sort="60">
+        <div class="thumbnail">
+            
+            <a href="../publications/presentations/2025-06-framework-upaep/index.html">
+                <p>
+                    
+                    <img alt="A framework for design model-structured neural networks for model and control physical systems" src="../publications/presentations/2025-06-framework-upaep/slide.png" class="thumbnail-image">
+                </p>
+            </a>
+            
+        </div>
+        <div class="body">
+            <a href="../publications/presentations/2025-06-framework-upaep/index.html">
+                <div class="no-anchor listing-pub-title listing-title">A framework for design model-structured neural networks for model and control physical systems</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                
+                    <a href="../people/rosati-papini-gastone-pietro/">Gastone Pietro Rosati Papini</a><br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                
+                    <i>UPAEP University, Puebla, Mexico</i> (2025)<br>
+                
+            </div>
+            
+            <div class="listing-pub-links">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <a href="../publications/presentations/2025-06-framework-upaep/presentation.pdf" download="" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="quarto-post image-left" data-index="2" data-categories="UHJlc2VudGF0aW9ucyUyQ01vZGVsLVN0cnVjdHVyZWQlMjBOZXVyYWwlMjBOZXR3b3Jrcw==" data-listing-file-modified-sort="1779544177561" data-listing-reading-time-sort="1" data-listing-word-count-sort="66">
+        <div class="thumbnail">
+            
+            <a href="../publications/presentations/2025-08-framework-design-trento/index.html">
+                <p>
+                    
+                    <img alt="A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems" src="../publications/presentations/2025-08-framework-design-trento/slide.png" class="thumbnail-image">
+                </p>
+            </a>
+            
+        </div>
+        <div class="body">
+            <a href="../publications/presentations/2025-08-framework-design-trento/index.html">
+                <div class="no-anchor listing-pub-title listing-title">A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                
+                    <a href="../people/rosati-papini-gastone-pietro/">Gastone Pietro Rosati Papini</a><br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                
+                    <i>Chitkara University, India</i> (2025)<br>
+                
+            </div>
+            
+            <div class="listing-pub-links">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <a href="../publications/presentations/2025-08-framework-design-trento/presentation.pdf" download="" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="quarto-post image-left" data-index="3" data-categories="UHJlc2VudGF0aW9ucyUyQ01vZGVsLVN0cnVjdHVyZWQlMjBOZXVyYWwlMjBOZXR3b3Jrcw==" data-listing-file-modified-sort="1779544177564" data-listing-reading-time-sort="1" data-listing-word-count-sort="70">
+        <div class="thumbnail">
+            
+            <a href="../publications/presentations/2025-09-nnodely-ekumen/index.html">
+                <p>
+                    
+                    <img alt="NNodely: An Open Framework for Model-Structured Neural Networks in Robotics" src="../publications/presentations/2025-09-nnodely-ekumen/slide.png" class="thumbnail-image">
+                </p>
+            </a>
+            
+        </div>
+        <div class="body">
+            <a href="../publications/presentations/2025-09-nnodely-ekumen/index.html">
+                <div class="no-anchor listing-pub-title listing-title">NNodely: An Open Framework for Model-Structured Neural Networks in Robotics</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                
+                    <a href="../people/rosati-papini-gastone-pietro/">Gastone Pietro Rosati Papini</a>, 
+                    Mattia Piccinini<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                
+                    <i>Ekumen Robotics Software Company, Germany</i> (2025)<br>
+                
+            </div>
+            
+            <div class="listing-pub-links">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <a href="../publications/presentations/2025-09-nnodely-ekumen/presentation.pdf" download="" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="quarto-post image-left" data-index="4" data-categories="UHJlc2VudGF0aW9ucyUyQ01vZGVsLVN0cnVjdHVyZWQlMjBOZXVyYWwlMjBOZXR3b3Jrcw==" data-listing-file-modified-sort="1779544177573" data-listing-reading-time-sort="1" data-listing-word-count-sort="64">
+        <div class="thumbnail">
+            
+            <a href="../publications/presentations/2025-10-framework-trento/index.html">
+                <p>
+                    
+                    <img alt="A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems" src="../publications/presentations/2025-10-framework-trento/slide.png" class="thumbnail-image">
+                </p>
+            </a>
+            
+        </div>
+        <div class="body">
+            <a href="../publications/presentations/2025-10-framework-trento/index.html">
+                <div class="no-anchor listing-pub-title listing-title">A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                
+                    <a href="../people/rosati-papini-gastone-pietro/">Gastone Pietro Rosati Papini</a><br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                
+                    <i>Workshop-COSENO, University of Trento, Italy</i> (2025)<br>
+                
+            </div>
+            
+            <div class="listing-pub-links">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <a href="../publications/presentations/2025-10-framework-trento/presentation.pdf" download="" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    </div>
+
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="related-works" class="level2">
+<h2 class="anchored" data-anchor-id="related-works">Related works</h2>
+<div id="listing-related" class="quarto-listing quarto-listing-container-custom">
+
+<div class="list quarto-listing-default">
+    
+    
+    <div class="quarto-post image-left" data-index="0" data-categories="UmVsYXRlZCUyMHdvcmtzJTJDTW9kZWwtU3RydWN0dXJlZCUyME5ldXJhbCUyME5ldHdvcmtz" data-listing-file-modified-sort="1779544177640" data-listing-reading-time-sort="5" data-listing-word-count-sort="843">
+        <div class="thumbnail">
+            
+            <a href="../publications/related/2022-mauro-da-lio-complex-self-driving-behaviors-emerging-fr/index.html">
+                <p>
+                    
+                    <img alt="Complex self-driving behaviors emerging from affordance competition in layered control architectures" src="../publications/related/2022-mauro-da-lio-complex-self-driving-behaviors-emerging-fr/main.png" class="thumbnail-image">
+                </p>
+            </a>
+            
+        </div>
+        <div class="body">
+            <a href="../publications/related/2022-mauro-da-lio-complex-self-driving-behaviors-emerging-fr/index.html">
+                <div class="no-anchor listing-pub-title listing-title">Complex self-driving behaviors emerging from affordance competition in layered control architectures</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                
+                    Mauro Da Lio, 
+                    Antonello Cherubini, 
+                    <a href="../people/rosati-papini-gastone-pietro/">Gastone Pietro Rosati Papini</a>, 
+                    <a href="../people/plebe-alice/">Alice Plebe</a><br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                
+                    <i>Cognitive Systems Research</i> (2022)<br>
+                
+            </div>
+            
+            <div class="listing-pub-links">
+                
+                
+                
+                
+                
+                
+                <a href="https://doi.org/10.1016/j.cogsys.2022.12.007" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">DOI <i class="bi bi-box-arrow-up-right"></i></span>
+                </a>
+                
+                
+                
+                
+                
+                
+                
+                
+                 | 
+                
+                <a href="../publications/related/2022-mauro-da-lio-complex-self-driving-behaviors-emerging-fr/paper.pdf" download="" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="quarto-post image-left" data-index="1" data-categories="UmVsYXRlZCUyMHdvcmtzJTJDTW9kZWwtU3RydWN0dXJlZCUyME5ldXJhbCUyME5ldHdvcmtz" data-listing-file-modified-sort="1779544177614" data-listing-reading-time-sort="3" data-listing-word-count-sort="465">
+        <div class="thumbnail">
+            
+            <a href="../publications/related/2021-alessandro-antonucci-efficient-prediction-of-human-motion-for/index.html">
+                <p>
+                    
+                    <img alt="Efficient Prediction of Human Motion for Real-Time Robotics Applications With Physics-Inspired Neural Networks" src="../publications/related/2021-alessandro-antonucci-efficient-prediction-of-human-motion-for/main.png" class="thumbnail-image">
+                </p>
+            </a>
+            
+        </div>
+        <div class="body">
+            <a href="../publications/related/2021-alessandro-antonucci-efficient-prediction-of-human-motion-for/index.html">
+                <div class="no-anchor listing-pub-title listing-title">Efficient Prediction of Human Motion for Real-Time Robotics Applications With Physics-Inspired Neural Networks</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                
+                    Alessandro Antonucci, 
+                    <a href="../people/rosati-papini-gastone-pietro/">Gastone Pietro Rosati Papini</a>, 
+                    Paolo Bevilacqua, 
+                    Luigi Palopoli, 
+                    Daniele Fontanelli<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                
+                    <i>IEEE Access</i> (2021)<br>
+                
+            </div>
+            
+            <div class="listing-pub-links">
+                
+                
+                
+                
+                
+                
+                <a href="https://doi.org/10.1109/ACCESS.2021.3138614" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">DOI <i class="bi bi-box-arrow-up-right"></i></span>
+                </a>
+                
+                
+                
+                
+                
+                
+                
+                
+                 | 
+                
+                <a href="../publications/related/2021-alessandro-antonucci-efficient-prediction-of-human-motion-for/paper.pdf" download="" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="quarto-post image-left" data-index="2" data-categories="UmVsYXRlZCUyMHdvcmtzJTJDTW9kZWwtU3RydWN0dXJlZCUyME5ldXJhbCUyME5ldHdvcmtz" data-listing-file-modified-sort="1779544177623" data-listing-reading-time-sort="3" data-listing-word-count-sort="566">
+        <div class="thumbnail">
+            
+            <a href="../publications/related/2021-gastone-pietro-rosati-papini-a-reinforcement-learning-a/index.html">
+                <p>
+                    
+                    <img alt="A Reinforcement Learning Approach for Enacting Cautious Behaviours in Autonomous Driving" src="../publications/related/2021-gastone-pietro-rosati-papini-a-reinforcement-learning-a/main.png" class="thumbnail-image">
+                </p>
+            </a>
+            
+        </div>
+        <div class="body">
+            <a href="../publications/related/2021-gastone-pietro-rosati-papini-a-reinforcement-learning-a/index.html">
+                <div class="no-anchor listing-pub-title listing-title">A Reinforcement Learning Approach for Enacting Cautious Behaviours in Autonomous Driving</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                
+                    <a href="../people/rosati-papini-gastone-pietro/">Gastone Pietro Rosati Papini</a>, 
+                    <a href="../people/plebe-alice/">Alice Plebe</a>, 
+                    Mauro Da Lio, 
+                    Riccardo Donà<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                
+                    <i>IEEE Transactions on Intelligent Transportation Systems</i> (2021)<br>
+                
+            </div>
+            
+            <div class="listing-pub-links">
+                
+                
+                
+                
+                
+                
+                <a href="https://doi.org/10.1109/TITS.2021.3086397" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">DOI <i class="bi bi-box-arrow-up-right"></i></span>
+                </a>
+                
+                
+                
+                
+                
+                
+                
+                
+                 | 
+                
+                <a href="../publications/related/2021-gastone-pietro-rosati-papini-a-reinforcement-learning-a/paper.pdf" download="" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="quarto-post image-left" data-index="3" data-categories="UmVsYXRlZCUyMHdvcmtzJTJDTW9kZWwtU3RydWN0dXJlZCUyME5ldXJhbCUyME5ldHdvcmtz" data-listing-file-modified-sort="1779544177600" data-listing-reading-time-sort="4" data-listing-word-count-sort="723">
+        <div class="thumbnail">
+            
+            <a href="../publications/related/2020-mauro-da-lio-a-mental-simulation-approach-for-learning-/index.html">
+                <p>
+                    
+                    <img alt="A Mental Simulation Approach for Learning Neural-Network Predictive Control (in Self-Driving Cars)" src="../publications/related/2020-mauro-da-lio-a-mental-simulation-approach-for-learning-/main.png" class="thumbnail-image">
+                </p>
+            </a>
+            
+        </div>
+        <div class="body">
+            <a href="../publications/related/2020-mauro-da-lio-a-mental-simulation-approach-for-learning-/index.html">
+                <div class="no-anchor listing-pub-title listing-title">A Mental Simulation Approach for Learning Neural-Network Predictive Control (in Self-Driving Cars)</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                
+                    Mauro Da Lio, 
+                    Riccardo Donà, 
+                    <a href="../people/rosati-papini-gastone-pietro/">Gastone Pietro Rosati Papini</a>, 
+                    Francesco Biral, 
+                    Henrik Svensson<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                
+                    <i>IEEE Access</i> (2020)<br>
+                
+            </div>
+            
+            <div class="listing-pub-links">
+                
+                
+                
+                
+                
+                
+                <a href="https://doi.org/10.1109/ACCESS.2020.3032780" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">DOI <i class="bi bi-box-arrow-up-right"></i></span>
+                </a>
+                
+                
+                
+                
+                
+                
+                
+                
+                 | 
+                
+                <a href="../publications/related/2020-mauro-da-lio-a-mental-simulation-approach-for-learning-/paper.pdf" download="" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="quarto-post image-left" data-index="4" data-categories="UmVsYXRlZCUyMHdvcmtzJTJDTW9kZWwtU3RydWN0dXJlZCUyME5ldXJhbCUyME5ldHdvcmtz" data-listing-file-modified-sort="1779544177587" data-listing-reading-time-sort="3" data-listing-word-count-sort="512">
+        <div class="thumbnail">
+            
+            <a href="../publications/related/2019-mauro-da-lio-modelling-longitudinal-vehicle-dynamics-wi/index.html">
+                <p>
+                    
+                    <img alt="Modelling longitudinal vehicle dynamics with neural networks" src="../publications/related/2019-mauro-da-lio-modelling-longitudinal-vehicle-dynamics-wi/main.png" class="thumbnail-image">
+                </p>
+            </a>
+            
+        </div>
+        <div class="body">
+            <a href="../publications/related/2019-mauro-da-lio-modelling-longitudinal-vehicle-dynamics-wi/index.html">
+                <div class="no-anchor listing-pub-title listing-title">Modelling longitudinal vehicle dynamics with neural networks</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                
+                    Mauro Da Lio, 
+                    Daniele Bortoluzzi, 
+                    <a href="../people/rosati-papini-gastone-pietro/">Gastone Pietro Rosati Papini</a><br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                
+                    <i>Vehicle System Dynamics</i> (2019)<br>
+                
+            </div>
+            
+            <div class="listing-pub-links">
+                
+                
+                
+                
+                
+                
+                <a href="https://doi.org/10.1080/00423114.2019.1638947" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">DOI <i class="bi bi-box-arrow-up-right"></i></span>
+                </a>
+                
+                
+                
+                
+                
+                
+                
+                
+                 | 
+                
+                <a href="../publications/related/2019-mauro-da-lio-modelling-longitudinal-vehicle-dynamics-wi/paper.pdf" download="" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="quarto-post image-left" data-index="5" data-categories="UmVsYXRlZCUyMHdvcmtzJTJDTW9kZWwtU3RydWN0dXJlZCUyME5ldXJhbCUyME5ldHdvcmtz" data-listing-file-modified-sort="1779544177581" data-listing-reading-time-sort="3" data-listing-word-count-sort="426">
+        <div class="thumbnail">
+            
+            <a href="../publications/related/2018-subham-s-sahoo-learning-equations-for-extrapolation-and/index.html">
+                <p>
+                    
+                    <img alt="Learning Equations for Extrapolation and Control" src="../publications/related/2018-subham-s-sahoo-learning-equations-for-extrapolation-and/main.png" class="thumbnail-image">
+                </p>
+            </a>
+            
+        </div>
+        <div class="body">
+            <a href="../publications/related/2018-subham-s-sahoo-learning-equations-for-extrapolation-and/index.html">
+                <div class="no-anchor listing-pub-title listing-title">Learning Equations for Extrapolation and Control</div>
+            </a>
+            
+            <div class="listing-pub-author listing-author">
+                
+                    Subham S. Sahoo, 
+                    Christoph H. Lampert, 
+                    Georg Martius<br> 
+            </div>
+            
+            <div class="metadata-value listing-pub-journal listing-publication">
+                
+                
+                    <i>ICML</i> (2018)<br>
+                
+            </div>
+            
+            <div class="listing-pub-links">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <a href="../publications/related/2018-subham-s-sahoo-learning-equations-for-extrapolation-and/paper.pdf" download="" style="text-decoration: none;">
+                    <span style="border: 1px solid currentColor; padding: 2px 8px; border-radius: 4px;">PDF <i class="bi bi-download"></i></span>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    </div>
+
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
+
+
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -709,6 +1887,15 @@ window.Quarto = {
     }
   });
   </script>
+<nav class="page-navigation column-body">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../publications/papers/2025-road-friction-aware-abs/index.html" class="pagination-link" aria-label="A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks">
+        <span class="nav-page-text">A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

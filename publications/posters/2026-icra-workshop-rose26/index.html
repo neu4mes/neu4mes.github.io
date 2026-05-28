@@ -6,8 +6,19 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Gastone Pietro Rosati Papini">
+<meta name="author" content="Alice Plebe">
+<meta name="author" content="Mojtaba Sharifzadeh">
+<meta name="author" content="Sebastiano Taddei">
+<meta name="author" content="Mattia Piazza">
+<meta name="author" content="Giovanni Scialla">
+<meta name="author" content="Francesco Baroni">
+<meta name="author" content="Giovanni Maria Francesco La Scala">
+<meta name="author" content="Davide De Martini">
+<meta name="author" content="Gioele Defrancesco">
+<meta name="author" content="Filippo Faccini">
 
-<title>Sabrina Ciuffoletti – neu4mes</title>
+<title>nnodely: A Framework for Structured Neural Networks in Robotics – neu4mes</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,25 +37,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../..//assets/images/neu4mes_minilogo.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-cf05ff44224c86179a6b878a5dc86c68.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../publications/posters/2025-icra-lbr-nnodely/index.html" rel="next">
+<link href="../../..//assets/images/neu4mes_minilogo.png" rel="icon" type="image/png">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-cf05ff44224c86179a6b878a5dc86c68.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,88 +83,32 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-pubs .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-publication','listing-title','listing-categories','listing-image','listing-date','listing-author',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: [],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-pubs'] = new List('listing-pubs', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <meta name="google-site-verification" content="j_gTCzWnr1jevnfvO9Y_sxECPpvnmmr3i7nuJjhDkiw">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="Sabrina Ciuffoletti – neu4mes">
-<meta property="og:description" content="Research Fellow">
-<meta property="og:image" content="https://neu4mes.github.io/people/ciuffoletti-sabrina/avatar.jpg">
+<link rel="stylesheet" href="../../../styles.css">
+<meta property="og:title" content="nnodely: A Framework for Structured Neural Networks in Robotics – neu4mes">
+<meta property="og:image" content="https://neu4mes.github.io/publications/posters/2026-icra-workshop-rose26/poster.png">
 <meta property="og:site_name" content="neu4mes">
-<meta name="twitter:title" content="Sabrina Ciuffoletti – neu4mes">
-<meta name="twitter:description" content="Research Fellow">
-<meta name="twitter:image" content="https://neu4mes.github.io/people/ciuffoletti-sabrina/avatar.jpg">
+<meta property="og:image:height" content="2979">
+<meta property="og:image:width" content="2104">
+<meta name="twitter:title" content="nnodely: A Framework for Structured Neural Networks in Robotics – neu4mes">
+<meta name="twitter:image" content="https://neu4mes.github.io/publications/posters/2026-icra-workshop-rose26/poster.png">
+<meta name="twitter:image-height" content="2979">
+<meta name="twitter:image-width" content="2104">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../assets/images/neu4mes_logo.png" alt="Neu4mes" class="navbar-logo light-content">
-    <img src="../../assets/images/neu4mes_logo.png" alt="Neu4mes" class="navbar-logo dark-content">
+    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../../assets/images/neu4mes_logo.png" alt="Neu4mes" class="navbar-logo light-content">
+    <img src="../../../assets/images/neu4mes_logo.png" alt="Neu4mes" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -163,31 +118,31 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../framework/index.html"> 
+    <a class="nav-link" href="../../../framework/index.html"> 
 <span class="menu-text">Framework</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../wiki.html"> 
+    <a class="nav-link" href="../../../wiki.html"> 
 <span class="menu-text">Wiki</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../publications/index.html"> 
+    <a class="nav-link active" href="../../../publications/index.html" aria-current="page"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../people/index.html"> 
+    <a class="nav-link" href="../../../people/index.html"> 
 <span class="menu-text">People</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../work-with-us.html"> 
+    <a class="nav-link" href="../../../work-with-us.html"> 
 <span class="menu-text">Work with us</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../contacts.html"> 
+    <a class="nav-link" href="../../../contacts.html"> 
 <span class="menu-text">Contacts</span></a>
   </li>  
 </ul>
@@ -196,83 +151,265 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../publications/posters/2026-icra-workshop-rose26/index.html">Posters</a></li><li class="breadcrumb-item"><a href="../../../publications/posters/2026-icra-workshop-rose26/index.html">nnodely: A Framework for Structured Neural Networks in Robotics</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../publications/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Publications</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+ <span class="menu-text">Journal and conference papers</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../publications/papers/2025-road-friction-aware-abs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A Road Friction-Aware Anti-Lock Braking System Based on Model-Structured Neural Networks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../publications/papers/2026-vehicle-dynamics-msnn/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Vehicle Dynamics Learning From Physics Priors With Model-Structured Neural Networks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../publications/papers/2025-itsc-steering-dynamics-a2rl/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Model-Structured Neural Networks to Control the Steering Dynamics of Autonomous Race Cars</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Posters</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../publications/posters/2026-icra-workshop-rose26/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">nnodely: A Framework for Structured Neural Networks in Robotics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../publications/posters/2025-icra-lbr-nnodely/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Model-Structured Neural Networks to Model &amp; Control Robots</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../publications/posters/2026-icra-lbr-msnn-overview/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">nnodely – neuralize your model</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Presentations</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../publications/presentations/2024-11-framework-dii/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A Framework for Model-Structured Neural Networks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../publications/presentations/2025-06-framework-upaep/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A framework for design model-structured neural networks for model and control physical systems</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../publications/presentations/2025-08-framework-design-trento/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../publications/presentations/2025-09-nnodely-ekumen/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">NNodely: An Open Framework for Model-Structured Neural Networks in Robotics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../publications/presentations/2025-10-framework-trento/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A Framework for Designing Model-Structured Neural Networks for Modeling, Control, and Estimation of Physical Systems</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
+ <span class="menu-text">Related works</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../publications/related/2022-mauro-da-lio-complex-self-driving-behaviors-emerging-fr/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Complex self-driving behaviors emerging from affordance competition in layered control architectures</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../publications/related/2021-alessandro-antonucci-efficient-prediction-of-human-motion-for/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Efficient Prediction of Human Motion for Real-Time Robotics Applications With Physics-Inspired Neural Networks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../publications/related/2021-gastone-pietro-rosati-papini-a-reinforcement-learning-a/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A Reinforcement Learning Approach for Enacting Cautious Behaviours in Autonomous Driving</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../publications/related/2020-mauro-da-lio-a-mental-simulation-approach-for-learning-/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A Mental Simulation Approach for Learning Neural-Network Predictive Control (in Self-Driving Cars)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../publications/related/2019-mauro-da-lio-modelling-longitudinal-vehicle-dynamics-wi/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Modelling longitudinal vehicle dynamics with neural networks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../publications/related/2018-subham-s-sahoo-learning-equations-for-extrapolation-and/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Learning Equations for Extrapolation and Control</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
-<p><a href="../../index.html"><img src="../../assets/images/neu4mes_logo.png" class="img-fluid" width="150"></a></p>
+<p><a href="../../../index.html"><img src="../../../assets/images/neu4mes_logo.png" class="img-fluid" width="150"></a></p>
 </div></div>
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications" id="toc-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications" class="nav-link active" data-scroll-target="#b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications">Sabrina’s Group Publications</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-
-
-
-<hr>
-<div class="quarto-about-trestles column-page-left">
-  <div class="about-entity">
-    <img src="avatar.jpg" class="about-image
-  round " style="height: 20em; width: 20em;">
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../publications/posters/2026-icra-workshop-rose26/index.html">Posters</a></li><li class="breadcrumb-item"><a href="../../../publications/posters/2026-icra-workshop-rose26/index.html">nnodely: A Framework for Structured Neural Networks in Robotics</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Sabrina Ciuffoletti</h1>
-<p class="subtitle lead">Research Fellow</p>
-</div>
-<div class="quarto-title-meta column-page-left">
+<h1 class="title">nnodely: A Framework for Structured Neural Networks in Robotics</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Posters</div>
+    <div class="quarto-category">Model-Structured Neural Networks</div>
   </div>
-</header>
-    <div class="about-links">
-  <a href="mailto:sabrina.ciuffoletti@unitn.it" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-</div>
   </div>
-  <div class="about-contents"><div id="about">
-<p>Sabrina Ciuffoletti is a Research Fellow at the University of Trento, where she achieved her M.S. in Mechatronics Engineering in 2026 and her B.S. in Industrial Engineering in 2023. Her research focuses on the development of modular and scalable planners for vehicles and robotic systems.</p>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
-<p>M.S. Mechatronics Engineering | University of Trento | 2026 <br> B.S. Industrial Engineering | University of Trento | 2023</p>
-<p><br></p>
-</section>
-</div></div>
-</div>
 
-<section id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications" class="level2">
-<h2 data-anchor-id="b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c206d657461206669727374203e7d7ds-group-publications">Sabrina’s Group Publications</h2>
-<div id="listing-pubs" class="quarto-listing quarto-listing-container-custom">
-<div class="listing-actions-group">
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
+
+
+<div class="quarto-title-meta paper-title-meta-grid">
+
+    <div class="quarto-title-meta-column-start">
+    <div>
+      <div class="quarto-title-meta-heading">Authors</div>
+      <div class="quarto-title-meta-contents">
+                 <p>Gastone Pietro Rosati Papini </p>
+                 <p>Alice Plebe </p>
+                 <p>Mojtaba Sharifzadeh </p>
+                 <p>Sebastiano Taddei </p>
+                 <p>Mattia Piazza </p>
+                 <p>Giovanni Scialla </p>
+                 <p>Francesco Baroni </p>
+                 <p>Giovanni Maria Francesco La Scala </p>
+                 <p>Davide De Martini </p>
+                 <p>Gioele Defrancesco </p>
+                 <p>Filippo Faccini </p>
+              </div>
     </div>
-</div>
-
-<div class="list quarto-listing-default">
+          </div>
     
+  <div class="quarto-title-meta-column-end paper-publication-links">
+                <div>
+      <div class="quarto-title-meta-heading">PDF</div>
+      <div class="quarto-title-meta-contents">
+        <p class="paper-pdf-link">
+          <a href="poster.pdf" class="paper-pdf-link" download="poster.pdf">Download PDF</a>
+        </p>
+      </div>
     </div>
+            <div>
+      <div class="quarto-title-meta-heading">Paper</div>
+      <div class="quarto-title-meta-contents">
+        <p class="paper-pdf-link">
+          <a href="paper.pdf" class="paper-pdf-link" download="paper.pdf">Download paper</a>
+        </p>
+      </div>
+    </div>
+      </div>
 
-<div class="listing-no-matching d-none">No matching items</div>
+</div>
+  
+
+
+</header>
+
+
+<div class="poster-preview">
+<p><img src="poster.png" class="img-fluid" style="width:95.0%" alt="Poster: nnodely: A Framework for Structured Neural Networks in Robotics"></p>
 </div>
 
 
-
-
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -664,6 +801,15 @@ window.Quarto = {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../../publications/posters/2025-icra-lbr-nnodely/index.html" class="pagination-link" aria-label="Model-Structured Neural Networks to Model &amp; Control Robots">
+        <span class="nav-page-text">Model-Structured Neural Networks to Model &amp; Control Robots</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

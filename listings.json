@@ -1,10 +1,18 @@
 [
   {
-    "listing": "/publications/index.html",
+    "listing": "/people/taddei-sebastiano/index.html",
+    "items": [
+      "/publications/posters/2026-icra-workshop-rose26/index.html",
+      "/publications/posters/2026-icra-lbr-msnn-overview/index.html"
+    ]
+  },
+  {
+    "listing": "/people/rosati-papini-gastone-pietro/index.html",
     "items": [
       "/publications/papers/2025-road-friction-aware-abs/index.html",
       "/publications/papers/2026-vehicle-dynamics-msnn/index.html",
       "/publications/papers/2025-itsc-steering-dynamics-a2rl/index.html",
+      "/publications/posters/2026-icra-workshop-rose26/index.html",
       "/publications/posters/2025-icra-lbr-nnodely/index.html",
       "/publications/posters/2026-icra-lbr-msnn-overview/index.html",
       "/publications/presentations/2024-11-framework-dii/index.html",
@@ -16,61 +24,13 @@
       "/publications/related/2021-alessandro-antonucci-efficient-prediction-of-human-motion-for/index.html",
       "/publications/related/2021-gastone-pietro-rosati-papini-a-reinforcement-learning-a/index.html",
       "/publications/related/2020-mauro-da-lio-a-mental-simulation-approach-for-learning-/index.html",
-      "/publications/related/2019-mauro-da-lio-modelling-longitudinal-vehicle-dynamics-wi/index.html",
-      "/publications/related/2018-subham-s-sahoo-learning-equations-for-extrapolation-and/index.html"
+      "/publications/related/2019-mauro-da-lio-modelling-longitudinal-vehicle-dynamics-wi/index.html"
     ]
   },
   {
-    "listing": "/people/scialla-giovanni/index.html",
+    "listing": "/people/piazza-mattia/index.html",
     "items": [
-      "/publications/posters/2026-icra-lbr-msnn-overview/index.html"
-    ]
-  },
-  {
-    "listing": "/people/plebe-alice/index.html",
-    "items": [
-      "/publications/posters/2026-icra-lbr-msnn-overview/index.html",
-      "/publications/related/2022-mauro-da-lio-complex-self-driving-behaviors-emerging-fr/index.html",
-      "/publications/related/2021-gastone-pietro-rosati-papini-a-reinforcement-learning-a/index.html"
-    ]
-  },
-  {
-    "listing": "/people/la-scala-giovanni-maria-francesco/index.html",
-    "items": [
-      "/publications/posters/2026-icra-lbr-msnn-overview/index.html"
-    ]
-  },
-  {
-    "listing": "/people/filippo-faccini/index.html",
-    "items": [
-      "/publications/posters/2026-icra-lbr-msnn-overview/index.html"
-    ]
-  },
-  {
-    "listing": "/people/de-martini-davide/index.html",
-    "items": [
-      "/publications/posters/2026-icra-lbr-msnn-overview/index.html"
-    ]
-  },
-  {
-    "listing": "/people/baroni-francesco/index.html",
-    "items": [
-      "/publications/posters/2026-icra-lbr-msnn-overview/index.html"
-    ]
-  },
-  {
-    "listing": "/people/Sharifzadeh-Mojtaba/index.html",
-    "items": [
-      "/publications/posters/2026-icra-lbr-msnn-overview/index.html"
-    ]
-  },
-  {
-    "listing": "/people/ciuffoletti-sabrina/index.html",
-    "items": []
-  },
-  {
-    "listing": "/people/defrancesco-gioele/index.html",
-    "items": [
+      "/publications/posters/2026-icra-workshop-rose26/index.html",
       "/publications/posters/2026-icra-lbr-msnn-overview/index.html"
     ]
   },
@@ -92,17 +52,74 @@
     ]
   },
   {
-    "listing": "/people/piazza-mattia/index.html",
+    "listing": "/people/defrancesco-gioele/index.html",
     "items": [
+      "/publications/posters/2026-icra-workshop-rose26/index.html",
       "/publications/posters/2026-icra-lbr-msnn-overview/index.html"
     ]
   },
   {
-    "listing": "/people/rosati-papini-gastone-pietro/index.html",
+    "listing": "/people/ciuffoletti-sabrina/index.html",
+    "items": []
+  },
+  {
+    "listing": "/people/Sharifzadeh-Mojtaba/index.html",
+    "items": [
+      "/publications/posters/2026-icra-workshop-rose26/index.html",
+      "/publications/posters/2026-icra-lbr-msnn-overview/index.html"
+    ]
+  },
+  {
+    "listing": "/people/baroni-francesco/index.html",
+    "items": [
+      "/publications/posters/2026-icra-workshop-rose26/index.html",
+      "/publications/posters/2026-icra-lbr-msnn-overview/index.html"
+    ]
+  },
+  {
+    "listing": "/people/de-martini-davide/index.html",
+    "items": [
+      "/publications/posters/2026-icra-workshop-rose26/index.html",
+      "/publications/posters/2026-icra-lbr-msnn-overview/index.html"
+    ]
+  },
+  {
+    "listing": "/people/filippo-faccini/index.html",
+    "items": [
+      "/publications/posters/2026-icra-workshop-rose26/index.html",
+      "/publications/posters/2026-icra-lbr-msnn-overview/index.html"
+    ]
+  },
+  {
+    "listing": "/people/la-scala-giovanni-maria-francesco/index.html",
+    "items": [
+      "/publications/posters/2026-icra-workshop-rose26/index.html",
+      "/publications/posters/2026-icra-lbr-msnn-overview/index.html"
+    ]
+  },
+  {
+    "listing": "/people/plebe-alice/index.html",
+    "items": [
+      "/publications/posters/2026-icra-workshop-rose26/index.html",
+      "/publications/posters/2026-icra-lbr-msnn-overview/index.html",
+      "/publications/related/2022-mauro-da-lio-complex-self-driving-behaviors-emerging-fr/index.html",
+      "/publications/related/2021-gastone-pietro-rosati-papini-a-reinforcement-learning-a/index.html"
+    ]
+  },
+  {
+    "listing": "/people/scialla-giovanni/index.html",
+    "items": [
+      "/publications/posters/2026-icra-workshop-rose26/index.html",
+      "/publications/posters/2026-icra-lbr-msnn-overview/index.html"
+    ]
+  },
+  {
+    "listing": "/publications/index.html",
     "items": [
       "/publications/papers/2025-road-friction-aware-abs/index.html",
       "/publications/papers/2026-vehicle-dynamics-msnn/index.html",
       "/publications/papers/2025-itsc-steering-dynamics-a2rl/index.html",
+      "/publications/posters/2026-icra-workshop-rose26/index.html",
       "/publications/posters/2025-icra-lbr-nnodely/index.html",
       "/publications/posters/2026-icra-lbr-msnn-overview/index.html",
       "/publications/presentations/2024-11-framework-dii/index.html",
@@ -114,13 +131,8 @@
       "/publications/related/2021-alessandro-antonucci-efficient-prediction-of-human-motion-for/index.html",
       "/publications/related/2021-gastone-pietro-rosati-papini-a-reinforcement-learning-a/index.html",
       "/publications/related/2020-mauro-da-lio-a-mental-simulation-approach-for-learning-/index.html",
-      "/publications/related/2019-mauro-da-lio-modelling-longitudinal-vehicle-dynamics-wi/index.html"
-    ]
-  },
-  {
-    "listing": "/people/taddei-sebastiano/index.html",
-    "items": [
-      "/publications/posters/2026-icra-lbr-msnn-overview/index.html"
+      "/publications/related/2019-mauro-da-lio-modelling-longitudinal-vehicle-dynamics-wi/index.html",
+      "/publications/related/2018-subham-s-sahoo-learning-equations-for-extrapolation-and/index.html"
     ]
   }
 ]

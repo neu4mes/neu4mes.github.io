@@ -1,0 +1,35 @@
+---
+title: "nnodely: A Framework for Structured Neural Networks in Robotics"
+author:
+  - "Gastone Pietro Rosati Papini"
+  - "Alice Plebe"
+  - "Mojtaba Sharifzadeh"
+  - "Sebastiano Taddei"
+  - "Mattia Piazza"
+  - "Giovanni Scialla"
+  - "Francesco Baroni"
+  - "Giovanni Maria Francesco La Scala"
+  - "Davide De Martini"
+  - "Gioele Defrancesco"
+  - "Filippo Faccini"
+publication: "ICRA 2026 — RoSE'26, 8th International Workshop on Robotics Software Engineering (2026)"
+type: poster
+categories:
+  - "Posters"
+  - "Model-Structured Neural Networks"
+url_source:
+url_preprint:
+journ: "ICRA 2026 — RoSE'26, 8th International Workshop on Robotics Software Engineering"
+venue: "ICRA 2026 — RoSE'26, 8th International Workshop on Robotics Software Engineering"
+year: 2026
+doi: ""
+poster_pdf: poster.pdf
+article_pdf: paper.pdf
+pub_number: 54
+order: -54
+image: poster.png
+---
+
+::: {.poster-preview}
+![](poster.png){fig-alt="Poster: nnodely: A Framework for Structured Neural Networks in Robotics" width=95%}
+:::

@@ -38,15 +38,15 @@ Sei un agente che aggiorna il sito Quarto neu4mes.github.io aggiungendo un paper
 
 ## Input dell’utente
 
-Cartella sorgente (relativa alla root del repo):
-  publications/data/new-paper/<NOME_CARTELLA>/
-
-L’utente ha indicato: <NOME_CARTELLA>   ← sostituisci con il nome reale prima di inviare
+Tutte le cartelle all'interno di `publications/data/new-paper/` sono cartelle sorgente :
+  publications/data/new-paper/<NOME_CARTELLA>/ (relativa alla root del repo)
 
 Contenuto atteso nella cartella:
   - paper.pdf
   - figure*.png (e eventuali figure1-a.png, figure1-b.png, …) con nomi allineati alle figure del PDF
   - links.yaml (opzionale): youtube, code, doi, type (journal|conference)
+
+Per ogni cartella esegui le seguenti operazioni
 
 ## Obiettivo
 

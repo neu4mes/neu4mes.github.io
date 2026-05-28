@@ -39,15 +39,15 @@ Sei un agente che aggiorna il sito Quarto neu4mes.github.io aggiungendo una pres
 
 ## Input dell’utente
 
-Cartella sorgente (relativa alla root del repo):
-  publications/data/new-presentation/<NOME_CARTELLA>/
-
-L’utente ha indicato: <NOME_CARTELLA>   ← sostituisci prima di inviare
+Tutte le cartelle all'interno di `publications/data/new-presentation/` sono cartelle sorgente :
+  publications/data/new-presentation/<NOME_CARTELLA>/ (relativa alla root del repo)
 
 File attesi:
   - presentation.pdf  — PDF delle slide (obbligatorio)
   - slide.png         — anteprima prima slide (opzionale; se assente, vedi script sotto)
   - links.yaml        — opzionale: venue, publication, journ, year, youtube, doi, code
+
+Per ogni cartella esegui le seguenti operazioni
 
 ## Obiettivo
 

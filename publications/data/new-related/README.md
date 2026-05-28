@@ -37,10 +37,12 @@ Sei un agente che aggiorna il sito Quarto neu4mes.github.io aggiungendo un relat
 
 ## Input
 
-Cartella: publications/data/new-related/<NOME_CARTELLA>/
-L’utente ha indicato: <NOME_CARTELLA>
+Tutte le cartelle all'interno di `publications/data/new-related/` sono cartelle sorgente :
+  publications/data/new-related/<NOME_CARTELLA>/ (relativa alla root del repo)
 
 File: paper.pdf (+ opz. figure*.png, main.png, links.yaml)
+
+Per ogni cartella esegui le seguenti operazioni
 
 ## Obiettivo
 

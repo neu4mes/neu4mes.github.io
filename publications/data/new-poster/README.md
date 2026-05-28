@@ -44,16 +44,16 @@ Sei un agente che aggiorna il sito Quarto neu4mes.github.io aggiungendo un poste
 
 ## Input dell’utente
 
-Cartella sorgente (relativa alla root del repo):
-  publications/data/new-poster/<NOME_CARTELLA>/
-
-L’utente ha indicato: <NOME_CARTELLA>   ← sostituisci prima di inviare
+Tutte le cartelle all'interno di `publications/data/new-poster/` sono cartelle sorgente :
+  publications/data/new-poster/<NOME_CARTELLA>/ (relativa alla root del repo)
 
 File attesi (almeno uno tra poster.pdf e paper.pdf):
   - poster.pdf  — PDF del poster
   - paper.pdf   — PDF dell’articolo (opzionale)
   - poster.png  — anteprima (opzionale; se assente e c’è poster.pdf, vedi script sotto)
   - links.yaml  — opzionale: venue, doi, code
+
+Per ogni cartella esegui le seguenti operazioni
 
 ## Obiettivo
 

@@ -213,6 +213,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-externalCollab .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-subtitle','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-from","listing-project","listing-include-in-header","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-last","listing-first","listing-people_group","listing-external","listing-email","listing-education","listing-subtitle","listing-description","listing-affiliation","listing-image","listing-listing","listing-page-layout","listing-about","listing-path","listing-outputHref","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-externalCollab'] = new List('listing-externalCollab', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 <meta name="google-site-verification" content="j_gTCzWnr1jevnfvO9Y_sxECPpvnmmr3i7nuJjhDkiw">
 
@@ -333,6 +361,7 @@ window.Quarto = {
   </ul></li>
   <li><a href="#phd-students" id="toc-phd-students" class="nav-link" data-scroll-target="#phd-students">PhD Students</a></li>
   <li><a href="#research-fellows" id="toc-research-fellows" class="nav-link" data-scroll-target="#research-fellows">Research Fellows</a></li>
+  <li><a href="#external-project-collaborators" id="toc-external-project-collaborators" class="nav-link" data-scroll-target="#external-project-collaborators">External project collaborators</a></li>
   </ul>
 </nav>
     </div>
@@ -796,6 +825,84 @@ window.Quarto = {
                
             <div class="listing-box-subtitle">
               Research Fellow<br>
+            </div>
+
+            
+          </div>  
+        </div>  
+      </a>
+      
+    </div>
+  
+    
+  
+</div>
+</div>
+
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="external-project-collaborators" class="level2">
+<h2 class="anchored" data-anchor-id="external-project-collaborators">External project collaborators</h2>
+<div id="listing-externalCollab" class="quarto-listing quarto-listing-container-custom">
+
+<div class="quarto-listing quarto-listing-container-grid">
+  
+  <div class="list grid quarto-listing-cols-3"> 
+
+     
+    
+    <div class="g-col-1 listing-box">
+      
+      
+      
+      <a href="../people/mauro-dalio/index.html" role="button" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-left">
+          
+          
+          <p class="card-img-top">
+            <img alt="Mauro Da Lio" src="../people/mauro-dalio/avatar.png" class="thumbnail-image card-img listing-box-image" style="height" 150px;"="">
+          </p>
+          
+          <div class="card-body post-contents">
+            
+            <div class="listing-box-title">
+              Mauro Da Lio<br> 
+            </div>
+               
+            <div class="listing-box-subtitle">
+              Full Professor of Mechanical Systems, University of Trento<br>
+            </div>
+
+            
+          </div>  
+        </div>  
+      </a>
+      
+    </div>
+  
+     
+    
+    <div class="g-col-1 listing-box">
+      
+      
+      
+      <a href="../people/mattia-piccinini/index.html" role="button" class="quarto-grid-link">
+        <div class="quarto-grid-item card h-100 card-left">
+          
+          
+          <p class="card-img-top">
+            <img alt="Mattia Piccinini" src="../people/mattia-piccinini/avatar.jpg" class="thumbnail-image card-img listing-box-image" style="height" 150px;"="">
+          </p>
+          
+          <div class="card-body post-contents">
+            
+            <div class="listing-box-title">
+              Mattia Piccinini<br> 
+            </div>
+               
+            <div class="listing-box-subtitle">
+              Humboldt Post-doctoral Fellow, Technical University of Munich<br>
             </div>
 
             

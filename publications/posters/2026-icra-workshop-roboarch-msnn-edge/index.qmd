@@ -1,0 +1,30 @@
+---
+title: "Model-Structured Neural Networks on Edge Hardware: A Preliminary Study"
+author:
+  - "Giovanni Maria Francesco La Scala"
+  - "Sebastiano Taddei"
+  - "Francesco Baroni"
+  - "Gioele Defrancesco"
+  - "Filippo Faccini"
+  - "Gastone Pietro Rosati Papini"
+publication: "ICRA 2026 — RoboARCH 2026, 8th International Workshop on Robotics Acceleration with Computing Hardware and Systems (2026)"
+type: poster
+categories:
+  - "Posters"
+  - "Model-Structured Neural Networks"
+url_source:
+url_preprint:
+journ: "ICRA 2026 — RoboARCH 2026, 8th International Workshop on Robotics Acceleration with Computing Hardware and Systems"
+venue: "ICRA 2026 — RoboARCH 2026, 8th International Workshop on Robotics Acceleration with Computing Hardware and Systems"
+year: 2026
+doi: ""
+poster_pdf: poster.pdf
+article_pdf: paper.pdf
+pub_number: 56
+order: -56
+image: poster.png
+---
+
+::: {.poster-preview}
+![](poster.png){fig-alt="Poster: Model-Structured Neural Networks on Edge Hardware: A Preliminary Study" width=95%}
+:::

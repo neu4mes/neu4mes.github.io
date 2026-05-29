@@ -1,0 +1,30 @@
+---
+title: "A Fully Differentiable Framework for Autonomous Driving Based on Model-Structured Neural Networks"
+author:
+  - "Sabrina Ciuffoletti"
+  - "Gioele Defrancesco"
+  - "Giovanni Scialla"
+  - "Mattia Piazza"
+  - "Sebastiano Taddei"
+  - "Gastone Pietro Rosati Papini"
+publication: "ICRA 2026 — Autonomous Driving Workshop (2026)"
+type: poster
+categories:
+  - "Posters"
+  - "Model-Structured Neural Networks"
+url_source:
+url_preprint:
+journ: "ICRA 2026 — Autonomous Driving Workshop"
+venue: "ICRA 2026 — Autonomous Driving Workshop"
+year: 2026
+doi: ""
+poster_pdf: poster.pdf
+article_pdf: paper.pdf
+pub_number: 57
+order: -57
+image: poster.png
+---
+
+::: {.poster-preview}
+![](poster.png){fig-alt="Poster: A Fully Differentiable Framework for Autonomous Driving Based on Model-Structured Neural Networks" width=95%}
+:::

@@ -47,6 +47,7 @@ Contenuto atteso nella cartella:
   - links.yaml (opzionale): youtube, code, doi, type (journal|conference)
 
 Per ogni cartella esegui le seguenti operazioni
+Poi elimina la cartella source publications/data/new-paper/<NOME_CARTELLA>/
 
 ## Obiettivo
 

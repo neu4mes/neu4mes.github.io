@@ -48,6 +48,7 @@ File attesi:
   - links.yaml        — opzionale: venue, publication, journ, year, youtube, doi, code
 
 Per ogni cartella esegui le seguenti operazioni
+Poi elimina la cartella source publications/data/new-presentation/<NOME_CARTELLA>/
 
 ## Obiettivo
 

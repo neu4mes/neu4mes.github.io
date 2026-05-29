@@ -1,0 +1,30 @@
+---
+title: "Model-Structured Neural Networks for Road Condition Identification in AI-Enabled Digital Twin Architecture"
+author:
+  - "Mojtaba Sharifzadeh"
+  - "Filippo Faccini"
+  - "Giovanni Maria Francesco La Scala"
+  - "Alice Plebe"
+  - "Mattia Piccinini"
+  - "Gastone Pietro Rosati Papini"
+publication: "ICRA 2026 — Workshop on AI-Driven Automation and Robotic System Integration with Digital Twins (2026)"
+type: poster
+categories:
+  - "Posters"
+  - "Model-Structured Neural Networks"
+url_source:
+url_preprint:
+journ: "ICRA 2026 — Workshop on AI-Driven Automation and Robotic System Integration with Digital Twins"
+venue: "ICRA 2026 — Workshop on AI-Driven Automation and Robotic System Integration with Digital Twins"
+year: 2026
+doi: ""
+poster_pdf: poster.pdf
+article_pdf: paper.pdf
+pub_number: 55
+order: -55
+image: poster.png
+---
+
+::: {.poster-preview}
+![](poster.png){fig-alt="Poster: Model-Structured Neural Networks for Road Condition Identification in AI-Enabled Digital Twin Architecture" width=95%}
+:::

@@ -54,6 +54,7 @@ File attesi (almeno uno tra poster.pdf e paper.pdf):
   - links.yaml  — opzionale: venue, doi, code
 
 Per ogni cartella esegui le seguenti operazioni
+Poi elimina la cartella source publications/data/new-poster/<NOME_CARTELLA>/
 
 ## Obiettivo
 

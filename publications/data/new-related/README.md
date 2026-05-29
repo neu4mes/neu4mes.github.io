@@ -43,6 +43,7 @@ Tutte le cartelle all'interno di `publications/data/new-related/` sono cartelle 
 File: paper.pdf (+ opz. figure*.png, main.png, links.yaml)
 
 Per ogni cartella esegui le seguenti operazioni
+Poi elimina la cartella source publications/data/new-related/<NOME_CARTELLA>/
 
 ## Obiettivo
 

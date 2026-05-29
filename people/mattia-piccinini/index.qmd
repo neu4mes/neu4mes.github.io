@@ -1,0 +1,66 @@
+---
+title: &TITLE Mattia Piccinini
+last: Piccinini
+first: Mattia
+people_group: "external"
+external: true
+email: mattia.piccinini@tum.de
+education:
+  - Ph.D. in Autonomous Systems (summa cum laude) | University of Trento | 2024 <br> M.Sc. in Mechatronics Engineering (summa cum laude) | University of Trento | 2019 <br> B.Sc. in Industrial Engineering (summa cum laude) | University of Trento | 2017
+subtitle: "Humboldt Post-doctoral Fellow, Technical University of Munich"
+description: ""
+affiliation: Technical University of Munich
+image: avatar.jpg
+listing:
+  id: pubs
+  template: ../../_ejs/publications.ejs
+  contents:
+    - "../../../publications/**/*.qmd"
+    - "!../../../publications/_template/"
+  sort: "pub_number desc"
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+page-layout: full
+about:
+  id: about
+  template: trestles
+  image-shape: round
+  image: avatar.jpg
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:mattia.piccinini@tum.de
+    - text: Google Scholar
+      icon: mortarboard
+      href: https://scholar.google.com/citations?user=xtgKwEoAAAAJ&hl=it&authuser=1
+    - icon: github
+      text: GitHub
+      href: https://github.com/mattiapiccinini95
+    - icon: globe2
+      text: Website
+      href: https://mattiapiccinini95.github.io
+---
+
+<hr>
+
+:::{#about}
+
+I am a Humboldt Post-doctoral Fellow at the [Autonomous Vehicle Systems (AVS) Lab](https://www.mos.ed.tum.de/en/avs/home/), Technical University of Munich (TUM), Germany.
+
+My research lies at the intersection of **robotics**, **machine learning**, and **control**. I develop algorithms for real-time trajectory planning, control, and estimation of autonomous robots in uncertain, dynamic environments. I like to integrate prior knowledge of the robot dynamics into learning-based methods, such as neural networks, to enhance their **generalization to unseen scenarios** with minimal training data.
+
+A 3-minute video presentation of my Ph.D. research is available [here](https://youtu.be/sdoO9i480ZY).
+
+## Education
+{{< meta education >}}
+
+<br>
+
+:::
+
+## {{< meta first >}}'s Group Publications
+
+:::{#pubs}
+:::

@@ -45,6 +45,13 @@ listing:
     sort: last
     type: grid
     fields: [title, subtitle, image]
+  - id: externalCollab
+    include:
+      people_group: "external"
+    template: ../_ejs/people-box.ejs
+    sort: last
+    type: grid
+    fields: [title, subtitle, image]
 page-layout: full
 ---
 
@@ -79,6 +86,11 @@ page-layout: full
 ## Research Fellows
 
 ::: {#ResearchFellow}
+:::
+
+## External project collaborators
+
+::: {#externalCollab}
 :::
 
 

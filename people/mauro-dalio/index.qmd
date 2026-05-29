@@ -1,0 +1,52 @@
+---
+title: &TITLE Mauro Da Lio
+last: Da Lio
+first: Mauro
+people_group: "external"
+external: true
+email: ""
+education: []
+subtitle: "Full Professor of Mechanical Systems, University of Trento"
+description: ""
+affiliation: University of Trento
+image: avatar.png
+listing:
+  id: pubs
+  template: ../../_ejs/publications.ejs
+  contents:
+    - "../../../publications/**/*.qmd"
+    - "!../../../publications/_template/"
+  sort: "pub_number desc"
+  filter-ui: true
+  include:
+    author: *TITLE
+  fields: [publication, title, categories, image, date, author]
+page-layout: full
+about:
+  id: about
+  template: trestles
+  image-shape: round
+  image: avatar.png
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/mauro-da-lio-b6bb4b189/
+    - icon: building
+      text: UniTN page
+      href: https://webapps.unitn.it/du/it/Persona/PER0004188/Curriculum
+---
+
+<hr>
+
+:::{#about}
+
+Mauro Da Lio is a Full Professor of mechanical systems at the University of Trento, Italy. His earlier research activity was modeling, simulation, and optimal control of mechanical multibody systems, particularly vehicle and spacecraft dynamics. More recently, his focus shifted to modeling human sensory-motor control with applications in health, robotics, and, mostly, intelligent vehicles.
+
+He was involved in several EU Framework Programme 6 and 7 projects (PReVENT, SAFERIDER, interactIVe, VERITAS, AdaptIVe, No-Tremor, and SUNRISE). He coordinated the EU Horizon 2020 Dreams4Cars Research and Innovation Action, a collaborative robotics project that aimed at increasing the cognition abilities of artificial driving agents using offline simulation mechanisms broadly inspired by the human dream state (learning of forward models and offline synthesis of inverse ones).
+
+:::
+
+## {{< meta first >}}'s Group Publications
+
+:::{#pubs}
+:::

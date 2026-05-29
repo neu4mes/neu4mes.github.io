@@ -44,6 +44,9 @@ about:
     - icon: globe2
       text: Website 
       href: https://tonegas.com
+    - icon: building
+      text: UniTN page
+      href: https://webapps.unitn.it/du/en/Persona/PER0203525/Curriculum
 ---
 
 <hr>

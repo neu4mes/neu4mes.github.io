@@ -2,12 +2,14 @@
 title: &TITLE Sebastiano Taddei ##
 last: Taddei ##
 first: Sebastiano ##
-people_group: "PostDoc" ## "postdoc | gradstudent | alumni | pi | student" #
-email: sebastiano.taddei@unitn.it ##
+people_group: "external" ## "postdoc | gradstudent | alumni | pi | student" #
+external: true
+email: "" ##
 education:
   - Ph.D. in Autonomous Systems | Polytechnic University of Bari | 2026 <br> Master Degree | University of Trento | 2022  <br> Bachelor Degree | University of Trento | 2020  # i.e. PhD in Teology | University of Nowhere | 2024  <br> MS in Magical Application for Computers | University of Imagination | 2020  <br> BS in Sourcery and Algorithmic Arts | Fantasy State University | 2018
-subtitle: "Research fellow" ## "Postdoctoral Fellow | Graduate Student | Principal Investigator | Student | Alumni" #
-description: "PhD researcher in autonomous systems working on real-time motion planning and control for autonomous racing." ## Short description (optional) ##
+subtitle: "Software Engineer, Waymo" ## "Postdoctoral Fellow | Graduate Student | Principal Investigator | Student | Alumni" #
+description: "Software Engineer at Waymo, working on autonomous driving. Formerly a PhD researcher in autonomous systems focusing on real-time motion planning and control for autonomous racing." ## Short description (optional) ##
+affiliation: Waymo
 image: avatar.jpeg
 listing:
   id: pubs
@@ -28,11 +30,11 @@ about:
   image-shape: round
   image: avatar.jpeg
   links:
-    - icon: envelope
-      text: Email
-      href: mailto:sebastiano.taddei@unitn.it ##
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/sebastianotaddei/
     - text: Google Scholar
-      icon: mortarboard 
+      icon: mortarboard
       href: https://scholar.google.com/citations?user=oQH8Y2EAAAAJ&hl=en&oi=ao
 ---
 
@@ -42,12 +44,14 @@ about:
 :::{#about}
 
 
-I am a PhD researcher in autonomous systems focusing on real-time motion
-planning and control for autonomous racing. My work combines model-based
-approaches and learning-based methods, with a strong emphasis on full-system
-integration and practical validation in simulation and on real platforms. I am
-particularly interested in building complete, real-time software systems that
-connect theory with experimental results.
+I am a Software Engineer at Waymo, working on autonomous driving in Mountain
+View, California. Previously, I was a PhD researcher in autonomous systems
+focusing on real-time motion planning and control for autonomous racing. My
+work combined model-based approaches and learning-based methods, with a
+strong emphasis on full-system integration and practical validation in
+simulation and on real platforms, and I remain particularly interested in
+building complete, real-time software systems that connect theory with
+experimental results.
 
 
 

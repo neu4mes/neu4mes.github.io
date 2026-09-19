@@ -5,6 +5,15 @@ img.navbar-logo {
   width: auto;
 }
 
+/* People grid: force every team photo (incl. external collaborators) to the
+   same square thumbnail size, regardless of the source image's aspect ratio */
+.listing-box-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: top center;
+}
+
 p:has(> img.framework-diagram) {
   text-align: center;
   margin-bottom: 1.25rem;

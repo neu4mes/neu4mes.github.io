@@ -2,12 +2,13 @@
 title: &TITLE Alice Plebe ##
 last: Plebe ##
 first: Alice ##
-people_group: "AssistantProf" ## "postdoc | gradstudent | alumni | pi | student" #
+people_group: "external"
+external: true
 seniority: 1 ##
 email: alice.plebe@unitn.it ##
 education:
   - PhD in Computer Science | University of Trento | 2020  <br> MS in Computer Science | University of Catania | 2016 <br> BS in Computer Science | University of Catania | 2014
-subtitle: "Assistant Professor RTDa"
+subtitle: "Researcher, University of Trento"
 # description: "" ## Short description (optional) ##
 image: avatar.jpg
 listing:

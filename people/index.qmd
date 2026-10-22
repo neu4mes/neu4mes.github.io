@@ -18,15 +18,16 @@ listing:
     sort: last
     type: grid
     fields: [title, subtitle, image]
-  - id: PostDoc
-    include: 
-      people_group: "PostDoc"
-    exclude:
-      external: true
-    template: ../_ejs/people-box.ejs
-    sort: last
-    type: grid
-    fields: [title, subtitle, image]
+  # Postdoc section hidden while there are no postdocs: uncomment to show it again
+  # - id: PostDoc
+  #   include:
+  #     people_group: "PostDoc"
+  #   exclude:
+  #     external: true
+  #   template: ../_ejs/people-box.ejs
+  #   sort: last
+  #   type: grid
+  #   fields: [title, subtitle, image]
   - id: phdstudent
     include: 
       people_group: "phdstudent"
@@ -71,10 +72,12 @@ page-layout: full
 ::: {#AssistantProf}
 :::
 
+<!-- Postdoc section hidden while there are no postdocs: uncomment to show it again
 ### Postdoctoral Researchers
 
 ::: {#PostDoc}
 :::
+-->
 
 :::
 

@@ -2,7 +2,8 @@
 title: &TITLE Mattia Piazza
 last: Piazza
 first: Mattia
-people_group: "PostDoc"
+people_group: "external"
+external: true
 seniority: 2
 email: "matia.piazza@unitn.it"
 education:

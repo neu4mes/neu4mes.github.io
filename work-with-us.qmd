@@ -18,4 +18,11 @@ PhD positions will primarily focus on the application of model-structured neural
 
 Senior positions will involve supervising experimental applications by proposing approaches from other research fields, integrating knowledge from experimental areas into the Neu4mes framework, and maintaining the wiki that will collect models and controls developed within the project or found in the state of the art. Positions are sought with both hardware expertise for experimental supervision and mechanical and machine learning expertise for integration into the framework.
 
+### Open calls
+
+We are looking for researchers who want to work on physical AI and model-structured neural networks, i.e., architectures inspired by physical models and equations. The positions are at the [Department of Industrial Engineering](https://www.dii.unitn.it/en) of the University of Trento (Italy), with the maximum allowable salary for these positions: **€39,224.29 per year**. The calls expire at the **end of October 2026**. Candidates who will obtain their PhD later can also apply.
+
+- [Call for 2 research contracts – Project FIS 2023](https://lavoraconnoi.unitn.it/en/research-contracts/department-industrial-engineering-call-selections-awarding-no-2-research-contracts-project-fis-2023)
+- [Call for 1 post-doc assignment – Decree no. 651](https://lavoraconnoi.unitn.it/en/post-doc-assignments/department-industrial-engineering-call-selection-awarding-no-1-post-doc-assignment-decree-no-651)
+
 For more information, see the [Contacts](contacts.qmd) page.

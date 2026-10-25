@@ -16,7 +16,7 @@ categories:
   - "Journal Articles"
   - "Model-Structured Neural Networks"
 url_source:
-url_preprint: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7634813"
+url_preprint:
 journ: "SSRN Preprint (submitted to Elsevier)"
 year: 2026
 doi: "10.2139/ssrn.7634813"

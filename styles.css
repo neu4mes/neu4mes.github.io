@@ -14,6 +14,17 @@ img.navbar-logo {
   object-position: top center;
 }
 
+/* Publication listings: Quarto sets the bottom padding of each entry only on
+   mobile, so on desktop the gap above the separator came from the thumbnail's
+   <p> margin and vanished when the text column was taller than the image */
+div.quarto-post {
+  padding-bottom: 1em;
+}
+
+div.quarto-post .thumbnail p {
+  margin-bottom: 0;
+}
+
 p:has(> img.framework-diagram) {
   text-align: center;
   margin-bottom: 1.25rem;

@@ -2,12 +2,12 @@
 title: &TITLE Sabrina Ciuffoletti 
 last: Ciuffoletti
 first: Sabrina
-people_group: "ResearchFellow"
+people_group: "phdstudent"
 seniority: 2
 email: "sabrina.ciuffoletti@unitn.it"
 education:
   - M.S. Mechatronics Engineering | University of Trento | 2026 <br> B.S. Industrial Engineering | University of Trento | 2023
-subtitle: "Research Fellow"
+subtitle: "PhD student"
 description: ""
 project: "neu4mes"
 affiliation: University of Trento
@@ -50,7 +50,8 @@ about:
 
 :::{#about}
 
-Sabrina Ciuffoletti is a Research Fellow at the University of Trento, where she achieved her M.S. in Mechatronics Engineering in 2026 and her B.S. in Industrial Engineering in 2023. Her research focuses on the development of modular and scalable planners for vehicles and robotic systems.
+Sabrina Ciuffoletti is a PhD student at the University of Trento, where she earned her M.S. in Mechatronics Engineering in 2026 and her B.S. in Industrial Engineering in 2023. Her research focuses on modular and scalable motion planners for autonomous vehicles and robotic systems. In particular, she works on optimization-based, bio-inspired architectures that make planning decisions explainable and adaptable to different scenarios. She aims to integrate model-structured neural networks, built with the open-source framework nnodely, to extend the planner to more complex scenarios.
+
 
 
 
